@@ -1,1275 +1,667 @@
 {
   "connections": [
     {
-      "id": "april-burial-opening",
-      "source": 1,
-      "target": 76,
-      "type": "motif",
-      "description": "Opening 'April is the cruellest month' to closing 'mon frère' - framing of burial/resurrection tension in Part I"
-    },
-    {
-      "id": "hyacinth-girl-memory",
-      "source": 35,
-      "target": 37,
-      "type": "voice",
-      "description": "Hyacinth girl episode - intimate memory of failed romantic connection, looking into 'the heart of light'"
-    },
-    {
-      "id": "pearls-eyes-first",
-      "source": 48,
-      "target": 125,
-      "type": "reference",
-      "description": "First 'Those are pearls that were his eyes' from The Tempest - death by water motif begins"
-    },
-    {
-      "id": "pearls-eyes-second",
-      "source": 125,
-      "target": 316,
-      "type": "reference",
-      "description": "'Those are pearls that were his eyes' connects to Phlebas's bones being picked by currents"
-    },
-    {
-      "id": "unreal-city-repetition",
-      "source": 60,
-      "target": 207,
-      "type": "motif",
-      "description": "First 'Unreal City' to second occurrence - urban alienation and postwar death of civilization"
-    },
-    {
-      "id": "unreal-city-third",
-      "source": 207,
-      "target": 376,
-      "type": "motif",
-      "description": "Second 'Unreal City' to third occurrence - culminating in falling towers"
-    },
-    {
-      "id": "london-bridge-crowd",
-      "source": 62,
-      "target": 63,
-      "type": "allusion",
-      "description": "Dante's Inferno - 'so many, I had not thought death had undone so many' - the living dead of London"
-    },
-    {
-      "id": "death-undone-living-dead",
-      "source": 63,
-      "target": 329,
-      "type": "echo",
-      "description": "'death had undone so many' echoes in 'We who were living are now dying'"
-    },
-    {
-      "id": "corpse-planted-blooming",
-      "source": 71,
-      "target": 72,
-      "type": "imagery",
-      "description": "Stetson's planted corpse - grotesque resurrection parody"
-    },
-    {
-      "id": "fear-dust",
-      "source": 30,
-      "target": 430,
-      "type": "imagery",
-      "description": "'fear in a handful of dust' to 'These fragments I have shored against my ruins' - mortality theme"
-    },
-    {
-      "id": "water-dryness-opening",
-      "source": 22,
-      "target": 24,
-      "type": "imagery",
-      "description": "'dry stone no sound of water' establishes the fundamental lack driving the poem"
-    },
-    {
-      "id": "water-thirst-climax",
-      "source": 24,
-      "target": 335,
-      "type": "motif",
-      "description": "Opening 'no sound of water' to Part V's desperate 'If there were water'"
-    },
-    {
-      "id": "water-dripping-song",
-      "source": 335,
-      "target": 357,
-      "type": "imagery",
-      "description": "'If there were water' yearning to hermit-thrush's 'water-dripping song'"
-    },
-    {
-      "id": "sweet-thames-spenser",
-      "source": 176,
-      "target": 183,
-      "type": "reference",
-      "description": "Spenser's Prothalamion refrain - pastoral innocence vs modern pollution"
-    },
-    {
-      "id": "thames-sweating-pollution",
-      "source": 266,
-      "target": 267,
-      "type": "imagery",
-      "description": "Thames 'sweats / Oil and tar' - ecological and moral degradation"
-    },
-    {
-      "id": "death-water-prophecy",
-      "source": 55,
-      "target": 312,
-      "type": "motif",
-      "description": "'Fear death by water' prophecy fulfilled in Part IV 'Death by Water'"
-    },
-    {
-      "id": "phlebas-drowned",
-      "source": 312,
-      "target": 321,
-      "type": "motif",
-      "description": "Phlebas's death - failed elegy, no resurrection or consolation"
-    },
-    {
-      "id": "thunder-da-first",
-      "source": 400,
-      "target": 410,
-      "type": "motif",
-      "description": "First DA (Datta - give) to second DA - Sanskrit wisdom sequence"
-    },
-    {
-      "id": "thunder-da-second",
-      "source": 410,
-      "target": 417,
-      "type": "motif",
-      "description": "Second DA (Dayadhvam - sympathize) to third DA - ethical imperatives"
-    },
-    {
-      "id": "thunder-da-third",
-      "source": 417,
-      "target": 432,
-      "type": "motif",
-      "description": "Third DA (Damyata - control) to final repetition with 'Shantih'"
-    },
-    {
-      "id": "shantih-peace",
-      "source": 432,
-      "target": 433,
-      "type": "motif",
-      "description": "Final Sanskrit benediction 'Shantih shantih shantih' - The Peace which passeth understanding"
-    },
-    {
-      "id": "rats-alley-trenches",
-      "source": 115,
-      "target": 116,
-      "type": "reference",
-      "description": "WWI trench slang - 'rats' alley / Where the dead men lost their bones' - war trauma"
-    },
-    {
-      "id": "nerves-dialogue-opening",
-      "source": 111,
-      "target": 138,
-      "type": "voice",
-      "description": "'My nerves are bad to-night' - hysterical dialogue of failed marriage"
-    },
-    {
-      "id": "are-you-alive",
-      "source": 126,
-      "target": 127,
-      "type": "voice",
-      "description": "'Are you alive, or not?' - existential question to shell-shocked veteran"
-    },
-    {
-      "id": "shakespeherian-rag",
-      "source": 128,
-      "target": 130,
-      "type": "reference",
-      "description": "Jazz/ragtime intrusion - modernist fragmentation and popular culture"
-    },
-    {
-      "id": "lil-albert-demobbed",
-      "source": 139,
-      "target": 149,
-      "type": "voice",
-      "description": "Lil and demobbed Albert - post-war domestic violence and sexual pressure"
-    },
-    {
-      "id": "abortion-pills",
-      "source": 159,
-      "target": 160,
-      "type": "imagery",
-      "description": "'them pills I took, to bring it off' - abortion and death of fertility"
-    },
-    {
-      "id": "ophelia-goodnight",
-      "source": 172,
-      "target": 172,
-      "type": "allusion",
-      "description": "Ophelia's mad scene from Hamlet - suicide and despair"
-    },
-    {
-      "id": "philomel-nightingale",
-      "source": 99,
-      "target": 103,
-      "type": "reference",
-      "description": "Philomel's rape transformed into nightingale's 'inviolable voice'"
-    },
-    {
-      "id": "jug-jug-bird-song",
-      "source": 103,
-      "target": 203,
-      "type": "echo",
-      "description": "'Jug Jug' to dirty ears - repeated bird motif linking sexual violence"
-    },
-    {
-      "id": "typist-young-man",
-      "source": 222,
-      "target": 256,
-      "type": "voice",
-      "description": "Typist and carbuncular clerk - mechanical loveless sexuality"
-    },
-    {
-      "id": "tiresias-foresuffering",
-      "source": 218,
-      "target": 243,
-      "type": "voice",
-      "description": "Tiresias as witness - 'I Tiresias have foresuffered all' unites all perspectives"
-    },
-    {
-      "id": "tiresias-substance",
-      "source": 218,
-      "target": 256,
-      "type": "voice",
-      "description": "What Tiresias sees 'is the substance of the poem' per Eliot's note"
-    },
-    {
-      "id": "automatic-hand",
-      "source": 255,
-      "target": 256,
-      "type": "imagery",
-      "description": "'automatic hand' and gramophone - mechanization of emotion and sexuality"
-    },
-    {
-      "id": "lovely-woman-folly",
-      "source": 253,
-      "target": 256,
-      "type": "allusion",
-      "description": "Goldsmith's 'When lovely woman stoops to folly' - 18th century moral vs modern indifference"
-    },
-    {
-      "id": "magnus-martyr-splendour",
-      "source": 264,
-      "target": 265,
-      "type": "imagery",
-      "description": "'Inexplicable splendour of Ionian white and gold' - Anglo-Catholic sanctuary in the City"
-    },
-    {
-      "id": "fishermen-lounge",
-      "source": 263,
-      "target": 265,
-      "type": "imagery",
-      "description": "Fishermen at noon - Christ as Fisher King, moment of grace"
-    },
-    {
-      "id": "elizabeth-leicester",
-      "source": 279,
-      "target": 293,
-      "type": "reference",
-      "description": "Elizabeth and Leicester's barge - Elizabethan virginal splendor vs modern degradation"
-    },
-    {
-      "id": "thames-daughters-first",
-      "source": 292,
-      "target": 306,
-      "type": "voice",
-      "description": "First Thames-daughter testimony - sexual victimization by Richmond"
-    },
-    {
-      "id": "thames-daughters-second",
-      "source": 296,
-      "target": 306,
-      "type": "voice",
-      "description": "Second Thames-daughter - Moorgate and 'raised my knees / Supine'"
-    },
-    {
-      "id": "thames-daughters-third",
-      "source": 300,
-      "target": 306,
-      "type": "voice",
-      "description": "Third Thames-daughter - Margate Sands and empty heartedness"
-    },
-    {
-      "id": "carthage-augustine",
-      "source": 307,
-      "target": 309,
-      "type": "reference",
-      "description": "St. Augustine's Confessions - 'To Carthage then I came' - fires of lust"
-    },
-    {
-      "id": "burning-buddha-augustine",
-      "source": 307,
-      "target": 311,
-      "type": "reference",
-      "description": "Buddha's Fire Sermon with Augustine - Eastern and Western asceticism converge"
-    },
-    {
-      "id": "burning-refrain",
-      "source": 308,
-      "target": 311,
-      "type": "echo",
-      "description": "Repeated 'burning' - purgatorial fire for purification"
-    },
-    {
-      "id": "chapel-perilous",
-      "source": 385,
-      "target": 394,
-      "type": "reference",
-      "description": "Empty Chapel Perilous - Grail quest stripped of challenge or horror"
-    },
-    {
-      "id": "cock-crow-peter",
-      "source": 392,
-      "target": 393,
-      "type": "allusion",
-      "description": "Cock crowing - Peter's triple denial of Christ"
-    },
-    {
-      "id": "damp-gust-rain",
-      "source": 394,
-      "target": 395,
-      "type": "imagery",
-      "description": "'A damp gust / Bringing rain' - first promise of water after drought"
-    },
-    {
-      "id": "ganges-himavant",
-      "source": 396,
-      "target": 397,
-      "type": "reference",
-      "description": "Rain over Ganges and Himavant - Eastern geography, not the wasteland"
-    },
-    {
-      "id": "awful-daring-surrender",
-      "source": 403,
-      "target": 405,
-      "type": "voice",
-      "description": "'awful daring of a moment's surrender' - existential commitment, possibly marriage"
-    },
-    {
-      "id": "key-turned-prison",
-      "source": 411,
-      "target": 415,
-      "type": "imagery",
-      "description": "'I have heard the key / Turn in the door' - imprisonment of self, Bradley's philosophy"
-    },
-    {
-      "id": "beating-obedient",
-      "source": 420,
-      "target": 422,
-      "type": "imagery",
-      "description": "'your heart would have responded / ... beating obedient' - control and surrender to divine"
-    },
-    {
-      "id": "london-bridge-falling",
-      "source": 426,
-      "target": 429,
-      "type": "motif",
-      "description": "Nursery rhyme collapse - civilization's breakdown, Russell's hallucination"
-    },
-    {
-      "id": "dante-refining-fire",
-      "source": 427,
-      "target": 428,
-      "type": "allusion",
-      "description": "Dante's Purgatorio - 'Poi s'ascose nel foco che gli affina' - purifying fire"
-    },
-    {
-      "id": "quando-fiam-swallow",
-      "source": 428,
-      "target": 428,
-      "type": "allusion",
-      "description": "Pervigilium Veneris - 'When shall I be like the swallow' - Philomel's transformation"
-    },
-    {
-      "id": "prince-aquitaine-tower",
-      "source": 429,
-      "target": 430,
-      "type": "allusion",
-      "description": "Nerval's 'El Desdichado' - 'Le Prince d'Aquitaine à la tour abolie' - disinherited prince"
-    },
-    {
-      "id": "fragments-ruins",
-      "source": 430,
-      "target": 432,
-      "type": "voice",
-      "description": "'These fragments I have shored against my ruins' - meta-poetic commentary on the poem itself"
-    },
-    {
-      "id": "kyd-hieronymo-mad",
-      "source": 431,
-      "target": 430,
-      "type": "allusion",
-      "description": "Kyd's Spanish Tragedy - 'Why then Ile fit you' - Hieronymo's mad revenge"
-    },
-    {
-      "id": "son-of-man-prophet",
-      "source": 20,
-      "target": 42,
-      "type": "allusion",
-      "description": "'Son of man' biblical invocation - Christ as absent presence throughout"
-    },
-    {
-      "id": "red-rock-shelter",
-      "source": 26,
-      "target": 30,
-      "type": "imagery",
-      "description": "'shadow of this red rock' to 'fear in a handful of dust' - death of St. Narcissus echoes"
-    },
-    {
-      "id": "narcissus-saint-desert",
-      "source": 26,
-      "target": 322,
-      "type": "echo",
-      "description": "Red rock desert connects to Part V desert landscape - spiritual testing"
-    },
-    {
-      "id": "marie-childhood-memory",
-      "source": 8,
-      "target": 15,
-      "type": "voice",
-      "description": "Marie's memories - pre-WWI aristocratic Europe, 'In the mountains, there you feel free'"
-    },
-    {
-      "id": "marie-nationality",
-      "source": 12,
-      "target": 12,
-      "type": "reference",
-      "description": "'Bin gar keine Russin, stamm' aus Litauen, echt deutsch' - post-war border anxieties"
-    },
-    {
-      "id": "madame-sosostris-tarot",
-      "source": 43,
-      "target": 59,
-      "type": "voice",
-      "description": "Madame Sosostris's divination - false prophecy, commercialized mysticism"
-    },
-    {
-      "id": "hanged-man-missing",
-      "source": 54,
-      "target": 55,
-      "type": "imagery",
-      "description": "'I do not find / The Hanged Man' - crucified Christ absent from modern world"
-    },
-    {
-      "id": "one-eyed-merchant",
-      "source": 46,
-      "target": 209,
-      "type": "motif",
-      "description": "One-eyed merchant card connects to Mr. Eugenides - commerce and sexuality"
-    },
-    {
-      "id": "drowned-phoenician-sailor",
+      "id": "arc-1",
       "source": 47,
       "target": 312,
       "type": "motif",
-      "description": "Drowned Phoenician Sailor card fulfilled in Phlebas the Phoenician"
+      "description": "Madame Sosostris's card materializes as Phlebas in 'Death by Water'"
     },
     {
-      "id": "crowd-flowing-bridge",
-      "source": 62,
-      "target": 69,
-      "type": "imagery",
-      "description": "Commuters flowing over London Bridge - City workers as living dead"
-    },
-    {
-      "id": "saint-mary-woolnoth",
-      "source": 66,
-      "target": 68,
+      "id": "arc-3",
+      "source": 52,
+      "target": 209,
       "type": "reference",
-      "description": "St. Mary Woolnoth's dead sound - City church as sanctuary amid commerce"
+      "description": "The Tarot figure reappears as a named merchant in the city"
     },
     {
-      "id": "stetson-mylae",
-      "source": 69,
-      "target": 70,
-      "type": "allusion",
-      "description": "Stetson at Mylae - conflating ancient Punic Wars with WWI, Gallipoli campaign"
-    },
-    {
-      "id": "hypocrite-lecteur-baudelaire",
-      "source": 76,
-      "target": 76,
-      "type": "allusion",
-      "description": "Baudelaire's address to reader - implicating audience in moral corruption"
-    },
-    {
-      "id": "cleopatra-chair",
-      "source": 77,
-      "target": 92,
-      "type": "allusion",
-      "description": "Shakespeare's Cleopatra opening 'A Game of Chess' - fallen aristocratic femininity"
-    },
-    {
-      "id": "rape-of-philomel",
-      "source": 97,
-      "target": 103,
-      "type": "allusion",
-      "description": "Philomel tapestry - Ovid's rape narrative haunting the boudoir"
-    },
-    {
-      "id": "sylvan-scene-metamorphosis",
-      "source": 98,
-      "target": 103,
-      "type": "imagery",
-      "description": "'sylvan scene' to nightingale's cry - nature transformed by violence"
-    },
-    {
-      "id": "knock-upon-door",
-      "source": 138,
-      "target": 138,
-      "type": "allusion",
-      "description": "'waiting for a knock upon the door' - Revelation 3:20, Christ knocking"
-    },
-    {
-      "id": "closed-car-escape",
-      "source": 136,
-      "target": 138,
-      "type": "imagery",
-      "description": "'closed car' and chess game - middle-class entrapment and strategy"
-    },
-    {
-      "id": "hurry-up-time",
-      "source": 141,
-      "target": 169,
-      "type": "voice",
-      "description": "'HURRY UP PLEASE ITS TIME' - pub keeper's refrain framing Cockney monologue"
-    },
-    {
-      "id": "lil-antique-aging",
-      "source": 156,
-      "target": 157,
-      "type": "imagery",
-      "description": "Lil looks 'so antique' at thirty-one - premature aging from childbearing"
-    },
-    {
-      "id": "chemist-abortion",
-      "source": 161,
-      "target": 162,
-      "type": "voice",
-      "description": "'the chemist said it would be all right' - backstreet abortion"
-    },
-    {
-      "id": "river-tent-broken",
-      "source": 173,
-      "target": 179,
-      "type": "imagery",
-      "description": "'The river's tent is broken' - collapse of pastoral innocence"
-    },
-    {
-      "id": "nymphs-departed",
-      "source": 175,
-      "target": 179,
-      "type": "motif",
-      "description": "Repeated 'The nymphs are departed' - loss of mythic vitality"
-    },
-    {
-      "id": "marvell-coy-mistress",
-      "source": 185,
-      "target": 186,
-      "type": "allusion",
-      "description": "Marvell's carpe diem transformed to 'rattle of the bones' - death not seduction"
-    },
-    {
-      "id": "rat-creeping",
-      "source": 187,
-      "target": 195,
-      "type": "imagery",
-      "description": "Rat's 'slimy belly' repeated - ecological and moral degradation"
-    },
-    {
-      "id": "fishing-dull-canal",
-      "source": 189,
-      "target": 190,
-      "type": "imagery",
-      "description": "Fishing in dull canal behind gashouse - polluted industrial waterscape"
-    },
-    {
-      "id": "wreck-of-brother",
-      "source": 191,
-      "target": 192,
-      "type": "allusion",
-      "description": "'king my brother's wreck' - The Tempest, Ferdinand's father supposedly drowned"
-    },
-    {
-      "id": "city-city-lament",
-      "source": 259,
-      "target": 265,
-      "type": "voice",
-      "description": "'O City city' - prophetic lament over London, then glimpse of redemption"
-    },
-    {
-      "id": "mr-eugenides-merchant",
-      "source": 209,
-      "target": 214,
-      "type": "voice",
-      "description": "Mr. Eugenides, Smyrna merchant - homosexual proposition at Cannon Street Hotel"
-    },
-    {
-      "id": "currants-commerce",
-      "source": 210,
-      "target": 213,
-      "type": "imagery",
-      "description": "'pocket full of currants' and 'documents at sight' - commerce and sexuality entwined"
-    },
-    {
-      "id": "demotic-french",
-      "source": 212,
-      "target": 214,
-      "type": "voice",
-      "description": "'demotic French' - vernacular language of seedy proposition"
-    },
-    {
-      "id": "metropole-hotel",
-      "source": 214,
-      "target": 214,
-      "type": "reference",
-      "description": "Weekend at 'the Metropole' - not-quite-respectable hotel for assignation"
-    },
-    {
-      "id": "violet-hour-transition",
-      "source": 215,
-      "target": 221,
-      "type": "imagery",
-      "description": "'violet hour' when eyes and back 'Turn upward from the desk' - transition to sexuality"
-    },
-    {
-      "id": "typist-home-teatime",
-      "source": 222,
-      "target": 230,
-      "type": "voice",
-      "description": "Typist's mechanized existence - 'At the violet hour, the evening hour that strives'"
-    },
-    {
-      "id": "carbuncular-clerk",
-      "source": 231,
-      "target": 243,
-      "type": "voice",
-      "description": "Young man carbuncular - mechanical sexuality without feeling"
-    },
-    {
-      "id": "assured-vanity",
-      "source": 233,
-      "target": 244,
-      "type": "imagery",
-      "description": "'One of the low on whom assurance sits' - bourgeois vanity"
-    },
-    {
-      "id": "groping-hands",
-      "source": 239,
-      "target": 240,
-      "type": "imagery",
-      "description": "'exploring hands' - sexual assault as mechanical gesture"
-    },
-    {
-      "id": "indifference-response",
-      "source": 242,
-      "target": 243,
-      "type": "voice",
-      "description": "Her indifference to being 'caressed' - complete emotional deadness"
-    },
-    {
-      "id": "glad-its-over",
-      "source": 252,
-      "target": 253,
-      "type": "voice",
-      "description": "'Well now that's done: and I'm glad it's over' - sex as tedious duty"
-    },
-    {
-      "id": "record-on-gramophone",
-      "source": 256,
-      "target": 256,
-      "type": "imagery",
-      "description": "'puts a record on the gramophone' - mechanized culture and emotion"
-    },
-    {
-      "id": "this-music-crept",
-      "source": 257,
-      "target": 258,
-      "type": "allusion",
-      "description": "The Tempest again - 'This music crept by me upon the waters' - transformation theme"
-    },
-    {
-      "id": "lower-thames-street",
-      "source": 260,
-      "target": 265,
-      "type": "reference",
-      "description": "Lower Thames Street geography - real London topography grounding the poem"
-    },
-    {
-      "id": "mandoline-clatter",
-      "source": 261,
-      "target": 262,
-      "type": "imagery",
-      "description": "'pleasant whining of a mandoline' - working class conviviality"
-    },
-    {
-      "id": "barges-drifting-logs",
-      "source": 273,
-      "target": 276,
-      "type": "imagery",
-      "description": "Barges and drifting logs - deforestation and commerce down the Thames"
-    },
-    {
-      "id": "greenwich-isle-dogs",
-      "source": 275,
-      "target": 276,
-      "type": "reference",
-      "description": "Greenwich and Isle of Dogs - East London docklands geography"
-    },
-    {
-      "id": "weialala-rhinemaidens",
-      "source": 277,
-      "target": 290,
-      "type": "reference",
-      "description": "Wagner's Rhine-daughters refrain adapted to polluted Thames"
-    },
-    {
-      "id": "elizabeth-virgin-queen",
-      "source": 279,
-      "target": 291,
-      "type": "reference",
-      "description": "Elizabeth I as Virgin Queen on her barge - past glory vs present degradation"
-    },
-    {
-      "id": "richmond-margate",
-      "source": 293,
-      "target": 300,
-      "type": "reference",
-      "description": "Richmond to Margate - geography of sexual encounters along Thames"
-    },
-    {
-      "id": "highbury-raised-knees",
-      "source": 293,
-      "target": 295,
-      "type": "voice",
-      "description": "'By Richmond I raised my knees / Supine' - first Thames-daughter's violation"
-    },
-    {
-      "id": "moorgate-second-daughter",
-      "source": 296,
-      "target": 298,
-      "type": "voice",
-      "description": "Moorgate encounter - second Thames-daughter, urban geography of seduction"
-    },
-    {
-      "id": "margate-third-daughter",
-      "source": 300,
-      "target": 303,
-      "type": "voice",
-      "description": "Margate Sands - 'I can connect / Nothing with nothing' - existential disconnection"
-    },
-    {
-      "id": "broken-fingernails",
-      "source": 303,
-      "target": 304,
-      "type": "imagery",
-      "description": "'broken fingernails of dirty hands' - working class bodily degradation"
-    },
-    {
-      "id": "la-la-refrain-ends",
-      "source": 306,
-      "target": 306,
-      "type": "voice",
-      "description": "Rhine-daughters' song peters out in 'la la' - exhausted lament"
-    },
-    {
-      "id": "fire-sermon-buddha",
-      "source": 308,
-      "target": 311,
-      "type": "reference",
-      "description": "Buddha's Fire Sermon - burning away the fires of lust and desire"
-    },
-    {
-      "id": "st-augustine-confessions",
-      "source": 307,
-      "target": 311,
-      "type": "reference",
-      "description": "Augustine's 'cauldron of unholy loves' - Western asceticism paralleling Eastern"
-    },
-    {
-      "id": "profit-and-loss",
-      "source": 314,
-      "target": 315,
-      "type": "imagery",
-      "description": "Phlebas forgot 'the profit and loss' - death releases from commercial concerns"
-    },
-    {
-      "id": "current-under-sea",
-      "source": 315,
-      "target": 316,
-      "type": "imagery",
-      "description": "'A current under sea / Picked his bones in whispers' - marine dissolution"
-    },
-    {
-      "id": "rose-and-fell",
-      "source": 316,
-      "target": 318,
-      "type": "imagery",
-      "description": "'As he rose and fell' - no resurrection, only physical motion"
-    },
-    {
-      "id": "stages-age-youth",
-      "source": 317,
-      "target": 318,
-      "type": "imagery",
-      "description": "'passed the stages of his age and youth' - life review in reverse"
-    },
-    {
-      "id": "gentile-or-jew",
-      "source": 319,
-      "target": 321,
-      "type": "voice",
-      "description": "'Gentile or Jew' - universal address, memento mori"
-    },
-    {
-      "id": "turn-the-wheel",
-      "source": 320,
-      "target": 321,
-      "type": "imagery",
-      "description": "'O you who turn the wheel' - wheel of fortune, ship's wheel, commerce"
-    },
-    {
-      "id": "consider-phlebas",
-      "source": 321,
-      "target": 321,
-      "type": "voice",
-      "description": "'Consider Phlebas, who was once handsome and tall as you' - direct warning"
-    },
-    {
-      "id": "after-torchlight",
-      "source": 322,
-      "target": 328,
-      "type": "allusion",
-      "description": "After Gethsemane and crucifixion - Christ's passion frames Part V"
-    },
-    {
-      "id": "agony-stony-places",
-      "source": 322,
-      "target": 331,
-      "type": "imagery",
-      "description": "'After the agony in stony places' - desert landscape of spiritual testing"
-    },
-    {
-      "id": "he-who-was-living",
-      "source": 328,
-      "target": 329,
-      "type": "voice",
-      "description": "'He who was living is now dead' - Christ's death, or civilization's"
-    },
-    {
-      "id": "we-who-were-living",
-      "source": 329,
-      "target": 330,
-      "type": "voice",
-      "description": "'We who were living are now dying' - universal death-in-life condition"
-    },
-    {
-      "id": "little-life-dried-tubers",
-      "source": 330,
-      "target": 7,
-      "type": "echo",
-      "description": "'With a little patience' echoes opening's 'dried tubers' - cyclical return"
-    },
-    {
-      "id": "rock-no-water",
-      "source": 331,
-      "target": 359,
-      "type": "motif",
-      "description": "Rock without water - fundamental lack driving the quest"
-    },
-    {
-      "id": "mountains-rock-no-water",
-      "source": 333,
-      "target": 358,
-      "type": "motif",
-      "description": "'In the mountains' without water - geography of spiritual trial"
-    },
-    {
-      "id": "if-there-were-water-anaphora",
-      "source": 335,
-      "target": 352,
-      "type": "voice",
-      "description": "Anaphoric 'If there were water' - incantatory yearning"
-    },
-    {
-      "id": "stop-and-drink",
-      "source": 335,
-      "target": 336,
-      "type": "voice",
-      "description": "'If there were water we should stop and drink' - basic survival need"
-    },
-    {
-      "id": "cannot-stop-or-think",
-      "source": 336,
-      "target": 337,
-      "description": "'one cannot stop or think' - relentless forward drive of desperation"
-    },
-    {
-      "id": "water-over-rock",
-      "source": 346,
-      "target": 358,
-      "type": "imagery",
-      "description": "'water over a rock' to water-dripping song - auditory hallucination"
-    },
-    {
-      "id": "hermit-thrush-quebec",
-      "source": 356,
-      "target": 358,
-      "type": "reference",
-      "description": "Hermit-thrush Eliot heard in Quebec - personal memory of natural purity"
-    },
-    {
-      "id": "drip-drop-drip-drop",
-      "source": 357,
-      "target": 358,
-      "type": "voice",
-      "description": "'Drip drop drip drop' - onomatopoeia of imagined water"
-    },
-    {
-      "id": "third-who-walks",
-      "source": 359,
-      "target": 365,
-      "type": "allusion",
-      "description": "'Who is the third who walks always beside you?' - Road to Emmaus, resurrection theme"
-    },
-    {
-      "id": "hooded-figure",
-      "source": 363,
-      "target": 365,
-      "type": "imagery",
-      "description": "'Gliding wrapt in a brown mantle, hooded' - unrecognized Christ or specter"
-    },
-    {
-      "id": "what-is-that-sound",
-      "source": 366,
-      "target": 376,
-      "type": "voice",
-      "description": "'What is that sound high in the air' - apocalyptic anxiety"
-    },
-    {
-      "id": "hooded-hordes-swarming",
-      "source": 368,
+      "id": "arc-4",
+      "source": 56,
       "target": 369,
-      "type": "imagery",
-      "description": "'hooded hordes swarming / Over endless plains' - Russian Revolution, mass movements"
+      "type": "motif",
+      "description": "Sosostris's 'crowds' return as apocalyptic masses"
     },
     {
-      "id": "cracked-earth-stumbling",
-      "source": 369,
+      "id": "arc-5",
+      "source": 51,
+      "target": 424,
+      "type": "motif",
+      "description": "The Tarot's Fisher King literalized at poem's close"
+    },
+    {
+      "id": "arc-6",
+      "source": 49,
+      "target": 77,
+      "type": "reference",
+      "description": "The Tarot's 'lady of situations' as Cleopatra-like figure"
+    },
+    {
+      "id": "arc-8",
+      "source": 48,
+      "target": 124,
+      "type": "echo",
+      "description": "The Tempest tag resurfaces mid-quarrel as involuntary echo"
+    },
+    {
+      "id": "arc-11",
+      "source": 62,
+      "target": 427,
+      "type": "motif",
+      "description": "From daily traffic to nursery-rhyme collapse"
+    },
+    {
+      "id": "arc-12",
+      "source": 67,
+      "target": 384,
+      "type": "echo",
+      "description": "Bell-time returns, but spectral, in the climactic vision"
+    },
+    {
+      "id": "arc-13",
+      "source": 65,
+      "target": 215,
+      "type": "motif",
+      "description": "City bodies choreographed by clocks and desks"
+    },
+    {
+      "id": "arc-14",
+      "source": 66,
+      "target": 258,
+      "type": "reference",
+      "description": "Named arteries recur, mapping the financial-civic core"
+    },
+    {
+      "id": "arc-15",
+      "source": 62,
+      "target": 259,
+      "type": "voice",
+      "description": "The impersonal crowd narrows to one ear in the same zone"
+    },
+    {
+      "id": "arc-16",
+      "source": 24,
+      "target": 353,
+      "type": "motif",
+      "description": "The wish for water returns as conditional prayer"
+    },
+    {
+      "id": "arc-17",
+      "source": 25,
+      "target": 127,
+      "type": "imagery",
+      "description": "Early desert image amplifies into total parched landscape"
+    },
+    {
+      "id": "arc-18",
+      "source": 30,
       "target": 370,
       "type": "imagery",
-      "description": "'stumbling in cracked earth' - environmental and social collapse"
+      "description": "Dust's terror realizes as drought-cracked plains"
     },
     {
-      "id": "falling-towers",
-      "source": 373,
-      "target": 376,
+      "id": "arc-19",
+      "source": 182,
+      "target": 127,
       "type": "motif",
-      "description": "Falling towers of civilization - Jerusalem, Athens, Alexandria, Vienna, London"
+      "description": "The lake of memory set against absolute thirst"
     },
     {
-      "id": "jerusalem-athens-alexandria",
-      "source": 374,
-      "target": 375,
-      "type": "reference",
-      "description": "Great cities of civilization - ancient and modern collapse together"
-    },
-    {
-      "id": "vienna-london-falling",
-      "source": 375,
-      "target": 376,
-      "type": "reference",
-      "description": "Vienna and London unreal - contemporary European decline"
-    },
-    {
-      "id": "woman-drawing-hair",
-      "source": 377,
-      "target": 378,
+      "id": "arc-23",
+      "source": 396,
+      "target": 176,
       "type": "imagery",
-      "description": "Woman with 'long black hair' - Hieronymus Bosch-like surreal vision"
+      "description": "Two sacred rivers mirror: one polluted, one parched"
     },
     {
-      "id": "fiddled-whispered-music",
-      "source": 378,
+      "id": "arc-24",
+      "source": 315,
+      "target": 186,
+      "type": "imagery",
+      "description": "Subaqueous whisper becomes audible rattle ashore"
+    },
+    {
+      "id": "arc-25",
+      "source": 335,
+      "target": 182,
+      "type": "motif",
+      "description": "The longing for a pool answers a remembered shore"
+    },
+    {
+      "id": "arc-26",
+      "source": 358,
+      "target": 177,
+      "type": "imagery",
+      "description": "False auditory water vs. conspicuously absent waste"
+    },
+    {
+      "id": "arc-28",
+      "source": 424,
+      "target": 189,
+      "type": "echo",
+      "description": "Two fishing scenes close a karmic loop"
+    },
+    {
+      "id": "arc-30",
+      "source": 115,
+      "target": 186,
+      "type": "imagery",
+      "description": "The alley's lost bones reappear rattling by the Thames"
+    },
+    {
+      "id": "arc-31",
+      "source": 71,
+      "target": 391,
+      "type": "motif",
+      "description": "Stetson's corpse concludes as harmless bones"
+    },
+    {
+      "id": "arc-32",
+      "source": 193,
+      "target": 388,
+      "type": "imagery",
+      "description": "Scattered bodies become tumbled graves"
+    },
+    {
+      "id": "arc-33",
+      "source": 63,
+      "target": 369,
+      "type": "allusion",
+      "description": "Infernal procession returns as larger horde"
+    },
+    {
+      "id": "arc-34",
+      "source": 74,
+      "target": 391,
+      "type": "motif",
+      "description": "Fear of disturbed burial ends with bleak reassurance"
+    },
+    {
+      "id": "arc-35",
+      "source": 99,
+      "target": 203,
+      "type": "echo",
+      "description": "Philomel's rape-song returns as crude birdsong parody"
+    },
+    {
+      "id": "arc-36",
+      "source": 100,
+      "target": 357,
+      "type": "imagery",
+      "description": "Another bird replaces Philomel as tentative, purer music"
+    },
+    {
+      "id": "arc-37",
+      "source": 172,
+      "target": 392,
+      "type": "echo",
+      "description": "Ophelia-farewell answered by cock's daybreak call"
+    },
+    {
+      "id": "arc-38",
+      "source": 128,
+      "target": 257,
+      "type": "reference",
+      "description": "Vulgar rag and haunted music: two faces of quoted song"
+    },
+    {
+      "id": "arc-39",
+      "source": 108,
+      "target": 308,
+      "type": "imagery",
+      "description": "Quiet domestic fire becomes ascetic conflagration"
+    },
+    {
+      "id": "arc-40",
+      "source": 94,
+      "target": 322,
+      "type": "imagery",
+      "description": "Decorative burning returns as communal torchlight"
+    },
+    {
+      "id": "arc-41",
+      "source": 68,
+      "target": 215,
+      "type": "motif",
+      "description": "City's bell strikes become embodied as office fatigue"
+    },
+    {
+      "id": "arc-43",
+      "source": 118,
+      "target": 367,
+      "type": "echo",
+      "description": "Two sound-questions frame the poem's sonic anxiety"
+    },
+    {
+      "id": "arc-44",
+      "source": 261,
       "target": 379,
       "type": "imagery",
-      "description": "'fiddle whisper music' - sinister ethereal sounds"
+      "description": "Bar-music returns as eerier string whispering"
     },
     {
-      "id": "bats-crawling-down-walls",
-      "source": 379,
-      "target": 380,
+      "id": "arc-45",
+      "source": 64,
+      "target": 368,
+      "type": "echo",
+      "description": "Breath-sounds scale from office sighs to world-lament"
+    },
+    {
+      "id": "arc-46",
+      "source": 39,
+      "target": 215,
+      "type": "motif",
+      "description": "Failed eyes recur as strained office eyes"
+    },
+    {
+      "id": "arc-47",
+      "source": 138,
+      "target": 215,
       "type": "imagery",
-      "description": "Bats 'crawling head downward down a blackened wall' - inverted nightmare world"
+      "description": "Eyes return as collective bodily metronome"
     },
     {
-      "id": "towers-upside-down",
-      "source": 381,
-      "target": 382,
+      "id": "arc-48",
+      "source": 41,
+      "target": 249,
       "type": "imagery",
-      "description": "'towers / Tolling reminiscent bells' - inverted architecture of chaos"
+      "description": "Vision moves from numinous light to domestic mirror"
     },
     {
-      "id": "empty-cisterns-wells",
-      "source": 384,
-      "target": 385,
+      "id": "arc-49",
+      "source": 116,
+      "target": 187,
       "type": "imagery",
-      "description": "'voices singing out of empty cisterns and exhausted wells' - complete depletion"
+      "description": "The named alley's rat slinks into the riverside"
     },
     {
-      "id": "empty-chapel",
-      "source": 388,
-      "target": 390,
-      "type": "reference",
-      "description": "Chapel Perilous is 'empty' - Grail quest without trial or redemption"
-    },
-    {
-      "id": "winds-home-only",
-      "source": 388,
-      "target": 389,
-      "type": "imagery",
-      "description": "'only the wind's home' - spiritual desolation"
-    },
-    {
-      "id": "dry-bones-no-harm",
-      "source": 390,
+      "id": "arc-50",
+      "source": 194,
       "target": 391,
-      "type": "voice",
-      "description": "'Dry bones can harm no one' - even horror is exhausted"
-    },
-    {
-      "id": "cock-stood",
-      "source": 392,
-      "target": 393,
       "type": "imagery",
-      "description": "Cock crowing 'Co co rico' - dawn, Peter's denial, morning announcement"
+      "description": "From rat-rattled bones to chapel's dry bones"
     },
     {
-      "id": "flash-of-lightning",
-      "source": 393,
+      "id": "arc-51",
+      "source": 99,
+      "target": 239,
+      "type": "allusion",
+      "description": "Myth of rape foreshadows the typist's coercion"
+    },
+    {
+      "id": "arc-53",
+      "source": 253,
+      "target": 172,
+      "type": "voice",
+      "description": "Poem's women recur as Ophelia-drift and post-act pacing"
+    },
+    {
+      "id": "arc-54",
+      "source": 209,
+      "target": 314,
+      "type": "motif",
+      "description": "Bills of lading and ledgers return as drowned profit/loss"
+    },
+    {
+      "id": "arc-55",
+      "source": 212,
+      "target": 258,
+      "type": "reference",
+      "description": "Merchant hospitality maps onto mercantile avenues"
+    },
+    {
+      "id": "arc-56",
+      "source": 221,
+      "target": 312,
+      "type": "motif",
+      "description": "The sailor came home—or didn't; two maritime fates rhyme"
+    },
+    {
+      "id": "arc-57",
+      "source": 37,
+      "target": 323,
+      "type": "imagery",
+      "description": "Charged garden scene returns as frozen hush"
+    },
+    {
+      "id": "arc-58",
+      "source": 41,
+      "target": 323,
+      "type": "motif",
+      "description": "Two silences: visionary and wintry"
+    },
+    {
+      "id": "arc-59",
+      "source": 67,
+      "target": 389,
+      "type": "reference",
+      "description": "From functioning church to emptied chapel"
+    },
+    {
+      "id": "arc-60",
+      "source": 68,
+      "target": 384,
+      "type": "echo",
+      "description": "Same time-keeping, resurrected as memory"
+    },
+    {
+      "id": "arc-61",
+      "source": 20,
+      "target": 401,
+      "type": "allusion",
+      "description": "Prophetic address meets the Upanishadic triad"
+    },
+    {
+      "id": "arc-63",
+      "source": 76,
+      "target": 329,
+      "type": "voice",
+      "description": "Baudelaire's implicated reader returns as implicated 'we'"
+    },
+    {
+      "id": "arc-64",
+      "source": 307,
+      "target": 322,
+      "type": "allusion",
+      "description": "Augustine's inner fire echoes in final section's torches"
+    },
+    {
+      "id": "arc-65",
+      "source": 8,
       "target": 394,
       "type": "imagery",
-      "description": "'In a flash of lightning' - sudden apocalyptic revelation"
+      "description": "Early shower returns as long-deferred storm"
     },
     {
-      "id": "rain-over-ganges",
-      "source": 395,
-      "target": 397,
+      "id": "arc-68",
+      "source": 87,
+      "target": 266,
       "type": "imagery",
-      "description": "Rain falls over Ganges and Himavant - but NOT in the wasteland"
+      "description": "Overpowering scents recur as industrial reek"
     },
     {
-      "id": "jungle-crouched",
-      "source": 398,
-      "target": 399,
+      "id": "arc-69",
+      "source": 96,
+      "target": 177,
       "type": "imagery",
-      "description": "'jungle crouched, humped in silence' - Eastern landscape awakening"
+      "description": "Aquarium-like art reappears as river detritus"
     },
     {
-      "id": "da-thunder-speaks",
-      "source": 400,
-      "target": 432,
-      "type": "motif",
-      "description": "'DA' - Thunder's voice from Brihadaranyaka-Upanishad, threefold command"
-    },
-    {
-      "id": "datta-what-have-we-given",
-      "source": 400,
-      "target": 409,
-      "type": "voice",
-      "description": "Datta (give) - interrogation of what has been sacrificed or surrendered"
-    },
-    {
-      "id": "blood-shaking-heart",
-      "source": 402,
-      "target": 403,
-      "type": "imagery",
-      "description": "'blood shaking my heart' - visceral moment of commitment"
-    },
-    {
-      "id": "prudence-cannot-retract",
-      "source": 404,
-      "target": 405,
-      "type": "voice",
-      "description": "'an age of prudence can never retract' - irreversibility of existential choice"
-    },
-    {
-      "id": "by-this-only-existed",
-      "source": 405,
-      "target": 409,
-      "type": "voice",
-      "description": "'By this, and this only, we have existed' - existence defined by surrender"
-    },
-    {
-      "id": "obituaries-spider-webs",
-      "source": 406,
-      "target": 408,
-      "type": "imagery",
-      "description": "'not to be found in our obituaries' to 'beneficent spider' - hidden spiritual reality"
-    },
-    {
-      "id": "beneficent-spider",
-      "source": 407,
-      "target": 409,
-      "type": "imagery",
-      "description": "'beneficent spider' - rare positive image, web-making as creation"
-    },
-    {
-      "id": "dayadhvam-sympathize",
-      "source": 410,
-      "target": 416,
-      "type": "voice",
-      "description": "Dayadhvam (sympathize) - but we remain imprisoned in separate cells"
-    },
-    {
-      "id": "key-turned-once",
-      "source": 411,
-      "target": 412,
-      "type": "imagery",
-      "description": "'I have heard the key / Turn in the door once and turn once only' - solipsistic prison"
-    },
-    {
-      "id": "each-in-his-prison",
-      "source": 413,
+      "id": "arc-71",
+      "source": 249,
       "target": 415,
-      "type": "voice",
-      "description": "'each in his prison / Thinking of the key' - Bradley's isolated finite centers"
-    },
-    {
-      "id": "aetherial-rumours",
-      "source": 415,
-      "target": 416,
       "type": "imagery",
-      "description": "'aetherial rumours' - hints of transcendent connection"
+      "description": "Self-regard slides into self-confinement"
     },
     {
-      "id": "coriolanus-pride",
-      "source": 416,
-      "target": 417,
+      "id": "arc-72",
+      "source": 70,
+      "target": 307,
       "type": "allusion",
-      "description": "Shakespeare's Coriolanus - aristocratic pride and isolation"
+      "description": "Punic War glimmers twice: naval battle and Augustine's Carthage"
     },
     {
-      "id": "damyata-control",
-      "source": 417,
+      "id": "arc-73",
+      "source": 60,
+      "target": 375,
+      "type": "motif",
+      "description": "London's unreality joins global list of falling cities"
+    },
+    {
+      "id": "arc-74",
+      "source": 65,
+      "target": 216,
+      "type": "imagery",
+      "description": "Commuter and machine converge as habit"
+    },
+    {
+      "id": "arc-75",
+      "source": 235,
+      "target": 215,
+      "type": "motif",
+      "description": "Fatigue in private and public spheres mirrors"
+    },
+    {
+      "id": "arc-76",
+      "source": 30,
+      "target": 240,
+      "type": "motif",
+      "description": "Hand first holds dust, later enacts coercion"
+    },
+    {
+      "id": "arc-78",
+      "source": 303,
       "target": 423,
-      "type": "voice",
-      "description": "Damyata (control) - mastery over self and boat, heart responding"
+      "type": "imagery",
+      "description": "From broken laboring hands to disciplined control"
     },
     {
-      "id": "boat-responded-gaily",
-      "source": 418,
+      "id": "arc-79",
+      "source": 77,
+      "target": 421,
+      "type": "imagery",
+      "description": "Queenly interior's poise reappears as sea-craft's response"
+    },
+    {
+      "id": "arc-80",
+      "source": 107,
+      "target": 248,
+      "type": "reference",
+      "description": "Same staircase returns: noisy then dark"
+    },
+    {
+      "id": "arc-82",
+      "source": 40,
+      "target": 328,
+      "type": "echo",
+      "description": "Phrase becomes collective sentence"
+    },
+    {
+      "id": "arc-83",
+      "source": 126,
+      "target": 414,
+      "type": "voice",
+      "description": "Taunt about emptiness returns as shared mental lock"
+    },
+    {
+      "id": "arc-84",
+      "source": 117,
+      "target": 367,
+      "type": "echo",
+      "description": "Identical interrogative form, wider horizon"
+    },
+    {
+      "id": "arc-85",
+      "source": 112,
+      "target": 431,
+      "type": "voice",
+      "description": "Failed dialogue resolves in fragmentary monologue"
+    },
+    {
+      "id": "arc-86",
+      "source": 300,
+      "target": 182,
+      "type": "reference",
+      "description": "Two shores—one numb, one weeping—frame breakdown and memory"
+    },
+    {
+      "id": "arc-87",
+      "source": 275,
+      "target": 213,
+      "type": "reference",
+      "description": "River reach and city hub: same London arc"
+    },
+    {
+      "id": "arc-88",
+      "source": 293,
+      "target": 259,
+      "type": "reference",
+      "description": "Boroughs within the larger city refrain"
+    },
+    {
+      "id": "arc-90",
+      "source": 137,
+      "target": 401,
+      "type": "motif",
+      "description": "Sterile game answered by three ethical moves"
+    },
+    {
+      "id": "arc-91",
+      "source": 22,
+      "target": 431,
+      "type": "motif",
+      "description": "Opening heap returns as closing fragments, now shored"
+    },
+    {
+      "id": "arc-92",
+      "source": 26,
+      "target": 352,
+      "type": "imagery",
+      "description": "Red rock's shadow longs to harbor a pool of grace"
+    },
+    {
+      "id": "arc-93",
+      "source": 28,
+      "target": 360,
+      "type": "imagery",
+      "description": "Multiple shadows prefigure the mysterious third"
+    },
+    {
+      "id": "arc-94",
+      "source": 68,
+      "target": 434,
+      "type": "motif",
+      "description": "Dead bell-sound yields to final triple peace"
+    },
+    {
+      "id": "arc-96",
+      "source": 215,
+      "target": 221,
+      "type": "motif",
+      "description": "Sailor/typist pairing unified under Tiresias"
+    },
+    {
+      "id": "arc-98",
+      "source": 257,
+      "target": 424,
+      "type": "reference",
+      "description": "Quoted music's watery creep returns at final shore"
+    },
+    {
+      "id": "arc-99",
+      "source": 126,
+      "target": 328,
+      "type": "voice",
+      "description": "Private accusation finds collective verdict"
+    },
+    {
+      "id": "arc-100",
+      "source": 55,
+      "target": 312,
+      "type": "motif",
+      "description": "Her warning 'Fear death by water' becomes Part IV's event: Phlebas drowned"
+    },
+    {
+      "id": "arc-101",
+      "source": 55,
+      "target": 364,
+      "type": "allusion",
+      "description": "The missing Hanged Man returns as hooded figure haunting Part V"
+    },
+    {
+      "id": "arc-102",
+      "source": 312,
+      "target": 419,
+      "type": "motif",
+      "description": "After Phlebas drowns, seafaring resurfaces ironically cheerful"
+    },
+    {
+      "id": "arc-103",
+      "source": 328,
+      "target": 39,
+      "type": "echo",
+      "description": "Collective 'living/dead' judgment recalls the liminal hyacinth moment"
+    },
+    {
+      "id": "arc-104",
+      "source": 90,
+      "target": 175,
+      "type": "imagery",
+      "description": "Wind crosses the brown land, evolving from unheard to sole tenant"
+    },
+    {
+      "id": "arc-105",
+      "source": 87,
+      "target": 266,
+      "type": "imagery",
+      "description": "Synthetic perfumes drowning sense recur as river's oil and tar"
+    },
+    {
+      "id": "arc-106",
+      "source": 129,
+      "target": 370,
+      "type": "motif",
+      "description": "Domestic wind under door becomes metaphysical in empty chapel"
+    },
+    {
+      "id": "arc-107",
+      "source": 133,
+      "target": 283,
+      "type": "imagery",
+      "description": "River's broken tent becomes industrial degradation: oil and tar"
+    },
+    {
+      "id": "arc-108",
+      "source": 283,
       "target": 419,
       "type": "imagery",
-      "description": "'The boat responded / Gaily' - rare moment of harmony and control"
+      "description": "From river's industrial sweat to boat's cheerful response"
     },
     {
-      "id": "expert-hand-sail",
-      "source": 419,
-      "target": 420,
-      "type": "imagery",
-      "description": "'An expert with a sail' - technical mastery enabling connection"
+      "id": "arc-109",
+      "source": 426,
+      "target": 283,
+      "type": "motif",
+      "description": "Fisher King's desire to order his lands meets the broken river-tent"
     },
     {
-      "id": "heart-would-have-responded",
-      "source": 420,
-      "target": 423,
-      "type": "voice",
-      "description": "'your heart would have responded' - subjunctive mood, unrealized possibility"
+      "id": "arc-110",
+      "source": 98,
+      "target": 164,
+      "type": "echo",
+      "description": "'Jug Jug' echoes 'So rudely forc'd': both quote the same violence"
     },
     {
-      "id": "controlling-hands",
-      "source": 421,
-      "target": 422,
-      "type": "imagery",
-      "description": "'beating obedient / To controlling hands' - submission to divine control"
-    },
-    {
-      "id": "fishing-arid-plain",
-      "source": 424,
-      "target": 425,
-      "type": "imagery",
-      "description": "'I sat upon the shore / Fishing' - Fisher King at poem's end, still wounded"
-    },
-    {
-      "id": "set-lands-in-order",
-      "source": 425,
-      "target": 430,
-      "type": "voice",
-      "description": "'Shall I at least set my lands in order?' - tentative hope for redemption"
-    },
-    {
-      "id": "poi-sascose-fire",
-      "source": 427,
-      "target": 428,
+      "id": "arc-111",
+      "source": 406,
+      "target": 62,
       "type": "allusion",
-      "description": "Dante's Arnaut Daniel in Purgatorio - 'Poi s'ascose nel foco che gli affina' - refining fire"
+      "description": "Dante's purgatorial fire frames both Inferno's crowds and purification"
     },
     {
-      "id": "quando-fiam-chelidon",
-      "source": 428,
-      "target": 429,
-      "type": "allusion",
-      "description": "'Quando fiam uti chelidon' - when shall I be like the swallow, Philomel transformed"
+      "id": "arc-112",
+      "source": 328,
+      "target": 39,
+      "type": "motif",
+      "description": "'Living/dead' phrase becomes collective sentence in Part V"
     },
     {
-      "id": "hieronymo-mad-again",
-      "source": 431,
-      "target": 432,
-      "type": "allusion",
-      "description": "Kyd's Hieronymo - 'Why then Ile fit you' - mad revenger fitting his play"
-    },
-    {
-      "id": "final-da-repetition",
-      "source": 432,
-      "target": 433,
-      "type": "voice",
-      "description": "'Datta. Dayadhvam. Damyata.' - final recapitulation before peace"
+      "id": "arc-113",
+      "source": 129,
+      "target": 370,
+      "type": "echo",
+      "description": "Question 'What is that noise?' repeats as 'What is that sound?' with wider scope"
     }
   ],
   "metadata": {
     "poem": "The Waste Land",
-    "author": "T. S. Eliot",
-    "publication_year": 1922,
-    "total_verses": 434,
-    "total_connections": 175,
-    "sections": {
-      "I": "THE BURIAL OF THE DEAD (1-76)",
-      "II": "A GAME OF CHESS (77-172)",
-      "III": "THE FIRE SERMON (173-311)",
-      "IV": "DEATH BY WATER (312-321)",
-      "V": "WHAT THE THUNDER SAID (322-433)"
-    },
-    "connection_types": {
-      "reference": "Direct quotation, explicit allusion to another text",
-      "echo": "Thematic or verbal repetition, internal mirroring",
-      "allusion": "Literary, mythological, biblical, or historical reference",
-      "motif": "Recurring symbol, image, or theme",
-      "voice": "Dramatic speech, testimony, dialogue or monologue",
-      "imagery": "Visual, auditory, or sensory connection"
-    },
-    "scholarly_sources": [
-      "Badenhausen - Trauma and Violence in The Waste Land",
-      "Sorum - Psychology, Psychoanalysis, and New Subjectivities",
-      "McIntire - The Waste Land as Ecocritique",
-      "Gordon - Mixing Memory and Desire: What Eliot's Biography Can Tell Us",
-      "Spurr - Religions East and West in The Waste Land",
-      "Levenson - Form, Voice, and the Avant-Garde",
-      "Coyle - Doing Tradition in Different Voices: Pastiche",
-      "Rabaté - The Waste Land and the Great War",
-      "McIntire - Introduction to Cambridge Companion"
-    ],
-    "key_themes": [
-      "Post-WWI trauma and violence",
-      "Sexual dysfunction and gender ambiguity",
-      "Urban alienation and ecological crisis",
-      "Failed communication and isolated subjectivity",
-      "Eastern and Western religious traditions",
-      "Modernist fragmentation and avant-garde technique",
-      "Biographical trauma and expatriate experience",
-      "Intertextuality and pastiche",
-      "The quest for spiritual redemption",
-      "Death-in-life and failed resurrection"
-    ],
-    "generated_date": "2025-10-12",
-    "notes": "Connections derived from scholarly analysis in Cambridge Companion to The Waste Land and related critical texts. Emphasizes trauma theory, psychological readings, ecocriticism, biographical context, religious dimensions, formal innovation, and intertextual relationships as identified by leading Eliot scholars."
+    "totalConnections": 93,
+    "connectionTypes": {
+      "reference": "Direct quotation or allusion",
+      "echo": "Thematic or verbal echo",
+      "allusion": "Literary/mythological allusion",
+      "motif": "Recurring motif or symbol",
+      "voice": "Same speaker or voice",
+      "imagery": "Shared imagery or symbolism"
+    }
   }
 }

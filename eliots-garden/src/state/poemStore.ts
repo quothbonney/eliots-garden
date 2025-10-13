@@ -3,6 +3,7 @@ import type { Annotation, Token } from '../components/poem/Word'
 import wastelandComplete from '../data/wasteland-complete.json'
 import wastelandVerses from '../data/wasteland-verses.json'
 import arcConnectionsData from '../data/arcConnections.json'
+import speakerAssignments from '../data/speakerAssignments.json'
 
 export type PoemLine = {
   id: string
@@ -14,6 +15,15 @@ export type PoemLine = {
   words: Token[]
   italic?: boolean
   language?: string
+  speakerId?: string
+}
+
+export type Speaker = {
+  name: string
+  casualName: string
+  type: string
+  color: string
+  description: string
 }
 
 export type ArcConnection = {
@@ -31,9 +41,12 @@ type PoemState = {
   activeAnnotations: Annotation[]
   hoveredArcId: string | null
   arcConnections: ArcConnection[]
+  speakers: Record<string, Speaker>
+  showSpeakerColors: boolean
   loadPoem: () => void
   toggleWord: (tokenId: string) => void
   setHoveredArc: (arcId: string | null) => void
+  toggleSpeakerColors: () => void
 }
 
 export const usePoemStore = create<PoemState>((set, get) => ({
@@ -43,6 +56,8 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   activeAnnotations: [],
   hoveredArcId: null,
   arcConnections: arcConnectionsData.connections as ArcConnection[],
+  speakers: speakerAssignments.speakers as Record<string, Speaker>,
+  showSpeakerColors: false,
   loadPoem() {
     set({ isLoading: true })
     
@@ -59,11 +74,16 @@ export const usePoemStore = create<PoemState>((set, get) => ({
         language: line.language
       }
       
-      // Find corresponding verse number if it's a verse line
+      // Find corresponding verse number and speaker if it's a verse line
       if (line.type === 'verse') {
         const verseEntry = wastelandVerses.verses.find((v: any) => v.lineNumber === line.number)
         if (verseEntry) {
           poemLine.verseNumber = verseEntry.verseNumber
+          // Assign speaker based on verse number
+          const speakerId = (speakerAssignments.verseAssignments as Record<string, string>)[verseEntry.verseNumber]
+          if (speakerId) {
+            poemLine.speakerId = speakerId
+          }
         }
       }
       
@@ -71,7 +91,7 @@ export const usePoemStore = create<PoemState>((set, get) => ({
       if (line.text && line.type !== 'blank') {
         let cursor = 0
         const pieces = line.text.split(/(\s+)/)
-        poemLine.words = pieces.map((piece, idx) => ({
+        poemLine.words = pieces.map((piece: string, idx: number) => ({
           id: `${poemLine.id}-w${idx}`,
           text: piece,
           lineId: poemLine.id,
@@ -80,7 +100,7 @@ export const usePoemStore = create<PoemState>((set, get) => ({
           isWhitespace: /^\s+$/.test(piece),
           annotations: []
         }))
-        cursor += pieces.reduce((sum, p) => sum + p.length, 0)
+        cursor += pieces.reduce((sum: number, p: string) => sum + p.length, 0)
       }
       
       return poemLine
@@ -102,6 +122,9 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   },
   setHoveredArc(arcId: string | null) {
     set({ hoveredArcId: arcId })
+  },
+  toggleSpeakerColors() {
+    set({ showSpeakerColors: !get().showSpeakerColors })
   },
 }))
 

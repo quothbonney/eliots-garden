@@ -1,0 +1,387 @@
+{
+  "speakers": [
+    {
+      "id": "speaker-1",
+      "name": "Calendar-Documentarian",
+      "casualName": "Narrator",
+      "type": "impersonal narrator",
+      "color": "#8b9dc3",
+      "cue": "April is the cruellest month",
+      "description": "Opens in descriptive, all-seeing register"
+    },
+    {
+      "id": "speaker-2",
+      "name": "Collective 'we' of seasonal reminiscence",
+      "casualName": "The We",
+      "type": "plural we",
+      "color": "#9fa8da",
+      "cue": "Winter kept us warm",
+      "description": "First-person plural"
+    },
+    {
+      "id": "speaker-3",
+      "name": "Marie",
+      "casualName": "Marie",
+      "type": "remembered individual",
+      "color": "#a8dadc",
+      "cue": "Starnbergersee",
+      "description": "Memory voice localized by place and name"
+    },
+    {
+      "id": "speaker-4",
+      "name": "Desert-Preacher",
+      "casualName": "The Preacher",
+      "type": "prophetic instructor",
+      "color": "#d4a574",
+      "cue": "What are the roots that clutch",
+      "description": "Didactic 'I' to the Son of man"
+    },
+    {
+      "id": "speaker-5",
+      "name": "Hyacinth Pair",
+      "casualName": "Hyacinth Girl",
+      "type": "twinned memory voices",
+      "color": "#b39ddb",
+      "cue": "hyacinth garden",
+      "description": "Man/woman intimate entanglement"
+    },
+    {
+      "id": "speaker-6",
+      "name": "Madame Sosostris",
+      "casualName": "Madame Sosostris",
+      "type": "fortune-teller",
+      "color": "#ce93d8",
+      "cue": "famous clairvoyante",
+      "description": "Tarot reading and foreshadowing"
+    },
+    {
+      "id": "speaker-7",
+      "name": "Ariel's echo",
+      "casualName": "Ariel",
+      "type": "quoted Shakespearean voice",
+      "color": "#90caf9",
+      "cue": "Those are pearls that were his eyes",
+      "description": "Stage-aside within tarot scene"
+    },
+    {
+      "id": "speaker-8",
+      "name": "Unreal-City Surveyor",
+      "casualName": "Dante",
+      "type": "city-documentarian",
+      "color": "#78909c",
+      "cue": "Unreal City",
+      "description": "Dantean vision of the damned city"
+    },
+    {
+      "id": "speaker-9",
+      "name": "Address to Stetson",
+      "casualName": "Stetson's Friend",
+      "type": "direct apostrophe",
+      "color": "#e57373",
+      "cue": "Stetson!",
+      "description": "Frame-breaking voice ends Part I"
+    },
+    {
+      "id": "speaker-10",
+      "name": "The Narrator",
+      "casualName": "Narrator",
+      "type": "descriptive voice",
+      "color": "#8b9dc3",
+      "cue": "The Chair she sat in, like a burnished throne",
+      "description": "Descriptive narrator voice"
+    },
+    {
+      "id": "speaker-11",
+      "name": "Nervous Woman",
+      "casualName": "Nervous Woman",
+      "type": "agitated interlocutor",
+      "color": "#ff8a80",
+      "cue": "My nerves are bad to-night",
+      "description": "Rapid interrogatives"
+    },
+    {
+      "id": "speaker-12",
+      "name": "Shakespeherian Rag",
+      "casualName": "The Rag He Sings",
+      "type": "quoted song",
+      "color": "#ffd54f",
+      "cue": "O O O O that Shakespeherian Rag",
+      "description": "Broadway earworm in his mind"
+    },
+    {
+      "id": "speaker-10a",
+      "name": "Philomela",
+      "casualName": "Philomela",
+      "type": "mythic voice",
+      "color": "#ce93d8",
+      "cue": "Jug Jug",
+      "description": "The nightingale's violated voice"
+    },
+    {
+      "id": "speaker-13",
+      "name": "Shell-shocked Man",
+      "casualName": "Shell-shocked Man",
+      "type": "interior monologue",
+      "color": "#9e9e9e",
+      "cue": "the mental list after the song",
+      "description": "Inner drift"
+    },
+    {
+      "id": "speaker-14",
+      "name": "Pub Monologist",
+      "casualName": "Lil's Friend",
+      "type": "working-class dramatic monologue",
+      "color": "#ffb74d",
+      "cue": "When Lil's husband got demobbed",
+      "description": "Lil's friend gossipy rant"
+    },
+    {
+      "id": "speaker-15",
+      "name": "Publican",
+      "casualName": "Publican",
+      "type": "institutional interjection",
+      "color": "#ff6f00",
+      "cue": "HURRY UP PLEASE IT'S TIME",
+      "description": "Timekeeper cuts across pub-speaker"
+    },
+    {
+      "id": "speaker-15a",
+      "name": "Ophelia-Echo",
+      "casualName": "Ophelia",
+      "type": "quoted tragic exit",
+      "color": "#ba68c8",
+      "cue": "Good night, ladies",
+      "description": "Part II's last line"
+    },
+    {
+      "id": "speaker-16",
+      "name": "The River-Singer",
+      "casualName": "River-Singer",
+      "type": "elegiac lyric voice",
+      "color": "#4db6ac",
+      "cue": "Sweet Thames, run softly",
+      "description": "Wistful, quoted/lyric voice singing the Thames-lament"
+    },
+    {
+      "id": "speaker-17",
+      "name": "The Fisherman",
+      "casualName": "Fisherman",
+      "type": "gritty first-person witness",
+      "color": "#8d6e63",
+      "cue": "I was fishing in the dull canal",
+      "description": "Local, gritty voice reporting what he sees — gashouse narrator"
+    },
+    {
+      "id": "speaker-18",
+      "name": "The Bone-Whisper",
+      "casualName": "Death",
+      "type": "uncanny intruder",
+      "color": "#90a4ae",
+      "cue": "the rattle of the bones",
+      "description": "Short, chilling aside — the poem's death-presence"
+    },
+    {
+      "id": "speaker-19",
+      "name": "Mr. Eugenides",
+      "casualName": "Mr. Eugenides",
+      "type": "cameo merchant",
+      "color": "#ffcc80",
+      "cue": "demotic French",
+      "description": "Smyrna merchant language-crossing"
+    },
+    {
+      "id": "speaker-20",
+      "name": "Charneled-City Lamenter",
+      "casualName": "City Lamenter",
+      "type": "choric lament",
+      "color": "#a1887f",
+      "cue": "rats' alley",
+      "description": "Transition to Tiresias"
+    },
+    {
+      "id": "speaker-21",
+      "name": "Tiresias",
+      "casualName": "Tiresias",
+      "type": "named self",
+      "color": "#9575cd",
+      "cue": "I Tiresias",
+      "description": "Seer and synthesizer"
+    },
+    {
+      "id": "speaker-22",
+      "name": "Tiresias-narrated Typist & Clerk",
+      "casualName": "Typist & Clerk",
+      "type": "witnessed scene",
+      "color": "#7986cb",
+      "cue": "At the violet hour",
+      "description": "Mechanical coupling witnessed"
+    },
+    {
+      "id": "speaker-23",
+      "name": "Typist Interior",
+      "casualName": "The Typist",
+      "type": "post-act micro-voice",
+      "color": "#64b5f6",
+      "cue": "her brain allows one half-formed thought",
+      "description": "Impersonalized interiority"
+    },
+    {
+      "id": "speaker-24",
+      "name": "Mourner of the City",
+      "casualName": "City Mourner",
+      "type": "elegiac observer",
+      "color": "#4fc3f7",
+      "cue": "O City city",
+      "description": "Church-gazer"
+    },
+    {
+      "id": "speaker-25",
+      "name": "Thames-Daughters",
+      "casualName": "Thames-Daughters",
+      "type": "plural chorus",
+      "color": "#4dd0e1",
+      "cue": "la la",
+      "description": "Rhinemaidens choral plural"
+    },
+    {
+      "id": "speaker-26",
+      "name": "Paired Ascetics",
+      "casualName": "Augustine & Buddha",
+      "type": "doctrinal counter-voices",
+      "color": "#f4511e",
+      "cue": "To Carthage then I came",
+      "description": "Augustine & Buddha"
+    },
+    {
+      "id": "speaker-27",
+      "name": "Undersea Elegist",
+      "casualName": "Phlebas",
+      "type": "epitaphal narrator",
+      "color": "#26a69a",
+      "cue": "Phlebas the Phoenician",
+      "description": "Compressed anti-elegy"
+    },
+    {
+      "id": "speaker-28",
+      "name": "Passion-Pursuit Reporter",
+      "casualName": "Torchlight Voice",
+      "type": "documentary crisis voice",
+      "color": "#ef5350",
+      "cue": "After the torchlight red on sweaty faces",
+      "description": "Catastrophic reportage"
+    },
+    {
+      "id": "speaker-29",
+      "name": "Water-Lament 'we'",
+      "casualName": "Water-Lament",
+      "type": "transpersonal chorus",
+      "color": "#66bb6a",
+      "cue": "If there were water",
+      "description": "Collective 'we'"
+    },
+    {
+      "id": "speaker-30",
+      "name": "Emmaus Third",
+      "casualName": "Emmaus",
+      "type": "numinous witness",
+      "color": "#ab47bc",
+      "cue": "Who is the third who walks",
+      "description": "Revelatory address"
+    },
+    {
+      "id": "speaker-31",
+      "name": "Apocalyptic Cataloguer",
+      "casualName": "Falling Towers",
+      "type": "panoramic judgment",
+      "color": "#ec407a",
+      "cue": "Falling towers",
+      "description": "Panoramic judgment"
+    },
+    {
+      "id": "speaker-11a",
+      "name": "Her Conscience",
+      "casualName": "Her Conscience",
+      "type": "interior voice",
+      "color": "#ff6b6b",
+      "cue": "I think we are in rats' alley",
+      "description": "Inner voice of moral unease"
+    },
+    {
+      "id": "speaker-31a",
+      "name": "Thunder",
+      "casualName": "Thunder",
+      "type": "thunder-voice",
+      "color": "#455a64",
+      "cue": "DA",
+      "description": "The thunder speaks"
+    },
+    {
+      "id": "speaker-32",
+      "name": "Datta - Chorus of Gods",
+      "casualName": "Chorus of Gods",
+      "type": "thunder-ethics",
+      "color": "#5c6bc0",
+      "cue": "Datta",
+      "description": "Divine voice of giving"
+    },
+    {
+      "id": "speaker-32a",
+      "name": "Dayadhvam - Chorus of Humans",
+      "casualName": "Chorus of Humans",
+      "type": "thunder-ethics",
+      "color": "#7e57c2",
+      "cue": "Dayadhvam",
+      "description": "Human voice of compassion"
+    },
+    {
+      "id": "speaker-32b",
+      "name": "Damyata - Chorus of Demons",
+      "casualName": "Chorus of Demons",
+      "type": "thunder-ethics",
+      "color": "#ab47bc",
+      "cue": "Damyata",
+      "description": "Demonic voice of control"
+    },
+    {
+      "id": "speaker-33",
+      "name": "Fisher King",
+      "casualName": "Fisher King",
+      "type": "wounded king",
+      "color": "#8d6e63",
+      "cue": "I sat upon the shore",
+      "description": "The wounded king fishing"
+    },
+    {
+      "id": "speaker-34",
+      "name": "Cutter-Quoter",
+      "casualName": "Collage Voice",
+      "type": "multilingual shard-collector",
+      "color": "#ffa726",
+      "cue": "London Bridge is falling down",
+      "description": "Collage-montage"
+    },
+    {
+      "id": "speaker-35",
+      "name": "Shorer of Fragments",
+      "casualName": "Final Voice",
+      "type": "final I then prayer",
+      "color": "#b0bec5",
+      "cue": "These fragments I have shored",
+      "description": "Benediction"
+    },
+    {
+      "id": "speaker-36",
+      "name": "Unspoken",
+      "casualName": "Unspoken",
+      "type": "silence",
+      "color": "#90a4ae",
+      "cue": "Shantih",
+      "description": "Peace beyond words"
+    }
+  ],
+  "metadata": {
+    "poem": "The Waste Land",
+    "totalSpeakers": 41,
+    "description": "Voice strata and speaker assignments across the poem"
+  }
+}

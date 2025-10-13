@@ -4,6 +4,8 @@
 @theme {
   --font-family-serif: 'Literata', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif;
   --color-night: #0a0a0a;
+  --color-carbon: #0b0b0c;
+  --color-ink: #111113;
 }
 
 html, body, #root {
@@ -11,11 +13,16 @@ html, body, #root {
 }
 
 body {
-  background-color: black;
+  background: radial-gradient(1200px 800px at 20% 10%, rgba(255,255,255,0.04), transparent 60%),
+              radial-gradient(900px 700px at 80% 90%, rgba(255,255,255,0.03), transparent 60%),
+              linear-gradient(180deg, var(--color-carbon), black 60%);
   color: white;
   font-family: var(--font-family-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+  font-kerning: normal;
+  font-feature-settings: "liga" 1, "clig" 1, "onum" 1, "kern" 1;
 }
 
 /* Hide scrollbar for main poem section */
@@ -26,4 +33,46 @@ main::-webkit-scrollbar {
 main {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+/* Vignette + fine grain (very subtle) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 120% at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%);
+}
+
+/* Poem ornaments and drop cap */
+.poem-container {
+  max-width: 62ch;
+}
+
+.poem-section {
+  position: relative;
+}
+
+.poem-section::before,
+.poem-section::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+}
+
+.poem-section::before { top: -18px; }
+.poem-section::after { bottom: -18px; }
+
+.first-verse .dropcap-letter {
+  float: left;
+  font-size: 3.2rem;
+  line-height: 0.85;
+  padding-right: 0.25rem;
+  margin-top: 0.18rem;
+  color: rgba(255,255,255,0.9);
 }

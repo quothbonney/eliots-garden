@@ -83,17 +83,25 @@ export function InlineArcs() {
 
         const path = document.createElementNS('http://www.w3.org/2000/svg', 'path')
         
-        // Create bezier curve from source to target
-        // SVG is shifted 200px left, so we need to account for that
+        // Create proper arc curve from source to target
+        // SVG is shifted 280px left for horizontal space
         const poemRect = poemContainer.getBoundingClientRect()
-        const x = poemRect.left - overlayRect.left + 200 - 32 // poem left edge + SVG offset - margin from text
-        const midY = (sourceY + targetY) / 2
-        const controlOffset = Math.min(Math.abs(targetY - sourceY) * 0.3, 120)
-        
-        const d = `M ${x} ${sourceY} C ${x - controlOffset} ${midY}, ${x - controlOffset} ${midY}, ${x} ${targetY}`
-        
-        // Calculate arc length to determine fade strength
+        const x = poemRect.left - overlayRect.left + 280 - 32 // poem left edge + SVG offset - margin from text
         const arcLength = Math.abs(targetY - sourceY)
+        
+        // Scale control point distance based on arc length
+        // Longer arcs curve out more to avoid intersections
+        const baseControlOffset = Math.min(arcLength * 0.35, 220)
+        const heightFactor = Math.max(1, arcLength / 3000) // Extra extension for very long arcs
+        const controlOffset = baseControlOffset * heightFactor
+        
+        // Use quadratic bezier for cleaner arcs
+        const controlX = x - controlOffset
+        const controlY = (sourceY + targetY) / 2
+        
+        const d = `M ${x} ${sourceY} Q ${controlX} ${controlY}, ${x} ${targetY}`
+        
+        // Calculate fade strength based on arc length
         const maxLength = 3000 // approximate max arc length in pixels
         const lengthRatio = Math.min(arcLength / maxLength, 1)
         
@@ -110,7 +118,7 @@ export function InlineArcs() {
         
         // Calculate opacity at endpoints and midpoint based on arc length
         const endpointOpacity = hoveredArcId === conn.id ? 0.9 : 0.3
-        const midpointOpacity = hoveredArcId === conn.id ? 0.9 : Math.max(0.05, 0.3 * (1 - lengthRatio * 0.85))
+        const midpointOpacity = hoveredArcId === conn.id ? 0.9 : Math.max(0.0, 0.9 * (1 - lengthRatio * 0.9))
         
         const stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop')
         stop1.setAttribute('offset', '0%')
@@ -276,15 +284,15 @@ export function InlineArcs() {
         className="absolute inset-0 pointer-events-none"
         style={{ zIndex: 5 }}
       >
-        <svg
-          ref={svgRef}
-          className="absolute w-full h-full pointer-events-auto"
-          style={{ 
-            left: '-200px',
-            width: 'calc(100% + 200px)',
-            overflow: 'visible' 
-          }}
-        />
+      <svg
+        ref={svgRef}
+        className="absolute w-full h-full pointer-events-auto"
+        style={{ 
+          left: '-280px',
+          width: 'calc(100% + 280px)',
+          overflow: 'visible' 
+        }}
+      />
       </div>
       
       {/* Preview tooltip */}

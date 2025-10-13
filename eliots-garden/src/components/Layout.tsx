@@ -8,7 +8,7 @@ export function Layout() {
       <aside className="border-r border-white/10 sticky top-0 h-screen overflow-hidden">
         <AnnotationPanel />
       </aside>
-      <main className="overflow-y-auto h-screen">
+      <main className="overflow-y-auto h-screen relative">
         <PoemView />
       </main>
       <aside className="border-l border-white/10 sticky top-0 h-screen overflow-hidden">
