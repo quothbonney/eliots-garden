@@ -77,7 +77,18 @@ export function PoemView() {
                         <span key={w.id} className="dropcap-letter">{w.text.charAt(0)}</span>
                       )
                     }
-                    return <Word key={w.id} word={w} lineType={line.type} speakerColor={speakerColor} />
+                    
+                    // Check if next word has same annotation (for continuous underline)
+                    const nextWord = line.words[i + 1]
+                    const hasNextInGroup = !!(nextWord && !nextWord.isWhitespace && w.annotationId && nextWord.annotationId === w.annotationId)
+                    
+                    return <Word 
+                      key={w.id} 
+                      word={w} 
+                      lineType={line.type} 
+                      speakerColor={speakerColor}
+                      hasNextInGroup={hasNextInGroup}
+                    />
                   })
                 )}
               </div>

@@ -76,3 +76,15 @@ body::before {
   margin-top: 0.18rem;
   color: rgba(255,255,255,0.9);
 }
+
+/* Annotation underline animation */
+@keyframes pulse-underline {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scaleX(0.98);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scaleX(1);
+  }
+}

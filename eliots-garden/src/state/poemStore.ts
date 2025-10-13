@@ -4,6 +4,7 @@ import wastelandComplete from '../data/wasteland-complete.json'
 import wastelandVerses from '../data/wasteland-verses.json'
 import arcConnectionsData from '../data/arcConnections.json'
 import speakerAssignments from '../data/speakerAssignments.json'
+import annotationsData from '../data/annotations.json'
 
 export type PoemLine = {
   id: string
@@ -16,6 +17,7 @@ export type PoemLine = {
   italic?: boolean
   language?: string
   speakerId?: string
+  annotationId?: string  // ID of scholarly annotation for this line
 }
 
 export type Speaker = {
@@ -34,6 +36,14 @@ export type ArcConnection = {
   description: string
 }
 
+export type ScholarlyAnnotation = {
+  id: string
+  phrase: string
+  lineNumber: number
+  annotation: string
+  sources: string[]
+}
+
 type PoemState = {
   isLoading: boolean
   lines: PoemLine[]
@@ -43,10 +53,13 @@ type PoemState = {
   arcConnections: ArcConnection[]
   speakers: Record<string, Speaker>
   showSpeakerColors: boolean
+  scholarlyAnnotations: ScholarlyAnnotation[]
+  activeScholarlyAnnotation: ScholarlyAnnotation | null
   loadPoem: () => void
   toggleWord: (tokenId: string) => void
   setHoveredArc: (arcId: string | null) => void
   toggleSpeakerColors: () => void
+  setActiveAnnotation: (annotationId: string | null) => void
 }
 
 export const usePoemStore = create<PoemState>((set, get) => ({
@@ -58,6 +71,8 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   arcConnections: arcConnectionsData.connections as ArcConnection[],
   speakers: speakerAssignments.speakers as Record<string, Speaker>,
   showSpeakerColors: false,
+  scholarlyAnnotations: annotationsData.annotations as ScholarlyAnnotation[],
+  activeScholarlyAnnotation: null,
   loadPoem() {
     set({ isLoading: true })
     
@@ -91,16 +106,49 @@ export const usePoemStore = create<PoemState>((set, get) => ({
       if (line.text && line.type !== 'blank') {
         let cursor = 0
         const pieces = line.text.split(/(\s+)/)
-        poemLine.words = pieces.map((piece: string, idx: number) => ({
-          id: `${poemLine.id}-w${idx}`,
-          text: piece,
-          lineId: poemLine.id,
-          charStart: cursor,
-          charEnd: cursor + piece.length,
-          isWhitespace: /^\s+$/.test(piece),
-          annotations: []
-        }))
-        cursor += pieces.reduce((sum: number, p: string) => sum + p.length, 0)
+        poemLine.words = pieces.map((piece: string, idx: number) => {
+          const token: any = {
+            id: `${poemLine.id}-w${idx}`,
+            text: piece,
+            lineId: poemLine.id,
+            charStart: cursor,
+            charEnd: cursor + piece.length,
+            isWhitespace: /^\s+$/.test(piece),
+            annotations: []
+          }
+          cursor += piece.length
+          return token
+        })
+        
+        // Find annotations that match this line and mark the relevant words
+        const lineAnnotations = (annotationsData.annotations as ScholarlyAnnotation[]).filter(
+          (ann) => ann.lineNumber === line.number
+        )
+        
+        for (const ann of lineAnnotations) {
+          // Normalize the phrase and line text for matching
+          const normalizedPhrase = ann.phrase.toLowerCase().replace(/[.,;:!?—\-'"]/g, '').trim()
+          const normalizedLineText = line.text.toLowerCase().replace(/[.,;:!?—\-'"]/g, '')
+          
+          // Find where the phrase appears in the line
+          const phraseIndex = normalizedLineText.indexOf(normalizedPhrase)
+          if (phraseIndex !== -1) {
+            const phraseEnd = phraseIndex + normalizedPhrase.length
+            
+            // Mark words that fall within this phrase range
+            poemLine.words.forEach((word: any) => {
+              if (!word.isWhitespace) {
+                const wordStart = word.charStart
+                const wordEnd = word.charEnd
+                
+                // Check if word overlaps with phrase
+                if (wordStart < phraseEnd && wordEnd > phraseIndex) {
+                  word.annotationId = ann.id
+                }
+              }
+            })
+          }
+        }
       }
       
       return poemLine
@@ -125,6 +173,12 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   },
   toggleSpeakerColors() {
     set({ showSpeakerColors: !get().showSpeakerColors })
+  },
+  setActiveAnnotation(annotationId: string | null) {
+    const annotation = annotationId
+      ? get().scholarlyAnnotations.find((a) => a.id === annotationId) || null
+      : null
+    set({ activeScholarlyAnnotation: annotation })
   },
 }))
 
