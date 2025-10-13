@@ -1,0 +1,107 @@
+{
+  "title": "The Waste Land",
+  "author": "T.S. Eliot",
+  "year": 1922,
+  "structure": {
+    "epigraph": {
+      "startLine": 1,
+      "endLine": 3,
+      "type": "epigraph",
+      "language": "mixed",
+      "description": "Petronius Satyricon - Sibyl of Cumae"
+    },
+    "dedication": {
+      "startLine": 5,
+      "endLine": 6,
+      "type": "dedication",
+      "language": "italian",
+      "description": "For Ezra Pound - il miglior fabbro (the better craftsman)"
+    },
+    "sections": {
+      "I": {
+        "title": "THE BURIAL OF THE DEAD",
+        "headerLine": 11,
+        "startLine": 14,
+        "endLine": 92
+      },
+      "II": {
+        "title": "A GAME OF CHESS",
+        "headerLine": 97,
+        "startLine": 100,
+        "endLine": 200
+      },
+      "III": {
+        "title": "THE FIRE SERMON",
+        "headerLine": 205,
+        "startLine": 208,
+        "endLine": 357
+      },
+      "IV": {
+        "title": "DEATH BY WATER",
+        "headerLine": 362,
+        "startLine": 365,
+        "endLine": 374
+      },
+      "V": {
+        "title": "WHAT THE THUNDER SAID",
+        "headerLine": 379,
+        "startLine": 382,
+        "endLine": 501
+      }
+    }
+  },
+  "lines": [
+    {"number": 1, "text": "\"Nam Sibyllam quidem Cumis ego ipse oculis meis", "type": "epigraph", "section": null},
+    {"number": 2, "text": "vidi in ampulla pendere, et cum illi pueri dicerent:", "type": "epigraph", "section": null},
+    {"number": 3, "text": "Σίβυλλα τί θέλεις; respondebat illa: ἀποθανεῖν θέλω.\"", "type": "epigraph", "section": null},
+    {"number": 4, "text": "", "type": "blank", "section": null},
+    {"number": 5, "text": "       _For Ezra Pound", "type": "dedication", "section": null, "italic": true},
+    {"number": 6, "text": "       il miglior fabbro_", "type": "dedication", "section": null, "italic": true},
+    {"number": 7, "text": "", "type": "blank", "section": null},
+    {"number": 8, "text": "", "type": "blank", "section": null},
+    {"number": 9, "text": "", "type": "blank", "section": null},
+    {"number": 10, "text": "", "type": "blank", "section": null},
+    {"number": 11, "text": "    I. THE BURIAL OF THE DEAD", "type": "section_header", "section": "I"},
+    {"number": 12, "text": "", "type": "blank", "section": "I"},
+    {"number": 13, "text": "", "type": "blank", "section": "I"},
+    {"number": 14, "text": "April is the cruellest month, breeding", "type": "verse", "section": "I"},
+    {"number": 15, "text": "Lilacs out of the dead land, mixing", "type": "verse", "section": "I"},
+    {"number": 16, "text": "Memory and desire, stirring", "type": "verse", "section": "I"},
+    {"number": 17, "text": "Dull roots with spring rain.", "type": "verse", "section": "I"},
+    {"number": 18, "text": "Winter kept us warm, covering", "type": "verse", "section": "I"},
+    {"number": 19, "text": "Earth in forgetful snow, feeding", "type": "verse", "section": "I"},
+    {"number": 20, "text": "A little life with dried tubers.", "type": "verse", "section": "I"},
+    {"number": 21, "text": "Summer surprised us, coming over the Starnbergersee", "type": "verse", "section": "I"},
+    {"number": 22, "text": "With a shower of rain; we stopped in the colonnade,", "type": "verse", "section": "I"},
+    {"number": 23, "text": "And went on in sunlight, into the Hofgarten,", "type": "verse", "section": "I"},
+    {"number": 24, "text": "And drank coffee, and talked for an hour.", "type": "verse", "section": "I"},
+    {"number": 25, "text": "Bin gar keine Russin, stamm' aus Litauen, echt deutsch.", "type": "verse", "section": "I", "language": "german"},
+    {"number": 26, "text": "And when we were children, staying at the archduke's,", "type": "verse", "section": "I"},
+    {"number": 27, "text": "My cousin's, he took me out on a sled,", "type": "verse", "section": "I"},
+    {"number": 28, "text": "And I was frightened. He said, Marie,", "type": "verse", "section": "I"},
+    {"number": 29, "text": "Marie, hold on tight. And down we went.", "type": "verse", "section": "I"},
+    {"number": 30, "text": "In the mountains, there you feel free.", "type": "verse", "section": "I"},
+    {"number": 31, "text": "I read, much of the night, and go south in the winter.", "type": "verse", "section": "I"}
+  ],
+  "poemLineMapping": {
+    "description": "Maps actual poem verse lines (excluding headers, blanks, etc.) to standardized line numbers",
+    "1": 14,
+    "2": 15,
+    "3": 16,
+    "4": 17,
+    "5": 18,
+    "6": 19,
+    "7": 20,
+    "8": 21,
+    "9": 22,
+    "10": 23
+  },
+  "metadata": {
+    "totalLines": 501,
+    "totalVerseLines": 433,
+    "epigraphLines": 3,
+    "dedicationLines": 2,
+    "sectionHeaders": 5,
+    "blankLines": 58
+  }
+}

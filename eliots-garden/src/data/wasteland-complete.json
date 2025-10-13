@@ -1,0 +1,3527 @@
+{
+  "title": "The Waste Land",
+  "author": "T.S. Eliot",
+  "year": 1922,
+  "structure": {
+    "epigraph": {
+      "startLine": 1,
+      "endLine": 3,
+      "type": "epigraph",
+      "language": "mixed",
+      "description": "Petronius Satyricon - Sibyl of Cumae"
+    },
+    "dedication": {
+      "startLine": 5,
+      "endLine": 6,
+      "type": "dedication",
+      "language": "italian",
+      "description": "For Ezra Pound - il miglior fabbro (the better craftsman)"
+    },
+    "sections": {
+      "I": {
+        "title": "THE BURIAL OF THE DEAD",
+        "headerLine": 11,
+        "startLine": 14,
+        "endLine": 92
+      },
+      "II": {
+        "title": "A GAME OF CHESS",
+        "headerLine": 97,
+        "startLine": 100,
+        "endLine": 200
+      },
+      "III": {
+        "title": "THE FIRE SERMON",
+        "headerLine": 205,
+        "startLine": 208,
+        "endLine": 357
+      },
+      "IV": {
+        "title": "DEATH BY WATER",
+        "headerLine": 362,
+        "startLine": 365,
+        "endLine": 374
+      },
+      "V": {
+        "title": "WHAT THE THUNDER SAID",
+        "headerLine": 379,
+        "startLine": 382,
+        "endLine": 501
+      }
+    }
+  },
+  "lines": [
+    {
+      "number": 1,
+      "text": "﻿  “Nam Sibyllam quidem Cumis ego ipse oculis meis\r",
+      "type": "epigraph",
+      "section": null
+    },
+    {
+      "number": 2,
+      "text": "  vidi in ampulla pendere, et cum illi pueri dicerent:\r",
+      "type": "epigraph",
+      "section": null
+    },
+    {
+      "number": 3,
+      "text": "  Σίβυλλα τί θέλεις; respondebat illa: ἀποθανεῖν θέλω.”\r",
+      "type": "epigraph",
+      "section": null
+    },
+    {
+      "number": 4,
+      "text": "\r",
+      "type": "blank",
+      "section": null
+    },
+    {
+      "number": 5,
+      "text": "         For Ezra Pound\r",
+      "type": "dedication",
+      "section": null,
+      "italic": true
+    },
+    {
+      "number": 6,
+      "text": "         il miglior fabbro\r",
+      "type": "dedication",
+      "section": null,
+      "italic": true
+    },
+    {
+      "number": 7,
+      "text": "\r",
+      "type": "blank",
+      "section": null
+    },
+    {
+      "number": 8,
+      "text": "\r",
+      "type": "blank",
+      "section": null
+    },
+    {
+      "number": 9,
+      "text": "\r",
+      "type": "blank",
+      "section": null
+    },
+    {
+      "number": 10,
+      "text": "\r",
+      "type": "blank",
+      "section": null
+    },
+    {
+      "number": 11,
+      "text": "      I. THE BURIAL OF THE DEAD\r",
+      "type": "section_header",
+      "section": null
+    },
+    {
+      "number": 12,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 13,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 14,
+      "text": "  April is the cruellest month, breeding\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 15,
+      "text": "  Lilacs out of the dead land, mixing\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 16,
+      "text": "  Memory and desire, stirring\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 17,
+      "text": "  Dull roots with spring rain.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 18,
+      "text": "  Winter kept us warm, covering\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 19,
+      "text": "  Earth in forgetful snow, feeding\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 20,
+      "text": "  A little life with dried tubers.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 21,
+      "text": "  Summer surprised us, coming over the Starnbergersee\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 22,
+      "text": "  With a shower of rain; we stopped in the colonnade,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 23,
+      "text": "  And went on in sunlight, into the Hofgarten,                   \r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 24,
+      "text": "  And drank coffee, and talked for an hour.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 25,
+      "text": "  Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.\r",
+      "type": "verse",
+      "section": "I",
+      "language": "german"
+    },
+    {
+      "number": 26,
+      "text": "  And when we were children, staying at the archduke’s,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 27,
+      "text": "  My cousin’s, he took me out on a sled,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 28,
+      "text": "  And I was frightened. He said, Marie,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 29,
+      "text": "  Marie, hold on tight. And down we went.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 30,
+      "text": "  In the mountains, there you feel free.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 31,
+      "text": "  I read, much of the night, and go south in the winter.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 32,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 33,
+      "text": "  What are the roots that clutch, what branches grow\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 34,
+      "text": "  Out of this stony rubbish? Son of man,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 35,
+      "text": "  You cannot say, or guess, for you know only\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 36,
+      "text": "  A heap of broken images, where the sun beats,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 37,
+      "text": "  And the dead tree gives no shelter, the cricket no relief,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 38,
+      "text": "  And the dry stone no sound of water. Only\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 39,
+      "text": "  There is shadow under this red rock,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 40,
+      "text": "  (Come in under the shadow of this red rock),\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 41,
+      "text": "  And I will show you something different from either\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 42,
+      "text": "  Your shadow at morning striding behind you\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 43,
+      "text": "  Or your shadow at evening rising to meet you;\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 44,
+      "text": "  I will show you fear in a handful of dust.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 45,
+      "text": "       Frisch weht der Wind\r",
+      "type": "verse",
+      "section": "I",
+      "italic": true,
+      "language": "german"
+    },
+    {
+      "number": 46,
+      "text": "       Der Heimat zu\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 47,
+      "text": "       Mein Irisch Kind,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 48,
+      "text": "       Wo weilest du?\r",
+      "type": "verse",
+      "section": "I",
+      "italic": true
+    },
+    {
+      "number": 49,
+      "text": "  “You gave me hyacinths first a year ago;\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 50,
+      "text": "  “They called me the hyacinth girl.”\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 51,
+      "text": "  —Yet when we came back, late, from the Hyacinth garden,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 52,
+      "text": "  Your arms full, and your hair wet, I could not\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 53,
+      "text": "  Speak, and my eyes failed, I was neither\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 54,
+      "text": "  Living nor dead, and I knew nothing,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 55,
+      "text": "  Looking into the heart of light, the silence.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 56,
+      "text": "  Oed’ und leer das Meer.\r",
+      "type": "verse",
+      "section": "I",
+      "italic": true
+    },
+    {
+      "number": 57,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 58,
+      "text": "  Madame Sosostris, famous clairvoyante,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 59,
+      "text": "  Had a bad cold, nevertheless\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 60,
+      "text": "  Is known to be the wisest woman in Europe,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 61,
+      "text": "  With a wicked pack of cards. Here, said she,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 62,
+      "text": "  Is your card, the drowned Phoenician Sailor,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 63,
+      "text": "  (Those are pearls that were his eyes. Look!)\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 64,
+      "text": "  Here is Belladonna, the Lady of the Rocks,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 65,
+      "text": "  The lady of situations.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 66,
+      "text": "  Here is the man with three staves, and here the Wheel,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 67,
+      "text": "  And here is the one-eyed merchant, and this card,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 68,
+      "text": "  Which is blank, is something he carries on his back,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 69,
+      "text": "  Which I am forbidden to see. I do not find\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 70,
+      "text": "  The Hanged Man. Fear death by water.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 71,
+      "text": "  I see crowds of people, walking round in a ring.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 72,
+      "text": "  Thank you. If you see dear Mrs. Equitone,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 73,
+      "text": "  Tell her I bring the horoscope myself:\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 74,
+      "text": "  One must be so careful these days.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 75,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 76,
+      "text": "  Unreal City,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 77,
+      "text": "  Under the brown fog of a winter dawn,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 78,
+      "text": "  A crowd flowed over London Bridge, so many,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 79,
+      "text": "  I had not thought death had undone so many.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 80,
+      "text": "  Sighs, short and infrequent, were exhaled,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 81,
+      "text": "  And each man fixed his eyes before his feet.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 82,
+      "text": "  Flowed up the hill and down King William Street,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 83,
+      "text": "  To where Saint Mary Woolnoth kept the hours\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 84,
+      "text": "  With a dead sound on the final stroke of nine.\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 85,
+      "text": "  There I saw one I knew, and stopped him, crying “Stetson!\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 86,
+      "text": "  “You who were with me in the ships at Mylae!\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 87,
+      "text": "  “That corpse you planted last year in your garden,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 88,
+      "text": "  “Has it begun to sprout? Will it bloom this year?\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 89,
+      "text": "  “Or has the sudden frost disturbed its bed?\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 90,
+      "text": "  “Oh keep the Dog far hence, that’s friend to men,\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 91,
+      "text": "  “Or with his nails he’ll dig it up again!\r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 92,
+      "text": "  “You! hypocrite lecteur!—mon semblable,—mon frère!”    \r",
+      "type": "verse",
+      "section": "I"
+    },
+    {
+      "number": 93,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 94,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 95,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 96,
+      "text": "\r",
+      "type": "blank",
+      "section": "I"
+    },
+    {
+      "number": 97,
+      "text": "      II. A GAME OF CHESS\r",
+      "type": "section_header",
+      "section": "I"
+    },
+    {
+      "number": 98,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 99,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 100,
+      "text": "  The Chair she sat in, like a burnished throne,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 101,
+      "text": "  Glowed on the marble, where the glass\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 102,
+      "text": "  Held up by standards wrought with fruited vines\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 103,
+      "text": "  From which a golden Cupidon peeped out \r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 104,
+      "text": "  (Another hid his eyes behind his wing)\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 105,
+      "text": "  Doubled the flames of sevenbranched candelabra\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 106,
+      "text": "  Reflecting light upon the table as\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 107,
+      "text": "  The glitter of her jewels rose to meet it,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 108,
+      "text": "  From satin cases poured in rich profusion.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 109,
+      "text": "  In vials of ivory and coloured glass\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 110,
+      "text": "  Unstoppered, lurked her strange synthetic perfumes,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 111,
+      "text": "  Unguent, powdered, or liquid—troubled, confused\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 112,
+      "text": "  And drowned the sense in odours; stirred by the air\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 113,
+      "text": "  That freshened from the window, these ascended\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 114,
+      "text": "  In fattening the prolonged candle-flames,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 115,
+      "text": "  Flung their smoke into the laquearia,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 116,
+      "text": "  Stirring the pattern on the coffered ceiling.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 117,
+      "text": "  Huge sea-wood fed with copper\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 118,
+      "text": "  Burned green and orange, framed by the coloured stone,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 119,
+      "text": "  In which sad light a carvèd dolphin swam.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 120,
+      "text": "  Above the antique mantel was displayed\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 121,
+      "text": "  As though a window gave upon the sylvan scene\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 122,
+      "text": "  The change of Philomel, by the barbarous king\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 123,
+      "text": "  So rudely forced; yet there the nightingale\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 124,
+      "text": "  Filled all the desert with inviolable voice\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 125,
+      "text": "  And still she cried, and still the world pursues,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 126,
+      "text": "  “Jug Jug” to dirty ears.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 127,
+      "text": "  And other withered stumps of time\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 128,
+      "text": "  Were told upon the walls; staring forms\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 129,
+      "text": "  Leaned out, leaning, hushing the room enclosed.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 130,
+      "text": "  Footsteps shuffled on the stair.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 131,
+      "text": "  Under the firelight, under the brush, her hair\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 132,
+      "text": "  Spread out in fiery points\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 133,
+      "text": "  Glowed into words, then would be savagely still.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 134,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 135,
+      "text": "  “My nerves are bad to-night. Yes, bad. Stay with me.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 136,
+      "text": "  “Speak to me. Why do you never speak. Speak.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 137,
+      "text": "  “What are you thinking of? What thinking? What?\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 138,
+      "text": "  “I never know what you are thinking. Think.”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 139,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 140,
+      "text": "  I think we are in rats’ alley\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 141,
+      "text": "  Where the dead men lost their bones.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 142,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 143,
+      "text": "  “What is that noise?”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 144,
+      "text": "                               The wind under the door.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 145,
+      "text": "  “What is that noise now? What is the wind doing?”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 146,
+      "text": "                               Nothing again nothing.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 147,
+      "text": "                                                                    “Do\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 148,
+      "text": "  “You know nothing? Do you see nothing? Do you remember\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 149,
+      "text": "  “Nothing?”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 150,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 151,
+      "text": "     I remember\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 152,
+      "text": "  Those are pearls that were his eyes.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 153,
+      "text": "  “Are you alive, or not? Is there nothing in your head?”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 154,
+      "text": "                                                                      But\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 155,
+      "text": "  O O O O that Shakespeherian Rag—\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 156,
+      "text": "  It’s so elegant\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 157,
+      "text": "  So intelligent\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 158,
+      "text": "  “What shall I do now? What shall I do?”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 159,
+      "text": "  I shall rush out as I am, and walk the street\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 160,
+      "text": "  “With my hair down, so. What shall we do tomorrow?\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 161,
+      "text": "  “What shall we ever do?”\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 162,
+      "text": "                                       The hot water at ten.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 163,
+      "text": "  And if it rains, a closed car at four.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 164,
+      "text": "  And we shall play a game of chess,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 165,
+      "text": "  Pressing lidless eyes and waiting for a knock upon the door.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 166,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 167,
+      "text": "  When Lil’s husband got demobbed, I said—\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 168,
+      "text": "  I didn’t mince my words, I said to her myself, \r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 169,
+      "text": "  HURRY UP PLEASE IT’S TIME\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 170,
+      "text": "  Now Albert’s coming back, make yourself a bit smart.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 171,
+      "text": "  He’ll want to know what you done with that money he gave you\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 172,
+      "text": "  To get yourself some teeth. He did, I was there.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 173,
+      "text": "  You have them all out, Lil, and get a nice set,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 174,
+      "text": "  He said, I swear, I can’t bear to look at you.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 175,
+      "text": "  And no more can’t I, I said, and think of poor Albert,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 176,
+      "text": "  He’s been in the army four years, he wants a good time,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 177,
+      "text": "  And if you don’t give it him, there’s others will, I said.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 178,
+      "text": "  Oh is there, she said. Something o’ that, I said.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 179,
+      "text": "  Then I’ll know who to thank, she said, and give me a straight look.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 180,
+      "text": "  HURRY UP PLEASE IT’S TIME\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 181,
+      "text": "  If you don’t like it you can get on with it, I said.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 182,
+      "text": "  Others can pick and choose if you can’t.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 183,
+      "text": "  But if Albert makes off, it won’t be for lack of telling.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 184,
+      "text": "  You ought to be ashamed, I said, to look so antique.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 185,
+      "text": "  (And her only thirty-one.)\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 186,
+      "text": "  I can’t help it, she said, pulling a long face,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 187,
+      "text": "  It’s them pills I took, to bring it off, she said.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 188,
+      "text": "  (She’s had five already, and nearly died of young George.)\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 189,
+      "text": "  The chemist said it would be all right, but I’ve never been the same.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 190,
+      "text": "  You are a proper fool, I said.\r",
+      "type": "verse",
+      "section": "II",
+      "italic": true
+    },
+    {
+      "number": 191,
+      "text": "  Well, if Albert won’t leave you alone, there it is, I said,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 192,
+      "text": "  What you get married for if you don’t want children?\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 193,
+      "text": "  HURRY UP PLEASE IT’S TIME\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 194,
+      "text": "  Well, that Sunday Albert was home, they had a hot gammon,\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 195,
+      "text": "  And they asked me in to dinner, to get the beauty of it hot—\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 196,
+      "text": "  HURRY UP PLEASE IT’S TIME\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 197,
+      "text": "  HURRY UP PLEASE IT’S TIME\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 198,
+      "text": "  Goonight Bill. Goonight Lou. Goonight May. Goonight. \r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 199,
+      "text": "  Ta ta. Goonight. Goonight.\r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 200,
+      "text": "  Good night, ladies, good night, sweet ladies, good night, good night.    \r",
+      "type": "verse",
+      "section": "II"
+    },
+    {
+      "number": 201,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 202,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 203,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 204,
+      "text": "\r",
+      "type": "blank",
+      "section": "II"
+    },
+    {
+      "number": 205,
+      "text": "      III. THE FIRE SERMON\r",
+      "type": "section_header",
+      "section": "II"
+    },
+    {
+      "number": 206,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 207,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 208,
+      "text": "  The river’s tent is broken: the last fingers of leaf\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 209,
+      "text": "  Clutch and sink into the wet bank. The wind\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 210,
+      "text": "  Crosses the brown land, unheard. The nymphs are departed.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 211,
+      "text": "  Sweet Thames, run softly, till I end my song.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 212,
+      "text": "  The river bears no empty bottles, sandwich papers,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 213,
+      "text": "  Silk handkerchiefs, cardboard boxes, cigarette ends\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 214,
+      "text": "  Or other testimony of summer nights. The nymphs are departed.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 215,
+      "text": "  And their friends, the loitering heirs of city directors;\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 216,
+      "text": "  Departed, have left no addresses.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 217,
+      "text": "  By the waters of Leman I sat down and wept . . .\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 218,
+      "text": "  Sweet Thames, run softly till I end my song,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 219,
+      "text": "  Sweet Thames, run softly, for I speak not loud or long.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 220,
+      "text": "  But at my back in a cold blast I hear\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 221,
+      "text": "  The rattle of the bones, and chuckle spread from ear to ear.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 222,
+      "text": "  A rat crept softly through the vegetation\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 223,
+      "text": "  Dragging its slimy belly on the bank\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 224,
+      "text": "  While I was fishing in the dull canal\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 225,
+      "text": "  On a winter evening round behind the gashouse \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 226,
+      "text": "  Musing upon the king my brother’s wreck\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 227,
+      "text": "  And on the king my father’s death before him.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 228,
+      "text": "  White bodies naked on the low damp ground\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 229,
+      "text": "  And bones cast in a little low dry garret,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 230,
+      "text": "  Rattled by the rat’s foot only, year to year.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 231,
+      "text": "  But at my back from time to time I hear\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 232,
+      "text": "  The sound of horns and motors, which shall bring\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 233,
+      "text": "  Sweeney to Mrs. Porter in the spring.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 234,
+      "text": "  O the moon shone bright on Mrs. Porter\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 235,
+      "text": "  And on her daughter\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 236,
+      "text": "  They wash their feet in soda water\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 237,
+      "text": "  Et O ces voix d’enfants, chantant dans la coupole!\r",
+      "type": "verse",
+      "section": "III",
+      "italic": true,
+      "language": "french/italian"
+    },
+    {
+      "number": 238,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 239,
+      "text": "  Twit twit twit\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 240,
+      "text": "  Jug jug jug jug jug jug\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 241,
+      "text": "  So rudely forc’d.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 242,
+      "text": "  Tereu\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 243,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 244,
+      "text": "  Unreal City\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 245,
+      "text": "  Under the brown fog of a winter noon\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 246,
+      "text": "  Mr. Eugenides, the Smyrna merchant\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 247,
+      "text": "  Unshaven, with a pocket full of currants \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 248,
+      "text": "  C.i.f. London: documents at sight,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 249,
+      "text": "  Asked me in demotic French\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 250,
+      "text": "  To luncheon at the Cannon Street Hotel\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 251,
+      "text": "  Followed by a weekend at the Metropole.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 252,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 253,
+      "text": "  At the violet hour, when the eyes and back\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 254,
+      "text": "  Turn upward from the desk, when the human engine waits\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 255,
+      "text": "  Like a taxi throbbing waiting,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 256,
+      "text": "  I Tiresias, though blind, throbbing between two lives,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 257,
+      "text": "  Old man with wrinkled female breasts, can see\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 258,
+      "text": "  At the violet hour, the evening hour that strives \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 259,
+      "text": "  Homeward, and brings the sailor home from sea,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 260,
+      "text": "  The typist home at teatime, clears her breakfast, lights\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 261,
+      "text": "  Her stove, and lays out food in tins.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 262,
+      "text": "  Out of the window perilously spread\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 263,
+      "text": "  Her drying combinations touched by the sun’s last rays,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 264,
+      "text": "  On the divan are piled (at night her bed)\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 265,
+      "text": "  Stockings, slippers, camisoles, and stays.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 266,
+      "text": "  I Tiresias, old man with wrinkled dugs\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 267,
+      "text": "  Perceived the scene, and foretold the rest—\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 268,
+      "text": "  I too awaited the expected guest.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 269,
+      "text": "  He, the young man carbuncular, arrives,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 270,
+      "text": "  A small house agent’s clerk, with one bold stare,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 271,
+      "text": "  One of the low on whom assurance sits\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 272,
+      "text": "  As a silk hat on a Bradford millionaire.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 273,
+      "text": "  The time is now propitious, as he guesses,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 274,
+      "text": "  The meal is ended, she is bored and tired,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 275,
+      "text": "  Endeavours to engage her in caresses\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 276,
+      "text": "  Which still are unreproved, if undesired.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 277,
+      "text": "  Flushed and decided, he assaults at once;\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 278,
+      "text": "  Exploring hands encounter no defence;\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 279,
+      "text": "  His vanity requires no response,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 280,
+      "text": "  And makes a welcome of indifference.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 281,
+      "text": "  (And I Tiresias have foresuffered all\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 282,
+      "text": "  Enacted on this same divan or bed;\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 283,
+      "text": "  I who have sat by Thebes below the wall\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 284,
+      "text": "  And walked among the lowest of the dead.)\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 285,
+      "text": "  Bestows one final patronising kiss,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 286,
+      "text": "  And gropes his way, finding the stairs unlit . . .\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 287,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 288,
+      "text": "  She turns and looks a moment in the glass,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 289,
+      "text": "  Hardly aware of her departed lover; \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 290,
+      "text": "  Her brain allows one half-formed thought to pass:\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 291,
+      "text": "  “Well now that’s done: and I’m glad it’s over.”\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 292,
+      "text": "  When lovely woman stoops to folly and\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 293,
+      "text": "  Paces about her room again, alone,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 294,
+      "text": "  She smooths her hair with automatic hand,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 295,
+      "text": "  And puts a record on the gramophone.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 296,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 297,
+      "text": "  “This music crept by me upon the waters”\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 298,
+      "text": "  And along the Strand, up Queen Victoria Street.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 299,
+      "text": "  O City city, I can sometimes hear\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 300,
+      "text": "  Beside a public bar in Lower Thames Street,\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 301,
+      "text": "  The pleasant whining of a mandoline\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 302,
+      "text": "  And a clatter and a chatter from within\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 303,
+      "text": "  Where fishmen lounge at noon: where the walls\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 304,
+      "text": "  Of Magnus Martyr hold\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 305,
+      "text": "  Inexplicable splendour of Ionian white and gold.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 306,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 307,
+      "text": "       The river sweats\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 308,
+      "text": "       Oil and tar\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 309,
+      "text": "       The barges drift\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 310,
+      "text": "       With the turning tide\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 311,
+      "text": "       Red sails\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 312,
+      "text": "       Wide\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 313,
+      "text": "       To leeward, swing on the heavy spar.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 314,
+      "text": "       The barges wash\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 315,
+      "text": "       Drifting logs\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 316,
+      "text": "       Down Greenwich reach\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 317,
+      "text": "       Past the Isle of Dogs.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 318,
+      "text": "            Weialala leia\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 319,
+      "text": "            Wallala leialala\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 320,
+      "text": "       Elizabeth and Leicester\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 321,
+      "text": "       Beating oars\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 322,
+      "text": "       The stern was formed\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 323,
+      "text": "       A gilded shell\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 324,
+      "text": "       Red and gold\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 325,
+      "text": "       The brisk swell\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 326,
+      "text": "       Rippled both shores\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 327,
+      "text": "       Southwest wind\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 328,
+      "text": "       Carried down stream\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 329,
+      "text": "       The peal of bells\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 330,
+      "text": "       White towers\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 331,
+      "text": "            Weialala leia\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 332,
+      "text": "            Wallala leialala\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 333,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 334,
+      "text": "  “Trams and dusty trees.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 335,
+      "text": "  Highbury bore me. Richmond and Kew\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 336,
+      "text": "  Undid me. By Richmond I raised my knees\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 337,
+      "text": "  Supine on the floor of a narrow canoe.”\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 338,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 339,
+      "text": "  “My feet are at Moorgate, and my heart\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 340,
+      "text": "  Under my feet. After the event\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 341,
+      "text": "  He wept. He promised ‘a new start’.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 342,
+      "text": "  I made no comment. What should I resent?”\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 343,
+      "text": "  “On Margate Sands. \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 344,
+      "text": "  I can connect\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 345,
+      "text": "  Nothing with nothing.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 346,
+      "text": "  The broken fingernails of dirty hands.\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 347,
+      "text": "  My people humble people who expect\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 348,
+      "text": "  Nothing.”\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 349,
+      "text": "       la la\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 350,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 351,
+      "text": "  To Carthage then I came\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 352,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 353,
+      "text": "  Burning burning burning burning\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 354,
+      "text": "  O Lord Thou pluckest me out\r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 355,
+      "text": "  O Lord Thou pluckest  \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 356,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 357,
+      "text": "  burning    \r",
+      "type": "verse",
+      "section": "III"
+    },
+    {
+      "number": 358,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 359,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 360,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 361,
+      "text": "\r",
+      "type": "blank",
+      "section": "III"
+    },
+    {
+      "number": 362,
+      "text": "      IV. DEATH BY WATER\r",
+      "type": "section_header",
+      "section": "III"
+    },
+    {
+      "number": 363,
+      "text": "\r",
+      "type": "blank",
+      "section": "IV"
+    },
+    {
+      "number": 364,
+      "text": "\r",
+      "type": "blank",
+      "section": "IV"
+    },
+    {
+      "number": 365,
+      "text": "  Phlebas the Phoenician, a fortnight dead,\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 366,
+      "text": "  Forgot the cry of gulls, and the deep sea swell\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 367,
+      "text": "  And the profit and loss.\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 368,
+      "text": "                                           A current under sea\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 369,
+      "text": "  Picked his bones in whispers. As he rose and fell\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 370,
+      "text": "  He passed the stages of his age and youth\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 371,
+      "text": "  Entering the whirlpool.\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 372,
+      "text": "                                         Gentile or Jew\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 373,
+      "text": "  O you who turn the wheel and look to windward,\r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 374,
+      "text": "  Consider Phlebas, who was once handsome and tall as you.    \r",
+      "type": "verse",
+      "section": "IV"
+    },
+    {
+      "number": 375,
+      "text": "\r",
+      "type": "blank",
+      "section": "IV"
+    },
+    {
+      "number": 376,
+      "text": "\r",
+      "type": "blank",
+      "section": "IV"
+    },
+    {
+      "number": 377,
+      "text": "\r",
+      "type": "blank",
+      "section": "IV"
+    },
+    {
+      "number": 378,
+      "text": "\r",
+      "type": "blank",
+      "section": "IV"
+    },
+    {
+      "number": 379,
+      "text": "      V. WHAT THE THUNDER SAID\r",
+      "type": "section_header",
+      "section": "IV"
+    },
+    {
+      "number": 380,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 381,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 382,
+      "text": "  After the torchlight red on sweaty faces\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 383,
+      "text": "  After the frosty silence in the gardens\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 384,
+      "text": "  After the agony in stony places\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 385,
+      "text": "  The shouting and the crying\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 386,
+      "text": "  Prison and palace and reverberation\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 387,
+      "text": "  Of thunder of spring over distant mountains\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 388,
+      "text": "  He who was living is now dead\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 389,
+      "text": "  We who were living are now dying\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 390,
+      "text": "  With a little patience\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 391,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 392,
+      "text": "  Here is no water but only rock\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 393,
+      "text": "  Rock and no water and the sandy road\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 394,
+      "text": "  The road winding above among the mountains\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 395,
+      "text": "  Which are mountains of rock without water\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 396,
+      "text": "  If there were water we should stop and drink\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 397,
+      "text": "  Amongst the rock one cannot stop or think\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 398,
+      "text": "  Sweat is dry and feet are in the sand\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 399,
+      "text": "  If there were only water amongst the rock\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 400,
+      "text": "  Dead mountain mouth of carious teeth that cannot spit\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 401,
+      "text": "  Here one can neither stand nor lie nor sit  \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 402,
+      "text": "  There is not even silence in the mountains\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 403,
+      "text": "  But dry sterile thunder without rain\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 404,
+      "text": "  There is not even solitude in the mountains\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 405,
+      "text": "  But red sullen faces sneer and snarl\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 406,
+      "text": "  From doors of mudcracked houses\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 407,
+      "text": "                                                           If there were water\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 408,
+      "text": "  And no rock\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 409,
+      "text": "  If there were rock\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 410,
+      "text": "  And also water\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 411,
+      "text": "  And water \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 412,
+      "text": "  A spring\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 413,
+      "text": "  A pool among the rock\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 414,
+      "text": "  If there were the sound of water only\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 415,
+      "text": "  Not the cicada\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 416,
+      "text": "  And dry grass singing\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 417,
+      "text": "  But sound of water over a rock\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 418,
+      "text": "  Where the hermit-thrush sings in the pine trees\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 419,
+      "text": "  Drip drop drip drop drop drop drop\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 420,
+      "text": "  But there is no water\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 421,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 422,
+      "text": "  Who is the third who walks always beside you?\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 423,
+      "text": "  When I count, there are only you and I together \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 424,
+      "text": "  But when I look ahead up the white road\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 425,
+      "text": "  There is always another one walking beside you\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 426,
+      "text": "  Gliding wrapt in a brown mantle, hooded\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 427,
+      "text": "  I do not know whether a man or a woman\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 428,
+      "text": "  —But who is that on the other side of you?\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 429,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 430,
+      "text": "  What is that sound high in the air\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 431,
+      "text": "  Murmur of maternal lamentation\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 432,
+      "text": "  Who are those hooded hordes swarming\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 433,
+      "text": "  Over endless plains, stumbling in cracked earth\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 434,
+      "text": "  Ringed by the flat horizon only\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 435,
+      "text": "  What is the city over the mountains\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 436,
+      "text": "  Cracks and reforms and bursts in the violet air\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 437,
+      "text": "  Falling towers\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 438,
+      "text": "  Jerusalem Athens Alexandria\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 439,
+      "text": "  Vienna London\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 440,
+      "text": "  Unreal\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 441,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 442,
+      "text": "  A woman drew her long black hair out tight\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 443,
+      "text": "  And fiddled whisper music on those strings\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 444,
+      "text": "  And bats with baby faces in the violet light\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 445,
+      "text": "  Whistled, and beat their wings  \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 446,
+      "text": "  And crawled head downward down a blackened wall\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 447,
+      "text": "  And upside down in air were towers\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 448,
+      "text": "  Tolling reminiscent bells, that kept the hours\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 449,
+      "text": "  And voices singing out of empty cisterns and exhausted wells.\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 450,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 451,
+      "text": "  In this decayed hole among the mountains\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 452,
+      "text": "  In the faint moonlight, the grass is singing\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 453,
+      "text": "  Over the tumbled graves, about the chapel\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 454,
+      "text": "  There is the empty chapel, only the wind’s home.\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 455,
+      "text": "  It has no windows, and the door swings,\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 456,
+      "text": "  Dry bones can harm no one. \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 457,
+      "text": "  Only a cock stood on the rooftree\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 458,
+      "text": "  Co co rico co co rico\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 459,
+      "text": "  In a flash of lightning. Then a damp gust\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 460,
+      "text": "  Bringing rain\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 461,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 462,
+      "text": "  Ganga was sunken, and the limp leaves\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 463,
+      "text": "  Waited for rain, while the black clouds\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 464,
+      "text": "  Gathered far distant, over Himavant.\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 465,
+      "text": "  The jungle crouched, humped in silence.\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 466,
+      "text": "  Then spoke the thunder\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 467,
+      "text": "  DA\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 468,
+      "text": "  Datta: what have we given?\r",
+      "type": "verse",
+      "section": "V",
+      "italic": true
+    },
+    {
+      "number": 469,
+      "text": "  My friend, blood shaking my heart\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 470,
+      "text": "  The awful daring of a moment’s surrender\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 471,
+      "text": "  Which an age of prudence can never retract\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 472,
+      "text": "  By this, and this only, we have existed\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 473,
+      "text": "  Which is not to be found in our obituaries\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 474,
+      "text": "  Or in memories draped by the beneficent spider\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 475,
+      "text": "  Or under seals broken by the lean solicitor\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 476,
+      "text": "  In our empty rooms\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 477,
+      "text": "  DA \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 478,
+      "text": "  Dayadhvam: I have heard the key\r",
+      "type": "verse",
+      "section": "V",
+      "italic": true
+    },
+    {
+      "number": 479,
+      "text": "  Turn in the door once and turn once only\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 480,
+      "text": "  We think of the key, each in his prison\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 481,
+      "text": "  Thinking of the key, each confirms a prison\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 482,
+      "text": "  Only at nightfall, aetherial rumours\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 483,
+      "text": "  Revive for a moment a broken Coriolanus\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 484,
+      "text": "  DA\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 485,
+      "text": "  Damyata: The boat responded\r",
+      "type": "verse",
+      "section": "V",
+      "italic": true
+    },
+    {
+      "number": 486,
+      "text": "  Gaily, to the hand expert with sail and oar\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 487,
+      "text": "  The sea was calm, your heart would have responded \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 488,
+      "text": "  Gaily, when invited, beating obedient\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 489,
+      "text": "  To controlling hands\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 490,
+      "text": "\r",
+      "type": "blank",
+      "section": "V"
+    },
+    {
+      "number": 491,
+      "text": "                                       I sat upon the shore\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 492,
+      "text": "  Fishing, with the arid plain behind me\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 493,
+      "text": "  Shall I at least set my lands in order?\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 494,
+      "text": "  London Bridge is falling down falling down falling down\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 495,
+      "text": "  Poi s’ascose nel foco che gli affina\r",
+      "type": "verse",
+      "section": "V",
+      "italic": true
+    },
+    {
+      "number": 496,
+      "text": "  Quando fiam ceu chelidon — O swallow swallow\r",
+      "type": "verse",
+      "section": "V",
+      "italic": true
+    },
+    {
+      "number": 497,
+      "text": "  Le Prince d’Aquitaine à la tour abolie\r",
+      "type": "verse",
+      "section": "V",
+      "italic": true
+    },
+    {
+      "number": 498,
+      "text": "  These fragments I have shored against my ruins \r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 499,
+      "text": "  Why then Ile fit you. Hieronymo’s mad againe.\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 500,
+      "text": "  Datta. Dayadhvam. Damyata.\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 501,
+      "text": "                             Shantih    shantih    shantih\r",
+      "type": "verse",
+      "section": "V"
+    },
+    {
+      "number": 502,
+      "text": "",
+      "type": "blank",
+      "section": "V"
+    }
+  ],
+  "poemLineMapping": {
+    "1": 14,
+    "2": 15,
+    "3": 16,
+    "4": 17,
+    "5": 18,
+    "6": 19,
+    "7": 20,
+    "8": 21,
+    "9": 22,
+    "10": 23,
+    "11": 24,
+    "12": 25,
+    "13": 26,
+    "14": 27,
+    "15": 28,
+    "16": 29,
+    "17": 30,
+    "18": 31,
+    "19": 33,
+    "20": 34,
+    "21": 35,
+    "22": 36,
+    "23": 37,
+    "24": 38,
+    "25": 39,
+    "26": 40,
+    "27": 41,
+    "28": 42,
+    "29": 43,
+    "30": 44,
+    "31": 45,
+    "32": 46,
+    "33": 47,
+    "34": 48,
+    "35": 49,
+    "36": 50,
+    "37": 51,
+    "38": 52,
+    "39": 53,
+    "40": 54,
+    "41": 55,
+    "42": 56,
+    "43": 58,
+    "44": 59,
+    "45": 60,
+    "46": 61,
+    "47": 62,
+    "48": 63,
+    "49": 64,
+    "50": 65,
+    "51": 66,
+    "52": 67,
+    "53": 68,
+    "54": 69,
+    "55": 70,
+    "56": 71,
+    "57": 72,
+    "58": 73,
+    "59": 74,
+    "60": 76,
+    "61": 77,
+    "62": 78,
+    "63": 79,
+    "64": 80,
+    "65": 81,
+    "66": 82,
+    "67": 83,
+    "68": 84,
+    "69": 85,
+    "70": 86,
+    "71": 87,
+    "72": 88,
+    "73": 89,
+    "74": 90,
+    "75": 91,
+    "76": 92,
+    "77": 100,
+    "78": 101,
+    "79": 102,
+    "80": 103,
+    "81": 104,
+    "82": 105,
+    "83": 106,
+    "84": 107,
+    "85": 108,
+    "86": 109,
+    "87": 110,
+    "88": 111,
+    "89": 112,
+    "90": 113,
+    "91": 114,
+    "92": 115,
+    "93": 116,
+    "94": 117,
+    "95": 118,
+    "96": 119,
+    "97": 120,
+    "98": 121,
+    "99": 122,
+    "100": 123,
+    "101": 124,
+    "102": 125,
+    "103": 126,
+    "104": 127,
+    "105": 128,
+    "106": 129,
+    "107": 130,
+    "108": 131,
+    "109": 132,
+    "110": 133,
+    "111": 135,
+    "112": 136,
+    "113": 137,
+    "114": 138,
+    "115": 140,
+    "116": 141,
+    "117": 143,
+    "118": 144,
+    "119": 145,
+    "120": 146,
+    "121": 147,
+    "122": 148,
+    "123": 149,
+    "124": 151,
+    "125": 152,
+    "126": 153,
+    "127": 154,
+    "128": 155,
+    "129": 156,
+    "130": 157,
+    "131": 158,
+    "132": 159,
+    "133": 160,
+    "134": 161,
+    "135": 162,
+    "136": 163,
+    "137": 164,
+    "138": 165,
+    "139": 167,
+    "140": 168,
+    "141": 169,
+    "142": 170,
+    "143": 171,
+    "144": 172,
+    "145": 173,
+    "146": 174,
+    "147": 175,
+    "148": 176,
+    "149": 177,
+    "150": 178,
+    "151": 179,
+    "152": 180,
+    "153": 181,
+    "154": 182,
+    "155": 183,
+    "156": 184,
+    "157": 185,
+    "158": 186,
+    "159": 187,
+    "160": 188,
+    "161": 189,
+    "162": 190,
+    "163": 191,
+    "164": 192,
+    "165": 193,
+    "166": 194,
+    "167": 195,
+    "168": 196,
+    "169": 197,
+    "170": 198,
+    "171": 199,
+    "172": 200,
+    "173": 208,
+    "174": 209,
+    "175": 210,
+    "176": 211,
+    "177": 212,
+    "178": 213,
+    "179": 214,
+    "180": 215,
+    "181": 216,
+    "182": 217,
+    "183": 218,
+    "184": 219,
+    "185": 220,
+    "186": 221,
+    "187": 222,
+    "188": 223,
+    "189": 224,
+    "190": 225,
+    "191": 226,
+    "192": 227,
+    "193": 228,
+    "194": 229,
+    "195": 230,
+    "196": 231,
+    "197": 232,
+    "198": 233,
+    "199": 234,
+    "200": 235,
+    "201": 236,
+    "202": 237,
+    "203": 239,
+    "204": 240,
+    "205": 241,
+    "206": 242,
+    "207": 244,
+    "208": 245,
+    "209": 246,
+    "210": 247,
+    "211": 248,
+    "212": 249,
+    "213": 250,
+    "214": 251,
+    "215": 253,
+    "216": 254,
+    "217": 255,
+    "218": 256,
+    "219": 257,
+    "220": 258,
+    "221": 259,
+    "222": 260,
+    "223": 261,
+    "224": 262,
+    "225": 263,
+    "226": 264,
+    "227": 265,
+    "228": 266,
+    "229": 267,
+    "230": 268,
+    "231": 269,
+    "232": 270,
+    "233": 271,
+    "234": 272,
+    "235": 273,
+    "236": 274,
+    "237": 275,
+    "238": 276,
+    "239": 277,
+    "240": 278,
+    "241": 279,
+    "242": 280,
+    "243": 281,
+    "244": 282,
+    "245": 283,
+    "246": 284,
+    "247": 285,
+    "248": 286,
+    "249": 288,
+    "250": 289,
+    "251": 290,
+    "252": 291,
+    "253": 292,
+    "254": 293,
+    "255": 294,
+    "256": 295,
+    "257": 297,
+    "258": 298,
+    "259": 299,
+    "260": 300,
+    "261": 301,
+    "262": 302,
+    "263": 303,
+    "264": 304,
+    "265": 305,
+    "266": 307,
+    "267": 308,
+    "268": 309,
+    "269": 310,
+    "270": 311,
+    "271": 312,
+    "272": 313,
+    "273": 314,
+    "274": 315,
+    "275": 316,
+    "276": 317,
+    "277": 318,
+    "278": 319,
+    "279": 320,
+    "280": 321,
+    "281": 322,
+    "282": 323,
+    "283": 324,
+    "284": 325,
+    "285": 326,
+    "286": 327,
+    "287": 328,
+    "288": 329,
+    "289": 330,
+    "290": 331,
+    "291": 332,
+    "292": 334,
+    "293": 335,
+    "294": 336,
+    "295": 337,
+    "296": 339,
+    "297": 340,
+    "298": 341,
+    "299": 342,
+    "300": 343,
+    "301": 344,
+    "302": 345,
+    "303": 346,
+    "304": 347,
+    "305": 348,
+    "306": 349,
+    "307": 351,
+    "308": 353,
+    "309": 354,
+    "310": 355,
+    "311": 357,
+    "312": 365,
+    "313": 366,
+    "314": 367,
+    "315": 368,
+    "316": 369,
+    "317": 370,
+    "318": 371,
+    "319": 372,
+    "320": 373,
+    "321": 374,
+    "322": 382,
+    "323": 383,
+    "324": 384,
+    "325": 385,
+    "326": 386,
+    "327": 387,
+    "328": 388,
+    "329": 389,
+    "330": 390,
+    "331": 392,
+    "332": 393,
+    "333": 394,
+    "334": 395,
+    "335": 396,
+    "336": 397,
+    "337": 398,
+    "338": 399,
+    "339": 400,
+    "340": 401,
+    "341": 402,
+    "342": 403,
+    "343": 404,
+    "344": 405,
+    "345": 406,
+    "346": 407,
+    "347": 408,
+    "348": 409,
+    "349": 410,
+    "350": 411,
+    "351": 412,
+    "352": 413,
+    "353": 414,
+    "354": 415,
+    "355": 416,
+    "356": 417,
+    "357": 418,
+    "358": 419,
+    "359": 420,
+    "360": 422,
+    "361": 423,
+    "362": 424,
+    "363": 425,
+    "364": 426,
+    "365": 427,
+    "366": 428,
+    "367": 430,
+    "368": 431,
+    "369": 432,
+    "370": 433,
+    "371": 434,
+    "372": 435,
+    "373": 436,
+    "374": 437,
+    "375": 438,
+    "376": 439,
+    "377": 440,
+    "378": 442,
+    "379": 443,
+    "380": 444,
+    "381": 445,
+    "382": 446,
+    "383": 447,
+    "384": 448,
+    "385": 449,
+    "386": 451,
+    "387": 452,
+    "388": 453,
+    "389": 454,
+    "390": 455,
+    "391": 456,
+    "392": 457,
+    "393": 458,
+    "394": 459,
+    "395": 460,
+    "396": 462,
+    "397": 463,
+    "398": 464,
+    "399": 465,
+    "400": 466,
+    "401": 467,
+    "402": 468,
+    "403": 469,
+    "404": 470,
+    "405": 471,
+    "406": 472,
+    "407": 473,
+    "408": 474,
+    "409": 475,
+    "410": 476,
+    "411": 477,
+    "412": 478,
+    "413": 479,
+    "414": 480,
+    "415": 481,
+    "416": 482,
+    "417": 483,
+    "418": 484,
+    "419": 485,
+    "420": 486,
+    "421": 487,
+    "422": 488,
+    "423": 489,
+    "424": 491,
+    "425": 492,
+    "426": 493,
+    "427": 494,
+    "428": 495,
+    "429": 496,
+    "430": 497,
+    "431": 498,
+    "432": 499,
+    "433": 500,
+    "434": 501
+  },
+  "metadata": {
+    "totalLines": 502,
+    "totalVerseLines": 434,
+    "epigraphLines": 3,
+    "dedicationLines": 2,
+    "sectionHeaders": 5,
+    "blankLines": 58
+  }
+}

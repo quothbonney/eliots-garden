@@ -1,0 +1,3509 @@
+{
+  "title": "The Waste Land",
+  "sections": {
+    "I": {
+      "title": "THE BURIAL OF THE DEAD",
+      "headerLine": 11,
+      "startLine": 14,
+      "endLine": 92
+    },
+    "II": {
+      "title": "A GAME OF CHESS",
+      "headerLine": 97,
+      "startLine": 100,
+      "endLine": 200
+    },
+    "III": {
+      "title": "THE FIRE SERMON",
+      "headerLine": 205,
+      "startLine": 208,
+      "endLine": 357
+    },
+    "IV": {
+      "title": "DEATH BY WATER",
+      "headerLine": 362,
+      "startLine": 365,
+      "endLine": 374
+    },
+    "V": {
+      "title": "WHAT THE THUNDER SAID",
+      "headerLine": 379,
+      "startLine": 382,
+      "endLine": 501
+    }
+  },
+  "verses": [
+    {
+      "verseNumber": 1,
+      "lineNumber": 14,
+      "text": "April is the cruellest month, breeding",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 2,
+      "lineNumber": 15,
+      "text": "Lilacs out of the dead land, mixing",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 3,
+      "lineNumber": 16,
+      "text": "Memory and desire, stirring",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 4,
+      "lineNumber": 17,
+      "text": "Dull roots with spring rain.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 5,
+      "lineNumber": 18,
+      "text": "Winter kept us warm, covering",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 6,
+      "lineNumber": 19,
+      "text": "Earth in forgetful snow, feeding",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 7,
+      "lineNumber": 20,
+      "text": "A little life with dried tubers.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 8,
+      "lineNumber": 21,
+      "text": "Summer surprised us, coming over the Starnbergersee",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 9,
+      "lineNumber": 22,
+      "text": "With a shower of rain; we stopped in the colonnade,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 10,
+      "lineNumber": 23,
+      "text": "And went on in sunlight, into the Hofgarten,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 11,
+      "lineNumber": 24,
+      "text": "And drank coffee, and talked for an hour.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 12,
+      "lineNumber": 25,
+      "text": "Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.",
+      "section": "I",
+      "italic": false,
+      "language": "german"
+    },
+    {
+      "verseNumber": 13,
+      "lineNumber": 26,
+      "text": "And when we were children, staying at the archduke’s,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 14,
+      "lineNumber": 27,
+      "text": "My cousin’s, he took me out on a sled,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 15,
+      "lineNumber": 28,
+      "text": "And I was frightened. He said, Marie,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 16,
+      "lineNumber": 29,
+      "text": "Marie, hold on tight. And down we went.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 17,
+      "lineNumber": 30,
+      "text": "In the mountains, there you feel free.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 18,
+      "lineNumber": 31,
+      "text": "I read, much of the night, and go south in the winter.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 19,
+      "lineNumber": 33,
+      "text": "What are the roots that clutch, what branches grow",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 20,
+      "lineNumber": 34,
+      "text": "Out of this stony rubbish? Son of man,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 21,
+      "lineNumber": 35,
+      "text": "You cannot say, or guess, for you know only",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 22,
+      "lineNumber": 36,
+      "text": "A heap of broken images, where the sun beats,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 23,
+      "lineNumber": 37,
+      "text": "And the dead tree gives no shelter, the cricket no relief,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 24,
+      "lineNumber": 38,
+      "text": "And the dry stone no sound of water. Only",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 25,
+      "lineNumber": 39,
+      "text": "There is shadow under this red rock,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 26,
+      "lineNumber": 40,
+      "text": "(Come in under the shadow of this red rock),",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 27,
+      "lineNumber": 41,
+      "text": "And I will show you something different from either",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 28,
+      "lineNumber": 42,
+      "text": "Your shadow at morning striding behind you",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 29,
+      "lineNumber": 43,
+      "text": "Or your shadow at evening rising to meet you;",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 30,
+      "lineNumber": 44,
+      "text": "I will show you fear in a handful of dust.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 31,
+      "lineNumber": 45,
+      "text": "Frisch weht der Wind",
+      "section": "I",
+      "italic": true,
+      "language": "german"
+    },
+    {
+      "verseNumber": 32,
+      "lineNumber": 46,
+      "text": "Der Heimat zu",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 33,
+      "lineNumber": 47,
+      "text": "Mein Irisch Kind,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 34,
+      "lineNumber": 48,
+      "text": "Wo weilest du?",
+      "section": "I",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 35,
+      "lineNumber": 49,
+      "text": "“You gave me hyacinths first a year ago;",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 36,
+      "lineNumber": 50,
+      "text": "“They called me the hyacinth girl.”",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 37,
+      "lineNumber": 51,
+      "text": "—Yet when we came back, late, from the Hyacinth garden,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 38,
+      "lineNumber": 52,
+      "text": "Your arms full, and your hair wet, I could not",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 39,
+      "lineNumber": 53,
+      "text": "Speak, and my eyes failed, I was neither",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 40,
+      "lineNumber": 54,
+      "text": "Living nor dead, and I knew nothing,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 41,
+      "lineNumber": 55,
+      "text": "Looking into the heart of light, the silence.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 42,
+      "lineNumber": 56,
+      "text": "Oed’ und leer das Meer.",
+      "section": "I",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 43,
+      "lineNumber": 58,
+      "text": "Madame Sosostris, famous clairvoyante,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 44,
+      "lineNumber": 59,
+      "text": "Had a bad cold, nevertheless",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 45,
+      "lineNumber": 60,
+      "text": "Is known to be the wisest woman in Europe,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 46,
+      "lineNumber": 61,
+      "text": "With a wicked pack of cards. Here, said she,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 47,
+      "lineNumber": 62,
+      "text": "Is your card, the drowned Phoenician Sailor,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 48,
+      "lineNumber": 63,
+      "text": "(Those are pearls that were his eyes. Look!)",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 49,
+      "lineNumber": 64,
+      "text": "Here is Belladonna, the Lady of the Rocks,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 50,
+      "lineNumber": 65,
+      "text": "The lady of situations.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 51,
+      "lineNumber": 66,
+      "text": "Here is the man with three staves, and here the Wheel,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 52,
+      "lineNumber": 67,
+      "text": "And here is the one-eyed merchant, and this card,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 53,
+      "lineNumber": 68,
+      "text": "Which is blank, is something he carries on his back,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 54,
+      "lineNumber": 69,
+      "text": "Which I am forbidden to see. I do not find",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 55,
+      "lineNumber": 70,
+      "text": "The Hanged Man. Fear death by water.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 56,
+      "lineNumber": 71,
+      "text": "I see crowds of people, walking round in a ring.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 57,
+      "lineNumber": 72,
+      "text": "Thank you. If you see dear Mrs. Equitone,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 58,
+      "lineNumber": 73,
+      "text": "Tell her I bring the horoscope myself:",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 59,
+      "lineNumber": 74,
+      "text": "One must be so careful these days.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 60,
+      "lineNumber": 76,
+      "text": "Unreal City,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 61,
+      "lineNumber": 77,
+      "text": "Under the brown fog of a winter dawn,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 62,
+      "lineNumber": 78,
+      "text": "A crowd flowed over London Bridge, so many,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 63,
+      "lineNumber": 79,
+      "text": "I had not thought death had undone so many.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 64,
+      "lineNumber": 80,
+      "text": "Sighs, short and infrequent, were exhaled,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 65,
+      "lineNumber": 81,
+      "text": "And each man fixed his eyes before his feet.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 66,
+      "lineNumber": 82,
+      "text": "Flowed up the hill and down King William Street,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 67,
+      "lineNumber": 83,
+      "text": "To where Saint Mary Woolnoth kept the hours",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 68,
+      "lineNumber": 84,
+      "text": "With a dead sound on the final stroke of nine.",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 69,
+      "lineNumber": 85,
+      "text": "There I saw one I knew, and stopped him, crying “Stetson!",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 70,
+      "lineNumber": 86,
+      "text": "“You who were with me in the ships at Mylae!",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 71,
+      "lineNumber": 87,
+      "text": "“That corpse you planted last year in your garden,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 72,
+      "lineNumber": 88,
+      "text": "“Has it begun to sprout? Will it bloom this year?",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 73,
+      "lineNumber": 89,
+      "text": "“Or has the sudden frost disturbed its bed?",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 74,
+      "lineNumber": 90,
+      "text": "“Oh keep the Dog far hence, that’s friend to men,",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 75,
+      "lineNumber": 91,
+      "text": "“Or with his nails he’ll dig it up again!",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 76,
+      "lineNumber": 92,
+      "text": "“You! hypocrite lecteur!—mon semblable,—mon frère!”",
+      "section": "I",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 77,
+      "lineNumber": 100,
+      "text": "The Chair she sat in, like a burnished throne,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 78,
+      "lineNumber": 101,
+      "text": "Glowed on the marble, where the glass",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 79,
+      "lineNumber": 102,
+      "text": "Held up by standards wrought with fruited vines",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 80,
+      "lineNumber": 103,
+      "text": "From which a golden Cupidon peeped out",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 81,
+      "lineNumber": 104,
+      "text": "(Another hid his eyes behind his wing)",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 82,
+      "lineNumber": 105,
+      "text": "Doubled the flames of sevenbranched candelabra",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 83,
+      "lineNumber": 106,
+      "text": "Reflecting light upon the table as",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 84,
+      "lineNumber": 107,
+      "text": "The glitter of her jewels rose to meet it,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 85,
+      "lineNumber": 108,
+      "text": "From satin cases poured in rich profusion.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 86,
+      "lineNumber": 109,
+      "text": "In vials of ivory and coloured glass",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 87,
+      "lineNumber": 110,
+      "text": "Unstoppered, lurked her strange synthetic perfumes,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 88,
+      "lineNumber": 111,
+      "text": "Unguent, powdered, or liquid—troubled, confused",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 89,
+      "lineNumber": 112,
+      "text": "And drowned the sense in odours; stirred by the air",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 90,
+      "lineNumber": 113,
+      "text": "That freshened from the window, these ascended",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 91,
+      "lineNumber": 114,
+      "text": "In fattening the prolonged candle-flames,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 92,
+      "lineNumber": 115,
+      "text": "Flung their smoke into the laquearia,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 93,
+      "lineNumber": 116,
+      "text": "Stirring the pattern on the coffered ceiling.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 94,
+      "lineNumber": 117,
+      "text": "Huge sea-wood fed with copper",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 95,
+      "lineNumber": 118,
+      "text": "Burned green and orange, framed by the coloured stone,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 96,
+      "lineNumber": 119,
+      "text": "In which sad light a carvèd dolphin swam.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 97,
+      "lineNumber": 120,
+      "text": "Above the antique mantel was displayed",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 98,
+      "lineNumber": 121,
+      "text": "As though a window gave upon the sylvan scene",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 99,
+      "lineNumber": 122,
+      "text": "The change of Philomel, by the barbarous king",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 100,
+      "lineNumber": 123,
+      "text": "So rudely forced; yet there the nightingale",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 101,
+      "lineNumber": 124,
+      "text": "Filled all the desert with inviolable voice",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 102,
+      "lineNumber": 125,
+      "text": "And still she cried, and still the world pursues,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 103,
+      "lineNumber": 126,
+      "text": "“Jug Jug” to dirty ears.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 104,
+      "lineNumber": 127,
+      "text": "And other withered stumps of time",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 105,
+      "lineNumber": 128,
+      "text": "Were told upon the walls; staring forms",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 106,
+      "lineNumber": 129,
+      "text": "Leaned out, leaning, hushing the room enclosed.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 107,
+      "lineNumber": 130,
+      "text": "Footsteps shuffled on the stair.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 108,
+      "lineNumber": 131,
+      "text": "Under the firelight, under the brush, her hair",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 109,
+      "lineNumber": 132,
+      "text": "Spread out in fiery points",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 110,
+      "lineNumber": 133,
+      "text": "Glowed into words, then would be savagely still.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 111,
+      "lineNumber": 135,
+      "text": "“My nerves are bad to-night. Yes, bad. Stay with me.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 112,
+      "lineNumber": 136,
+      "text": "“Speak to me. Why do you never speak. Speak.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 113,
+      "lineNumber": 137,
+      "text": "“What are you thinking of? What thinking? What?",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 114,
+      "lineNumber": 138,
+      "text": "“I never know what you are thinking. Think.”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 115,
+      "lineNumber": 140,
+      "text": "I think we are in rats’ alley",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 116,
+      "lineNumber": 141,
+      "text": "Where the dead men lost their bones.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 117,
+      "lineNumber": 143,
+      "text": "“What is that noise?”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 118,
+      "lineNumber": 144,
+      "text": "The wind under the door.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 119,
+      "lineNumber": 145,
+      "text": "“What is that noise now? What is the wind doing?”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 120,
+      "lineNumber": 146,
+      "text": "Nothing again nothing.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 121,
+      "lineNumber": 147,
+      "text": "“Do",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 122,
+      "lineNumber": 148,
+      "text": "“You know nothing? Do you see nothing? Do you remember",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 123,
+      "lineNumber": 149,
+      "text": "“Nothing?”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 124,
+      "lineNumber": 151,
+      "text": "I remember",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 125,
+      "lineNumber": 152,
+      "text": "Those are pearls that were his eyes.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 126,
+      "lineNumber": 153,
+      "text": "“Are you alive, or not? Is there nothing in your head?”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 127,
+      "lineNumber": 154,
+      "text": "But",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 128,
+      "lineNumber": 155,
+      "text": "O O O O that Shakespeherian Rag—",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 129,
+      "lineNumber": 156,
+      "text": "It’s so elegant",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 130,
+      "lineNumber": 157,
+      "text": "So intelligent",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 131,
+      "lineNumber": 158,
+      "text": "“What shall I do now? What shall I do?”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 132,
+      "lineNumber": 159,
+      "text": "I shall rush out as I am, and walk the street",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 133,
+      "lineNumber": 160,
+      "text": "“With my hair down, so. What shall we do tomorrow?",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 134,
+      "lineNumber": 161,
+      "text": "“What shall we ever do?”",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 135,
+      "lineNumber": 162,
+      "text": "The hot water at ten.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 136,
+      "lineNumber": 163,
+      "text": "And if it rains, a closed car at four.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 137,
+      "lineNumber": 164,
+      "text": "And we shall play a game of chess,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 138,
+      "lineNumber": 165,
+      "text": "Pressing lidless eyes and waiting for a knock upon the door.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 139,
+      "lineNumber": 167,
+      "text": "When Lil’s husband got demobbed, I said—",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 140,
+      "lineNumber": 168,
+      "text": "I didn’t mince my words, I said to her myself,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 141,
+      "lineNumber": 169,
+      "text": "HURRY UP PLEASE IT’S TIME",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 142,
+      "lineNumber": 170,
+      "text": "Now Albert’s coming back, make yourself a bit smart.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 143,
+      "lineNumber": 171,
+      "text": "He’ll want to know what you done with that money he gave you",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 144,
+      "lineNumber": 172,
+      "text": "To get yourself some teeth. He did, I was there.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 145,
+      "lineNumber": 173,
+      "text": "You have them all out, Lil, and get a nice set,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 146,
+      "lineNumber": 174,
+      "text": "He said, I swear, I can’t bear to look at you.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 147,
+      "lineNumber": 175,
+      "text": "And no more can’t I, I said, and think of poor Albert,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 148,
+      "lineNumber": 176,
+      "text": "He’s been in the army four years, he wants a good time,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 149,
+      "lineNumber": 177,
+      "text": "And if you don’t give it him, there’s others will, I said.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 150,
+      "lineNumber": 178,
+      "text": "Oh is there, she said. Something o’ that, I said.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 151,
+      "lineNumber": 179,
+      "text": "Then I’ll know who to thank, she said, and give me a straight look.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 152,
+      "lineNumber": 180,
+      "text": "HURRY UP PLEASE IT’S TIME",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 153,
+      "lineNumber": 181,
+      "text": "If you don’t like it you can get on with it, I said.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 154,
+      "lineNumber": 182,
+      "text": "Others can pick and choose if you can’t.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 155,
+      "lineNumber": 183,
+      "text": "But if Albert makes off, it won’t be for lack of telling.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 156,
+      "lineNumber": 184,
+      "text": "You ought to be ashamed, I said, to look so antique.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 157,
+      "lineNumber": 185,
+      "text": "(And her only thirty-one.)",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 158,
+      "lineNumber": 186,
+      "text": "I can’t help it, she said, pulling a long face,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 159,
+      "lineNumber": 187,
+      "text": "It’s them pills I took, to bring it off, she said.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 160,
+      "lineNumber": 188,
+      "text": "(She’s had five already, and nearly died of young George.)",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 161,
+      "lineNumber": 189,
+      "text": "The chemist said it would be all right, but I’ve never been the same.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 162,
+      "lineNumber": 190,
+      "text": "You are a proper fool, I said.",
+      "section": "II",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 163,
+      "lineNumber": 191,
+      "text": "Well, if Albert won’t leave you alone, there it is, I said,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 164,
+      "lineNumber": 192,
+      "text": "What you get married for if you don’t want children?",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 165,
+      "lineNumber": 193,
+      "text": "HURRY UP PLEASE IT’S TIME",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 166,
+      "lineNumber": 194,
+      "text": "Well, that Sunday Albert was home, they had a hot gammon,",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 167,
+      "lineNumber": 195,
+      "text": "And they asked me in to dinner, to get the beauty of it hot—",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 168,
+      "lineNumber": 196,
+      "text": "HURRY UP PLEASE IT’S TIME",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 169,
+      "lineNumber": 197,
+      "text": "HURRY UP PLEASE IT’S TIME",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 170,
+      "lineNumber": 198,
+      "text": "Goonight Bill. Goonight Lou. Goonight May. Goonight.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 171,
+      "lineNumber": 199,
+      "text": "Ta ta. Goonight. Goonight.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 172,
+      "lineNumber": 200,
+      "text": "Good night, ladies, good night, sweet ladies, good night, good night.",
+      "section": "II",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 173,
+      "lineNumber": 208,
+      "text": "The river’s tent is broken: the last fingers of leaf",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 174,
+      "lineNumber": 209,
+      "text": "Clutch and sink into the wet bank. The wind",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 175,
+      "lineNumber": 210,
+      "text": "Crosses the brown land, unheard. The nymphs are departed.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 176,
+      "lineNumber": 211,
+      "text": "Sweet Thames, run softly, till I end my song.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 177,
+      "lineNumber": 212,
+      "text": "The river bears no empty bottles, sandwich papers,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 178,
+      "lineNumber": 213,
+      "text": "Silk handkerchiefs, cardboard boxes, cigarette ends",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 179,
+      "lineNumber": 214,
+      "text": "Or other testimony of summer nights. The nymphs are departed.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 180,
+      "lineNumber": 215,
+      "text": "And their friends, the loitering heirs of city directors;",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 181,
+      "lineNumber": 216,
+      "text": "Departed, have left no addresses.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 182,
+      "lineNumber": 217,
+      "text": "By the waters of Leman I sat down and wept . . .",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 183,
+      "lineNumber": 218,
+      "text": "Sweet Thames, run softly till I end my song,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 184,
+      "lineNumber": 219,
+      "text": "Sweet Thames, run softly, for I speak not loud or long.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 185,
+      "lineNumber": 220,
+      "text": "But at my back in a cold blast I hear",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 186,
+      "lineNumber": 221,
+      "text": "The rattle of the bones, and chuckle spread from ear to ear.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 187,
+      "lineNumber": 222,
+      "text": "A rat crept softly through the vegetation",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 188,
+      "lineNumber": 223,
+      "text": "Dragging its slimy belly on the bank",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 189,
+      "lineNumber": 224,
+      "text": "While I was fishing in the dull canal",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 190,
+      "lineNumber": 225,
+      "text": "On a winter evening round behind the gashouse",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 191,
+      "lineNumber": 226,
+      "text": "Musing upon the king my brother’s wreck",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 192,
+      "lineNumber": 227,
+      "text": "And on the king my father’s death before him.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 193,
+      "lineNumber": 228,
+      "text": "White bodies naked on the low damp ground",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 194,
+      "lineNumber": 229,
+      "text": "And bones cast in a little low dry garret,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 195,
+      "lineNumber": 230,
+      "text": "Rattled by the rat’s foot only, year to year.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 196,
+      "lineNumber": 231,
+      "text": "But at my back from time to time I hear",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 197,
+      "lineNumber": 232,
+      "text": "The sound of horns and motors, which shall bring",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 198,
+      "lineNumber": 233,
+      "text": "Sweeney to Mrs. Porter in the spring.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 199,
+      "lineNumber": 234,
+      "text": "O the moon shone bright on Mrs. Porter",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 200,
+      "lineNumber": 235,
+      "text": "And on her daughter",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 201,
+      "lineNumber": 236,
+      "text": "They wash their feet in soda water",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 202,
+      "lineNumber": 237,
+      "text": "Et O ces voix d’enfants, chantant dans la coupole!",
+      "section": "III",
+      "italic": true,
+      "language": "french/italian"
+    },
+    {
+      "verseNumber": 203,
+      "lineNumber": 239,
+      "text": "Twit twit twit",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 204,
+      "lineNumber": 240,
+      "text": "Jug jug jug jug jug jug",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 205,
+      "lineNumber": 241,
+      "text": "So rudely forc’d.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 206,
+      "lineNumber": 242,
+      "text": "Tereu",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 207,
+      "lineNumber": 244,
+      "text": "Unreal City",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 208,
+      "lineNumber": 245,
+      "text": "Under the brown fog of a winter noon",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 209,
+      "lineNumber": 246,
+      "text": "Mr. Eugenides, the Smyrna merchant",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 210,
+      "lineNumber": 247,
+      "text": "Unshaven, with a pocket full of currants",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 211,
+      "lineNumber": 248,
+      "text": "C.i.f. London: documents at sight,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 212,
+      "lineNumber": 249,
+      "text": "Asked me in demotic French",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 213,
+      "lineNumber": 250,
+      "text": "To luncheon at the Cannon Street Hotel",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 214,
+      "lineNumber": 251,
+      "text": "Followed by a weekend at the Metropole.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 215,
+      "lineNumber": 253,
+      "text": "At the violet hour, when the eyes and back",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 216,
+      "lineNumber": 254,
+      "text": "Turn upward from the desk, when the human engine waits",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 217,
+      "lineNumber": 255,
+      "text": "Like a taxi throbbing waiting,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 218,
+      "lineNumber": 256,
+      "text": "I Tiresias, though blind, throbbing between two lives,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 219,
+      "lineNumber": 257,
+      "text": "Old man with wrinkled female breasts, can see",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 220,
+      "lineNumber": 258,
+      "text": "At the violet hour, the evening hour that strives",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 221,
+      "lineNumber": 259,
+      "text": "Homeward, and brings the sailor home from sea,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 222,
+      "lineNumber": 260,
+      "text": "The typist home at teatime, clears her breakfast, lights",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 223,
+      "lineNumber": 261,
+      "text": "Her stove, and lays out food in tins.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 224,
+      "lineNumber": 262,
+      "text": "Out of the window perilously spread",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 225,
+      "lineNumber": 263,
+      "text": "Her drying combinations touched by the sun’s last rays,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 226,
+      "lineNumber": 264,
+      "text": "On the divan are piled (at night her bed)",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 227,
+      "lineNumber": 265,
+      "text": "Stockings, slippers, camisoles, and stays.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 228,
+      "lineNumber": 266,
+      "text": "I Tiresias, old man with wrinkled dugs",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 229,
+      "lineNumber": 267,
+      "text": "Perceived the scene, and foretold the rest—",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 230,
+      "lineNumber": 268,
+      "text": "I too awaited the expected guest.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 231,
+      "lineNumber": 269,
+      "text": "He, the young man carbuncular, arrives,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 232,
+      "lineNumber": 270,
+      "text": "A small house agent’s clerk, with one bold stare,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 233,
+      "lineNumber": 271,
+      "text": "One of the low on whom assurance sits",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 234,
+      "lineNumber": 272,
+      "text": "As a silk hat on a Bradford millionaire.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 235,
+      "lineNumber": 273,
+      "text": "The time is now propitious, as he guesses,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 236,
+      "lineNumber": 274,
+      "text": "The meal is ended, she is bored and tired,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 237,
+      "lineNumber": 275,
+      "text": "Endeavours to engage her in caresses",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 238,
+      "lineNumber": 276,
+      "text": "Which still are unreproved, if undesired.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 239,
+      "lineNumber": 277,
+      "text": "Flushed and decided, he assaults at once;",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 240,
+      "lineNumber": 278,
+      "text": "Exploring hands encounter no defence;",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 241,
+      "lineNumber": 279,
+      "text": "His vanity requires no response,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 242,
+      "lineNumber": 280,
+      "text": "And makes a welcome of indifference.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 243,
+      "lineNumber": 281,
+      "text": "(And I Tiresias have foresuffered all",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 244,
+      "lineNumber": 282,
+      "text": "Enacted on this same divan or bed;",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 245,
+      "lineNumber": 283,
+      "text": "I who have sat by Thebes below the wall",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 246,
+      "lineNumber": 284,
+      "text": "And walked among the lowest of the dead.)",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 247,
+      "lineNumber": 285,
+      "text": "Bestows one final patronising kiss,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 248,
+      "lineNumber": 286,
+      "text": "And gropes his way, finding the stairs unlit . . .",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 249,
+      "lineNumber": 288,
+      "text": "She turns and looks a moment in the glass,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 250,
+      "lineNumber": 289,
+      "text": "Hardly aware of her departed lover;",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 251,
+      "lineNumber": 290,
+      "text": "Her brain allows one half-formed thought to pass:",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 252,
+      "lineNumber": 291,
+      "text": "“Well now that’s done: and I’m glad it’s over.”",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 253,
+      "lineNumber": 292,
+      "text": "When lovely woman stoops to folly and",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 254,
+      "lineNumber": 293,
+      "text": "Paces about her room again, alone,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 255,
+      "lineNumber": 294,
+      "text": "She smooths her hair with automatic hand,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 256,
+      "lineNumber": 295,
+      "text": "And puts a record on the gramophone.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 257,
+      "lineNumber": 297,
+      "text": "“This music crept by me upon the waters”",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 258,
+      "lineNumber": 298,
+      "text": "And along the Strand, up Queen Victoria Street.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 259,
+      "lineNumber": 299,
+      "text": "O City city, I can sometimes hear",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 260,
+      "lineNumber": 300,
+      "text": "Beside a public bar in Lower Thames Street,",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 261,
+      "lineNumber": 301,
+      "text": "The pleasant whining of a mandoline",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 262,
+      "lineNumber": 302,
+      "text": "And a clatter and a chatter from within",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 263,
+      "lineNumber": 303,
+      "text": "Where fishmen lounge at noon: where the walls",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 264,
+      "lineNumber": 304,
+      "text": "Of Magnus Martyr hold",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 265,
+      "lineNumber": 305,
+      "text": "Inexplicable splendour of Ionian white and gold.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 266,
+      "lineNumber": 307,
+      "text": "The river sweats",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 267,
+      "lineNumber": 308,
+      "text": "Oil and tar",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 268,
+      "lineNumber": 309,
+      "text": "The barges drift",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 269,
+      "lineNumber": 310,
+      "text": "With the turning tide",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 270,
+      "lineNumber": 311,
+      "text": "Red sails",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 271,
+      "lineNumber": 312,
+      "text": "Wide",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 272,
+      "lineNumber": 313,
+      "text": "To leeward, swing on the heavy spar.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 273,
+      "lineNumber": 314,
+      "text": "The barges wash",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 274,
+      "lineNumber": 315,
+      "text": "Drifting logs",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 275,
+      "lineNumber": 316,
+      "text": "Down Greenwich reach",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 276,
+      "lineNumber": 317,
+      "text": "Past the Isle of Dogs.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 277,
+      "lineNumber": 318,
+      "text": "Weialala leia",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 278,
+      "lineNumber": 319,
+      "text": "Wallala leialala",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 279,
+      "lineNumber": 320,
+      "text": "Elizabeth and Leicester",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 280,
+      "lineNumber": 321,
+      "text": "Beating oars",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 281,
+      "lineNumber": 322,
+      "text": "The stern was formed",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 282,
+      "lineNumber": 323,
+      "text": "A gilded shell",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 283,
+      "lineNumber": 324,
+      "text": "Red and gold",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 284,
+      "lineNumber": 325,
+      "text": "The brisk swell",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 285,
+      "lineNumber": 326,
+      "text": "Rippled both shores",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 286,
+      "lineNumber": 327,
+      "text": "Southwest wind",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 287,
+      "lineNumber": 328,
+      "text": "Carried down stream",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 288,
+      "lineNumber": 329,
+      "text": "The peal of bells",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 289,
+      "lineNumber": 330,
+      "text": "White towers",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 290,
+      "lineNumber": 331,
+      "text": "Weialala leia",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 291,
+      "lineNumber": 332,
+      "text": "Wallala leialala",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 292,
+      "lineNumber": 334,
+      "text": "“Trams and dusty trees.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 293,
+      "lineNumber": 335,
+      "text": "Highbury bore me. Richmond and Kew",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 294,
+      "lineNumber": 336,
+      "text": "Undid me. By Richmond I raised my knees",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 295,
+      "lineNumber": 337,
+      "text": "Supine on the floor of a narrow canoe.”",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 296,
+      "lineNumber": 339,
+      "text": "“My feet are at Moorgate, and my heart",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 297,
+      "lineNumber": 340,
+      "text": "Under my feet. After the event",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 298,
+      "lineNumber": 341,
+      "text": "He wept. He promised ‘a new start’.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 299,
+      "lineNumber": 342,
+      "text": "I made no comment. What should I resent?”",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 300,
+      "lineNumber": 343,
+      "text": "“On Margate Sands.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 301,
+      "lineNumber": 344,
+      "text": "I can connect",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 302,
+      "lineNumber": 345,
+      "text": "Nothing with nothing.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 303,
+      "lineNumber": 346,
+      "text": "The broken fingernails of dirty hands.",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 304,
+      "lineNumber": 347,
+      "text": "My people humble people who expect",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 305,
+      "lineNumber": 348,
+      "text": "Nothing.”",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 306,
+      "lineNumber": 349,
+      "text": "la la",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 307,
+      "lineNumber": 351,
+      "text": "To Carthage then I came",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 308,
+      "lineNumber": 353,
+      "text": "Burning burning burning burning",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 309,
+      "lineNumber": 354,
+      "text": "O Lord Thou pluckest me out",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 310,
+      "lineNumber": 355,
+      "text": "O Lord Thou pluckest",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 311,
+      "lineNumber": 357,
+      "text": "burning",
+      "section": "III",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 312,
+      "lineNumber": 365,
+      "text": "Phlebas the Phoenician, a fortnight dead,",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 313,
+      "lineNumber": 366,
+      "text": "Forgot the cry of gulls, and the deep sea swell",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 314,
+      "lineNumber": 367,
+      "text": "And the profit and loss.",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 315,
+      "lineNumber": 368,
+      "text": "A current under sea",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 316,
+      "lineNumber": 369,
+      "text": "Picked his bones in whispers. As he rose and fell",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 317,
+      "lineNumber": 370,
+      "text": "He passed the stages of his age and youth",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 318,
+      "lineNumber": 371,
+      "text": "Entering the whirlpool.",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 319,
+      "lineNumber": 372,
+      "text": "Gentile or Jew",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 320,
+      "lineNumber": 373,
+      "text": "O you who turn the wheel and look to windward,",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 321,
+      "lineNumber": 374,
+      "text": "Consider Phlebas, who was once handsome and tall as you.",
+      "section": "IV",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 322,
+      "lineNumber": 382,
+      "text": "After the torchlight red on sweaty faces",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 323,
+      "lineNumber": 383,
+      "text": "After the frosty silence in the gardens",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 324,
+      "lineNumber": 384,
+      "text": "After the agony in stony places",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 325,
+      "lineNumber": 385,
+      "text": "The shouting and the crying",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 326,
+      "lineNumber": 386,
+      "text": "Prison and palace and reverberation",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 327,
+      "lineNumber": 387,
+      "text": "Of thunder of spring over distant mountains",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 328,
+      "lineNumber": 388,
+      "text": "He who was living is now dead",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 329,
+      "lineNumber": 389,
+      "text": "We who were living are now dying",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 330,
+      "lineNumber": 390,
+      "text": "With a little patience",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 331,
+      "lineNumber": 392,
+      "text": "Here is no water but only rock",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 332,
+      "lineNumber": 393,
+      "text": "Rock and no water and the sandy road",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 333,
+      "lineNumber": 394,
+      "text": "The road winding above among the mountains",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 334,
+      "lineNumber": 395,
+      "text": "Which are mountains of rock without water",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 335,
+      "lineNumber": 396,
+      "text": "If there were water we should stop and drink",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 336,
+      "lineNumber": 397,
+      "text": "Amongst the rock one cannot stop or think",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 337,
+      "lineNumber": 398,
+      "text": "Sweat is dry and feet are in the sand",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 338,
+      "lineNumber": 399,
+      "text": "If there were only water amongst the rock",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 339,
+      "lineNumber": 400,
+      "text": "Dead mountain mouth of carious teeth that cannot spit",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 340,
+      "lineNumber": 401,
+      "text": "Here one can neither stand nor lie nor sit",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 341,
+      "lineNumber": 402,
+      "text": "There is not even silence in the mountains",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 342,
+      "lineNumber": 403,
+      "text": "But dry sterile thunder without rain",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 343,
+      "lineNumber": 404,
+      "text": "There is not even solitude in the mountains",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 344,
+      "lineNumber": 405,
+      "text": "But red sullen faces sneer and snarl",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 345,
+      "lineNumber": 406,
+      "text": "From doors of mudcracked houses",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 346,
+      "lineNumber": 407,
+      "text": "If there were water",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 347,
+      "lineNumber": 408,
+      "text": "And no rock",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 348,
+      "lineNumber": 409,
+      "text": "If there were rock",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 349,
+      "lineNumber": 410,
+      "text": "And also water",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 350,
+      "lineNumber": 411,
+      "text": "And water",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 351,
+      "lineNumber": 412,
+      "text": "A spring",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 352,
+      "lineNumber": 413,
+      "text": "A pool among the rock",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 353,
+      "lineNumber": 414,
+      "text": "If there were the sound of water only",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 354,
+      "lineNumber": 415,
+      "text": "Not the cicada",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 355,
+      "lineNumber": 416,
+      "text": "And dry grass singing",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 356,
+      "lineNumber": 417,
+      "text": "But sound of water over a rock",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 357,
+      "lineNumber": 418,
+      "text": "Where the hermit-thrush sings in the pine trees",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 358,
+      "lineNumber": 419,
+      "text": "Drip drop drip drop drop drop drop",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 359,
+      "lineNumber": 420,
+      "text": "But there is no water",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 360,
+      "lineNumber": 422,
+      "text": "Who is the third who walks always beside you?",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 361,
+      "lineNumber": 423,
+      "text": "When I count, there are only you and I together",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 362,
+      "lineNumber": 424,
+      "text": "But when I look ahead up the white road",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 363,
+      "lineNumber": 425,
+      "text": "There is always another one walking beside you",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 364,
+      "lineNumber": 426,
+      "text": "Gliding wrapt in a brown mantle, hooded",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 365,
+      "lineNumber": 427,
+      "text": "I do not know whether a man or a woman",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 366,
+      "lineNumber": 428,
+      "text": "—But who is that on the other side of you?",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 367,
+      "lineNumber": 430,
+      "text": "What is that sound high in the air",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 368,
+      "lineNumber": 431,
+      "text": "Murmur of maternal lamentation",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 369,
+      "lineNumber": 432,
+      "text": "Who are those hooded hordes swarming",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 370,
+      "lineNumber": 433,
+      "text": "Over endless plains, stumbling in cracked earth",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 371,
+      "lineNumber": 434,
+      "text": "Ringed by the flat horizon only",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 372,
+      "lineNumber": 435,
+      "text": "What is the city over the mountains",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 373,
+      "lineNumber": 436,
+      "text": "Cracks and reforms and bursts in the violet air",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 374,
+      "lineNumber": 437,
+      "text": "Falling towers",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 375,
+      "lineNumber": 438,
+      "text": "Jerusalem Athens Alexandria",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 376,
+      "lineNumber": 439,
+      "text": "Vienna London",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 377,
+      "lineNumber": 440,
+      "text": "Unreal",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 378,
+      "lineNumber": 442,
+      "text": "A woman drew her long black hair out tight",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 379,
+      "lineNumber": 443,
+      "text": "And fiddled whisper music on those strings",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 380,
+      "lineNumber": 444,
+      "text": "And bats with baby faces in the violet light",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 381,
+      "lineNumber": 445,
+      "text": "Whistled, and beat their wings",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 382,
+      "lineNumber": 446,
+      "text": "And crawled head downward down a blackened wall",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 383,
+      "lineNumber": 447,
+      "text": "And upside down in air were towers",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 384,
+      "lineNumber": 448,
+      "text": "Tolling reminiscent bells, that kept the hours",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 385,
+      "lineNumber": 449,
+      "text": "And voices singing out of empty cisterns and exhausted wells.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 386,
+      "lineNumber": 451,
+      "text": "In this decayed hole among the mountains",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 387,
+      "lineNumber": 452,
+      "text": "In the faint moonlight, the grass is singing",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 388,
+      "lineNumber": 453,
+      "text": "Over the tumbled graves, about the chapel",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 389,
+      "lineNumber": 454,
+      "text": "There is the empty chapel, only the wind’s home.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 390,
+      "lineNumber": 455,
+      "text": "It has no windows, and the door swings,",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 391,
+      "lineNumber": 456,
+      "text": "Dry bones can harm no one.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 392,
+      "lineNumber": 457,
+      "text": "Only a cock stood on the rooftree",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 393,
+      "lineNumber": 458,
+      "text": "Co co rico co co rico",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 394,
+      "lineNumber": 459,
+      "text": "In a flash of lightning. Then a damp gust",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 395,
+      "lineNumber": 460,
+      "text": "Bringing rain",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 396,
+      "lineNumber": 462,
+      "text": "Ganga was sunken, and the limp leaves",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 397,
+      "lineNumber": 463,
+      "text": "Waited for rain, while the black clouds",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 398,
+      "lineNumber": 464,
+      "text": "Gathered far distant, over Himavant.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 399,
+      "lineNumber": 465,
+      "text": "The jungle crouched, humped in silence.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 400,
+      "lineNumber": 466,
+      "text": "Then spoke the thunder",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 401,
+      "lineNumber": 467,
+      "text": "DA",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 402,
+      "lineNumber": 468,
+      "text": "Datta: what have we given?",
+      "section": "V",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 403,
+      "lineNumber": 469,
+      "text": "My friend, blood shaking my heart",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 404,
+      "lineNumber": 470,
+      "text": "The awful daring of a moment’s surrender",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 405,
+      "lineNumber": 471,
+      "text": "Which an age of prudence can never retract",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 406,
+      "lineNumber": 472,
+      "text": "By this, and this only, we have existed",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 407,
+      "lineNumber": 473,
+      "text": "Which is not to be found in our obituaries",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 408,
+      "lineNumber": 474,
+      "text": "Or in memories draped by the beneficent spider",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 409,
+      "lineNumber": 475,
+      "text": "Or under seals broken by the lean solicitor",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 410,
+      "lineNumber": 476,
+      "text": "In our empty rooms",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 411,
+      "lineNumber": 477,
+      "text": "DA",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 412,
+      "lineNumber": 478,
+      "text": "Dayadhvam: I have heard the key",
+      "section": "V",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 413,
+      "lineNumber": 479,
+      "text": "Turn in the door once and turn once only",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 414,
+      "lineNumber": 480,
+      "text": "We think of the key, each in his prison",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 415,
+      "lineNumber": 481,
+      "text": "Thinking of the key, each confirms a prison",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 416,
+      "lineNumber": 482,
+      "text": "Only at nightfall, aetherial rumours",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 417,
+      "lineNumber": 483,
+      "text": "Revive for a moment a broken Coriolanus",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 418,
+      "lineNumber": 484,
+      "text": "DA",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 419,
+      "lineNumber": 485,
+      "text": "Damyata: The boat responded",
+      "section": "V",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 420,
+      "lineNumber": 486,
+      "text": "Gaily, to the hand expert with sail and oar",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 421,
+      "lineNumber": 487,
+      "text": "The sea was calm, your heart would have responded",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 422,
+      "lineNumber": 488,
+      "text": "Gaily, when invited, beating obedient",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 423,
+      "lineNumber": 489,
+      "text": "To controlling hands",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 424,
+      "lineNumber": 491,
+      "text": "I sat upon the shore",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 425,
+      "lineNumber": 492,
+      "text": "Fishing, with the arid plain behind me",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 426,
+      "lineNumber": 493,
+      "text": "Shall I at least set my lands in order?",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 427,
+      "lineNumber": 494,
+      "text": "London Bridge is falling down falling down falling down",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 428,
+      "lineNumber": 495,
+      "text": "Poi s’ascose nel foco che gli affina",
+      "section": "V",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 429,
+      "lineNumber": 496,
+      "text": "Quando fiam ceu chelidon — O swallow swallow",
+      "section": "V",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 430,
+      "lineNumber": 497,
+      "text": "Le Prince d’Aquitaine à la tour abolie",
+      "section": "V",
+      "italic": true,
+      "language": "english"
+    },
+    {
+      "verseNumber": 431,
+      "lineNumber": 498,
+      "text": "These fragments I have shored against my ruins",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 432,
+      "lineNumber": 499,
+      "text": "Why then Ile fit you. Hieronymo’s mad againe.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 433,
+      "lineNumber": 500,
+      "text": "Datta. Dayadhvam. Damyata.",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    },
+    {
+      "verseNumber": 434,
+      "lineNumber": 501,
+      "text": "Shantih    shantih    shantih",
+      "section": "V",
+      "italic": false,
+      "language": "english"
+    }
+  ]
+}

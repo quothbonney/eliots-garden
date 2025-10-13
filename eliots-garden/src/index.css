@@ -1,0 +1,29 @@
+@import '@fontsource/literata/index.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-family-serif: 'Literata', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif;
+  --color-night: #0a0a0a;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: var(--font-family-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for main poem section */
+main::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
