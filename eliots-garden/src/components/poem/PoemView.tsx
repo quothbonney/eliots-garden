@@ -8,6 +8,7 @@ export function PoemView() {
   const isLoading = usePoemStore((s) => s.isLoading)
   const speakers = usePoemStore((s) => s.speakers)
   const showSpeakerColors = usePoemStore((s) => s.showSpeakerColors)
+  const showInlineArcs = usePoemStore((s) => s.showInlineArcs)
 
   if (isLoading) {
     return <div className="p-12 text-white/60">Loading poem…</div>
@@ -16,7 +17,7 @@ export function PoemView() {
   return (
     <div className="relative">
       {/* Inline arcs SVG overlay */}
-      <InlineArcs />
+      {showInlineArcs && <InlineArcs />}
       
       {/* Poem text */}
       <div id="poem-content" className="p-12 poem-container mx-auto relative z-10">

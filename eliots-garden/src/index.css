@@ -13,9 +13,9 @@ html, body, #root {
 }
 
 body {
-  background: radial-gradient(1200px 800px at 20% 10%, rgba(255,255,255,0.04), transparent 60%),
-              radial-gradient(900px 700px at 80% 90%, rgba(255,255,255,0.03), transparent 60%),
-              linear-gradient(180deg, var(--color-carbon), black 60%);
+  background: radial-gradient(ellipse 1400px 900px at 30% 0%, rgba(60, 40, 80, 0.08), transparent 50%),
+              radial-gradient(ellipse 1000px 600px at 70% 100%, rgba(40, 60, 90, 0.06), transparent 50%),
+              linear-gradient(180deg, #080808, #000000 70%);
   color: white;
   font-family: var(--font-family-serif);
   -webkit-font-smoothing: antialiased;
@@ -35,14 +35,15 @@ main {
   scrollbar-width: none;  /* Firefox */
 }
 
-/* Vignette + fine grain (very subtle) */
+/* Vignette - more subtle and artistic */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(120% 120% at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%);
+    radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.4) 100%);
+  mix-blend-mode: multiply;
 }
 
 /* Poem ornaments and drop cap */
@@ -60,31 +61,33 @@ body::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 56px;
+  width: 40px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
 }
 
-.poem-section::before { top: -18px; }
-.poem-section::after { bottom: -18px; }
+.poem-section::before { top: -20px; }
+.poem-section::after { bottom: -20px; }
 
 .first-verse .dropcap-letter {
   float: left;
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 0.85;
-  padding-right: 0.25rem;
-  margin-top: 0.18rem;
-  color: rgba(255,255,255,0.9);
+  padding-right: 0.3rem;
+  margin-top: 0.15rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 300;
+  text-shadow: 0 2px 10px rgba(255,255,255,0.1);
 }
 
-/* Annotation underline animation */
+/* Annotation underline animation - more subtle */
 @keyframes pulse-underline {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.5;
     transform: scaleX(0.98);
   }
   50% {
-    opacity: 0.75;
+    opacity: 0.65;
     transform: scaleX(1);
   }
 }

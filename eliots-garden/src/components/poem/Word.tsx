@@ -12,6 +12,7 @@ export function Word({ word, lineType, speakerColor, hasNextInGroup }: WordProps
   const toggleWord = usePoemStore((s) => s.toggleWord)
   const isActive = usePoemStore((s) => s.activeWordIds.has(word.id))
   const showSpeakerColors = usePoemStore((s) => s.showSpeakerColors)
+  const showAnnotationHighlights = usePoemStore((s) => s.showAnnotationHighlights)
   const setActiveAnnotation = usePoemStore((s) => s.setActiveAnnotation)
   const activeAnnotation = usePoemStore((s) => s.activeScholarlyAnnotation)
 
@@ -25,13 +26,13 @@ export function Word({ word, lineType, speakerColor, hasNextInGroup }: WordProps
   }
 
   const style = showSpeakerColors && speakerColor ? { color: speakerColor } : undefined
-  const isAnnotated = !!word.annotationId
+  const isAnnotated = !!word.annotationId && showAnnotationHighlights
   const isAnnotationActive = word.annotationId && activeAnnotation?.id === word.annotationId
 
   return (
     <button
       onClick={() => {
-        if (word.annotationId) {
+        if (word.annotationId && showAnnotationHighlights) {
           setActiveAnnotation(isAnnotationActive ? null : word.annotationId)
         } else {
           toggleWord(word.id)

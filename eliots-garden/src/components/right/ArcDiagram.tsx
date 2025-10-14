@@ -13,10 +13,10 @@ export function ArcDiagram() {
     const svg = d3.select(ref.current)
     svg.selectAll('*').remove()
     
-    const width = 320
     const parentEl = (ref.current as SVGSVGElement | null)?.parentElement
+    const width = parentEl ? parentEl.clientWidth : 420
     const height = parentEl ? parentEl.clientHeight : window.innerHeight * 0.9
-    const margin = { top: 20, right: 150, bottom: 20, left: 20 }
+    const margin = { top: 0, right: 150, bottom: 0, left: 20 }
     const innerWidth = width - margin.left - margin.right
     
     svg.attr('viewBox', `0 0 ${width} ${height}`)
@@ -53,19 +53,19 @@ export function ArcDiagram() {
       .attr('result', 'blurredRect')
 
     // Create scale for line positions (using full line numbers 1-502)
-    // Scale by max verse number present in connections (they are verse-indexed)
-    const maxVerse = d3.max(arcConnections, (d: any) => Math.max(d.source, d.target)) || 433
-    const totalLines = maxVerse
+    // Using the full poem length for consistent scaling
+    const totalLines = 502  // Total lines in the poem
     const yScale = d3.scaleLinear()
-      .domain([1, totalLines])
-      .range([0, height - margin.top - margin.bottom])
+      .domain([0, totalLines + 20])  // Add some padding to domain to use full height
+      .range([0, height])
 
-    // Draw vertical spine
+    // Draw vertical spine (positioned more to the left)
+    const spineX = 40  // Fixed position from left
     g.append('line')
-      .attr('x1', innerWidth / 2)
+      .attr('x1', spineX)
       .attr('y1', 0)
-      .attr('x2', innerWidth / 2)
-      .attr('y2', height - margin.top - margin.bottom)
+      .attr('x2', spineX)
+      .attr('y2', height)
       .attr('stroke', 'white')
       .attr('stroke-opacity', 0.1)
 
@@ -105,7 +105,7 @@ export function ArcDiagram() {
       // Add background blur rectangle
       // Measure text to size background
       const textElement = g.append('text')
-        .attr('x', innerWidth + 5)
+        .attr('x', spineX + 80)
         .attr('y', y + 15)
         .attr('font-size', '10px')
         .attr('font-family', 'var(--font-family-serif)')
@@ -128,7 +128,7 @@ export function ArcDiagram() {
       
       // Actual text label
       labelGroup.append('text')
-        .attr('x', innerWidth + 5)
+        .attr('x', spineX + 80)
         .attr('y', y + 15)
         .attr('fill', 'white')
         .attr('fill-opacity', 0.8)
@@ -163,10 +163,9 @@ export function ArcDiagram() {
         const y2 = yScale(d.target)
         const midY = (y1 + y2) / 2
         const radius = Math.abs(y2 - y1) / 2
-        const x = innerWidth / 2
         
         // Create arc path on the right side
-        return `M ${x} ${y1} Q ${x + radius * 0.8} ${midY}, ${x} ${y2}`
+        return `M ${spineX} ${y1} Q ${spineX + radius * 0.8} ${midY}, ${spineX} ${y2}`
       })
       .attr('fill', 'none')
       .attr('stroke', d => typeColors[d.type] || 'white')
@@ -185,7 +184,7 @@ export function ArcDiagram() {
     arcConnections.forEach(conn => {
       [conn.source, conn.target].forEach(line => {
         g.append('circle')
-          .attr('cx', innerWidth / 2)
+          .attr('cx', spineX)
           .attr('cy', yScale(line))
           .attr('r', hoveredArcId === conn.id ? 3 : 2)
           .attr('fill', typeColors[conn.type] || 'white')

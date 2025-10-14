@@ -53,13 +53,19 @@ type PoemState = {
   arcConnections: ArcConnection[]
   speakers: Record<string, Speaker>
   showSpeakerColors: boolean
+  showInlineArcs: boolean
+  showAnnotationHighlights: boolean
   scholarlyAnnotations: ScholarlyAnnotation[]
   activeScholarlyAnnotation: ScholarlyAnnotation | null
+  annotationViewMode: 'single' | 'all'
   loadPoem: () => void
   toggleWord: (tokenId: string) => void
   setHoveredArc: (arcId: string | null) => void
   toggleSpeakerColors: () => void
+  toggleInlineArcs: () => void
+  toggleAnnotationHighlights: () => void
   setActiveAnnotation: (annotationId: string | null) => void
+  setAnnotationViewMode: (mode: 'single' | 'all') => void
 }
 
 export const usePoemStore = create<PoemState>((set, get) => ({
@@ -71,8 +77,11 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   arcConnections: arcConnectionsData.connections as ArcConnection[],
   speakers: speakerAssignments.speakers as Record<string, Speaker>,
   showSpeakerColors: false,
+  showInlineArcs: true,
+  showAnnotationHighlights: true,
   scholarlyAnnotations: annotationsData.annotations as ScholarlyAnnotation[],
   activeScholarlyAnnotation: null,
+  annotationViewMode: 'single',
   loadPoem() {
     set({ isLoading: true })
     
@@ -174,11 +183,20 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   toggleSpeakerColors() {
     set({ showSpeakerColors: !get().showSpeakerColors })
   },
+  toggleInlineArcs() {
+    set({ showInlineArcs: !get().showInlineArcs })
+  },
+  toggleAnnotationHighlights() {
+    set({ showAnnotationHighlights: !get().showAnnotationHighlights })
+  },
   setActiveAnnotation(annotationId: string | null) {
     const annotation = annotationId
       ? get().scholarlyAnnotations.find((a) => a.id === annotationId) || null
       : null
     set({ activeScholarlyAnnotation: annotation })
+  },
+  setAnnotationViewMode(mode: 'single' | 'all') {
+    set({ annotationViewMode: mode })
   },
 }))
 
