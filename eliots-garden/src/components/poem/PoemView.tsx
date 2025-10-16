@@ -9,6 +9,8 @@ export function PoemView() {
   const speakers = usePoemStore((s) => s.speakers)
   const showSpeakerColors = usePoemStore((s) => s.showSpeakerColors)
   const showInlineArcs = usePoemStore((s) => s.showInlineArcs)
+  const showAnnotationHighlights = usePoemStore((s) => s.showAnnotationHighlights)
+  const activeScholarlyAnnotation = usePoemStore((s) => s.activeScholarlyAnnotation)
 
   if (isLoading) {
     return <div className="p-12 text-white/60">Loading poem…</div>
@@ -71,26 +73,90 @@ export function PoemView() {
                 ) : line.type === 'section_header' ? (
                   <span>{line.text}</span>
                 ) : (
-                  line.words.map((w, i) => {
-                    const speakerColor = line.speakerId ? speakers[line.speakerId]?.color : undefined
-                    if (isFirstVerseInSection && i === 0 && !w.isWhitespace) {
-                      return (
-                        <span key={w.id} className="dropcap-letter">{w.text.charAt(0)}</span>
+                  (() => {
+                    const elements: JSX.Element[] = []
+
+                    for (let i = 0; i < line.words.length; i++) {
+                      const w = line.words[i]
+                      const speakerColor = line.speakerId ? speakers[line.speakerId]?.color : undefined
+                      if (isFirstVerseInSection && i === 0 && !w.isWhitespace) {
+                        elements.push(
+                          <span key={w.id} className="dropcap-letter">{w.text.charAt(0)}</span>
+                        )
+                        continue
+                      }
+
+                      // Group contiguous annotated tokens, bridging whitespace to the next annotated token with same id
+                      if (showAnnotationHighlights && w.annotationId) {
+                        const annId = w.annotationId
+                        let j = i
+                        while (j + 1 < line.words.length) {
+                          const next = line.words[j + 1]
+                          if (!next) break
+                          if (next.isWhitespace) {
+                            // Look ahead to next non-whitespace
+                            let k = j + 1
+                            while (k + 1 < line.words.length && line.words[k + 1].isWhitespace) k++
+                            const nextNonWs = line.words[k + 1]
+                            if (nextNonWs && nextNonWs.annotationId === annId) {
+                              j = k + 1
+                              continue
+                            }
+                            break
+                          }
+                          if (next.annotationId === annId) {
+                            j = j + 1
+                            continue
+                          }
+                          break
+                        }
+
+                        // Always use group rendering for annotated words (even single ones)
+                        const groupWords = line.words.slice(i, j + 1)
+                        const isActive = activeScholarlyAnnotation?.id === annId
+                        const underlineClass = clsx(
+                          'absolute bottom-0 left-0 right-0 h-[1px] transition-all duration-300',
+                          isActive
+                            ? 'bg-amber-400/90 shadow-[0_0_8px_rgba(251,191,36,0.6)]'
+                            : 'bg-amber-400/60 group-hover:bg-amber-400/80 group-hover:shadow-[0_0_6px_rgba(251,191,36,0.4)]'
+                        )
+                        elements.push(
+                          <span key={`${w.id}-grp`} className="relative inline-block group">
+                            {groupWords.map((gw, idx) => (
+                              <Word
+                                key={gw.id}
+                                word={gw}
+                                lineType={line.type}
+                                speakerColor={speakerColor}
+                                suppressUnderline
+                              />
+                            ))}
+                            <span 
+                              className={underlineClass}
+                              style={{
+                                animation: isActive ? 'none' : 'pulse-underline 3s ease-in-out infinite',
+                              }}
+                            />
+                          </span>
+                        )
+                        i = j
+                        continue
+                      }
+
+                      // Non-annotated words
+                      elements.push(
+                        <Word
+                          key={w.id}
+                          word={w}
+                          lineType={line.type}
+                          speakerColor={speakerColor}
+                          suppressUnderline
+                        />
                       )
                     }
-                    
-                    // Check if next word has same annotation (for continuous underline)
-                    const nextWord = line.words[i + 1]
-                    const hasNextInGroup = !!(nextWord && !nextWord.isWhitespace && w.annotationId && nextWord.annotationId === w.annotationId)
-                    
-                    return <Word 
-                      key={w.id} 
-                      word={w} 
-                      lineType={line.type} 
-                      speakerColor={speakerColor}
-                      hasNextInGroup={hasNextInGroup}
-                    />
-                  })
+
+                    return elements
+                  })()
                 )}
               </div>
             </div>
