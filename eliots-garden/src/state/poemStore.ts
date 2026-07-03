@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { Annotation, Token } from '../components/poem/Word'
+import type { Token } from '../components/poem/Word'
 import wastelandComplete from '../data/wasteland-complete.json'
 import wastelandVerses from '../data/wasteland-verses.json'
 import arcConnectionsData from '../data/arcConnections.json'
@@ -21,7 +21,6 @@ export type PoemLine = {
   italic?: boolean
   language?: string
   speakerId?: string
-  annotationId?: string  // ID of scholarly annotation for this line
 }
 
 export type Speaker = {
@@ -46,8 +45,6 @@ export type { ScholarlyAnnotation }
 type PoemState = {
   isLoading: boolean
   lines: PoemLine[]
-  activeWordIds: Set<string>
-  activeAnnotations: Annotation[]
   hoveredArcId: string | null
   arcConnections: ArcConnection[]
   speakers: Record<string, Speaker>
@@ -68,7 +65,6 @@ type PoemState = {
   activeSpeakerAnnotationId: string | null
 
   loadPoem: () => void
-  toggleWord: (tokenId: string) => void
   setHoveredArc: (arcId: string | null) => void
   toggleSpeakerColors: () => void
   toggleInlineArcs: () => void
@@ -82,8 +78,6 @@ type PoemState = {
 export const usePoemStore = create<PoemState>((set, get) => ({
   isLoading: false,
   lines: [],
-  activeWordIds: new Set(),
-  activeAnnotations: [],
   hoveredArcId: null,
   // Arc endpoints are canonical verse numbers (1-434) throughout the app;
   // ArcDiagram converts to document lines only for its own spine scale.
@@ -170,19 +164,14 @@ export const usePoemStore = create<PoemState>((set, get) => ({
       // Parse the line into tokens (strip BOM/CR; drop empty edge pieces
       // that would otherwise render as phantom zero-width tokens)
       if (line.text && line.type !== 'blank') {
-        let cursor = 0
         const pieces = line.text.replace(/[﻿\r]/g, '').split(/(\s+)/).filter((p: string) => p !== '')
         poemLine.words = pieces.map((piece: string, idx: number) => {
           const token: any = {
             id: `${poemLine.id}-w${idx}`,
             text: piece,
             lineId: poemLine.id,
-            charStart: cursor,
-            charEnd: cursor + piece.length,
-            isWhitespace: /^\s+$/.test(piece),
-            annotations: []
+            isWhitespace: /^\s+$/.test(piece)
           }
-          cursor += piece.length
           return token
         })
 
@@ -201,18 +190,6 @@ export const usePoemStore = create<PoemState>((set, get) => ({
     }
 
     set({ lines, scholarlyAnnotations: annotations, isLoading: false })
-  },
-  toggleWord(tokenId) {
-    const active = new Set(get().activeWordIds)
-    if (active.has(tokenId)) active.delete(tokenId)
-    else active.add(tokenId)
-    const annotations: Annotation[] = Array.from(active).slice(0, 3).map((id, i) => ({
-      id: `a-${id}-${i}`,
-      kind: i % 2 === 0 ? 'reference' : 'gloss',
-      content: 'Placeholder annotation. Real content TBD.',
-      targets: [],
-    }))
-    set({ activeWordIds: active, activeAnnotations: annotations })
   },
   setHoveredArc(arcId: string | null) {
     set({ hoveredArcId: arcId })

@@ -20,6 +20,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
   const showAnnotationHighlights = usePoemStore((s) => s.showAnnotationHighlights)
   const activeScholarlyAnnotation = usePoemStore((s) => s.activeScholarlyAnnotation)
   const setScrollState = usePoemStore((s) => s.setScrollState)
+  const setActiveAnnotation = usePoemStore((s) => s.setActiveAnnotation)
   const setActiveSpeakerAnnotation = usePoemStore((s) => s.setActiveSpeakerAnnotation)
   const activeSpeakerAnnotationId = usePoemStore((s) => s.activeSpeakerAnnotationId)
 
@@ -202,7 +203,8 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
 
                     for (let i = 0; i < line.words.length; i++) {
                       const w = line.words[i]
-                      const speakerColor = line.speakerId ? speakers[line.speakerId]?.color : undefined
+                      const speakerColor =
+                        showSpeakerColors && line.speakerId ? speakers[line.speakerId]?.color : undefined
 
                       // Group contiguous annotated tokens, bridging whitespace to the next annotated token with same id
                       if (showAnnotationHighlights && w.annotationId) {
@@ -239,14 +241,18 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                             : 'bg-amber-400/75 group-hover:bg-amber-400/90 group-hover:shadow-[0_0_6px_rgba(251,191,36,0.4)]'
                         )
                         elements.push(
-                          <span key={`${w.id}-grp`} className="relative inline-block group">
+                          <button
+                            key={`${w.id}-grp`}
+                            className="relative inline-block group cursor-pointer text-left"
+                            onClick={() => setActiveAnnotation(isActive ? null : annId)}
+                            aria-expanded={isActive}
+                            aria-label={`Annotation: ${groupWords.filter((gw) => !gw.isWhitespace).map((gw) => gw.text).join(' ')}`}
+                          >
                             {groupWords.map((gw, gi) => (
                               <Word
                                 key={gw.id}
                                 word={gw}
-                                lineType={line.type}
                                 speakerColor={speakerColor}
-                                suppressUnderline
                                 dropcap={i + gi === dropcapIdx}
                               />
                             ))}
@@ -256,7 +262,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                                 animation: isActive ? 'none' : 'pulse-underline 3s ease-in-out infinite',
                               }}
                             />
-                          </span>
+                          </button>
                         )
                         i = j
                         continue
@@ -267,9 +273,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                         <Word
                           key={w.id}
                           word={w}
-                          lineType={line.type}
                           speakerColor={speakerColor}
-                          suppressUnderline
                           dropcap={i === dropcapIdx}
                         />
                       )
