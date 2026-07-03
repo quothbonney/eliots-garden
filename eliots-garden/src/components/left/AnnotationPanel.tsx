@@ -1,7 +1,15 @@
+import { lazy, Suspense } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { usePoemStore } from '../../state/poemStore'
 
-import ReactMarkdown from 'react-markdown'
+// react-markdown (plus its remark pipeline) is ~40 kB gz; load it off the
+// critical path since it only renders annotation prose
+const ReactMarkdownLazy = lazy(() => import('react-markdown'))
+const ReactMarkdown = ({ components, children }: { components: any; children: string }) => (
+  <Suspense fallback={null}>
+    <ReactMarkdownLazy components={components}>{children}</ReactMarkdownLazy>
+  </Suspense>
+)
 
 export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) {
   const activeAnnotation = usePoemStore((s) => s.activeScholarlyAnnotation)

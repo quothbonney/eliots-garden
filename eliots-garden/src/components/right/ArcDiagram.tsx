@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react'
-import * as d3 from 'd3'
+import { useEffect, useRef, useState } from 'react'
+import { select } from 'd3-selection'
+import { scaleLinear } from 'd3-scale'
 import { usePoemStore } from '../../state/poemStore'
 import wastelandComplete from '../../data/wasteland-complete.json'
 import wastelandVerses from '../../data/wasteland-verses.json'
@@ -18,11 +19,29 @@ export function ArcDiagram() {
   const setHoveredArc = usePoemStore((s) => s.setHoveredArc)
   const scrollState = usePoemStore((s) => s.scrollState)
   const hasUserScrolled = usePoemStore((s) => s.hasUserScrolled)
+  const [resizeTick, setResizeTick] = useState(0)
+
+  // Redraw on window resize (rAF-debounced)
+  useEffect(() => {
+    let raf: number | null = null
+    const onResize = () => {
+      if (raf != null) cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        setResizeTick((t) => t + 1)
+        raf = null
+      })
+    }
+    window.addEventListener('resize', onResize)
+    return () => {
+      window.removeEventListener('resize', onResize)
+      if (raf != null) cancelAnimationFrame(raf)
+    }
+  }, [])
 
   // Initialize SVG structure
   useEffect(() => {
     if (!ref.current) return
-    const svg = d3.select(ref.current)
+    const svg = select(ref.current)
 
     // Create groups if they don't exist, order matters for layering
     if (svg.select('g.bg-layer').empty()) svg.append('g').attr('class', 'bg-layer')
@@ -61,7 +80,7 @@ export function ArcDiagram() {
   // Draw Content (Arcs, Labels, etc.)
   useEffect(() => {
     if (!ref.current) return
-    const svg = d3.select(ref.current)
+    const svg = select(ref.current)
     const g = svg.select('g.main-layer')
 
     // Clear previous content in this layer
@@ -79,7 +98,7 @@ export function ArcDiagram() {
 
     // Create scale for line positions
     const totalLines = 502
-    const yScale = d3.scaleLinear()
+    const yScale = scaleLinear()
       .domain([0, totalLines + 20])
       .range([0, height])
 
@@ -154,8 +173,8 @@ export function ArcDiagram() {
         .attr('font-size', '10px')
         .attr('font-family', 'var(--font-family-serif)')
         .text(labelText)
-        .on('mouseover', function () { d3.select(this).attr('fill-opacity', 1) })
-        .on('mouseout', function () { d3.select(this).attr('fill-opacity', 0.8) })
+        .on('mouseover', function () { select(this).attr('fill-opacity', 1) })
+        .on('mouseout', function () { select(this).attr('fill-opacity', 0.8) })
     })
 
     const typeColors: Record<string, string> = {
@@ -188,8 +207,9 @@ export function ArcDiagram() {
       })
       .attr('fill', 'none')
       .attr('stroke', d => typeColors[d.type] || 'white')
-      .attr('stroke-opacity', d => hoveredArcId === d.id ? 0.9 : 0.4)
-      .attr('stroke-width', d => hoveredArcId === d.id ? 2.5 : 1)
+      .attr('stroke-opacity', 0.4)
+      .attr('stroke-width', 1)
+      .attr('data-arc-id', d => d.id)
       .on('mouseover', function (_, d) { setHoveredArc(d.id) })
       .on('mouseout', function () { setHoveredArc(null) })
       .append('title')
@@ -200,24 +220,42 @@ export function ArcDiagram() {
         g.append('circle')
           .attr('cx', spineX)
           .attr('cy', yScale(lineOf(verse)))
-          .attr('r', hoveredArcId === conn.id ? 3 : 2)
+          .attr('r', 2)
           .attr('fill', typeColors[conn.type] || 'white')
-          .attr('fill-opacity', hoveredArcId === conn.id ? 0.9 : 0.8)
+          .attr('fill-opacity', 0.8)
+          .attr('data-arc-id', conn.id)
       })
     })
 
-  }, [arcConnections, hoveredArcId, setHoveredArc])
+  }, [arcConnections, setHoveredArc, resizeTick])
+
+  // Hover styling: cheap attribute updates instead of a full redraw
+  useEffect(() => {
+    if (!ref.current) return
+    const g = select(ref.current).select('g.main-layer')
+    g.selectAll<SVGPathElement, unknown>('path[data-arc-id]')
+      .attr('stroke-opacity', function () {
+        return this.getAttribute('data-arc-id') === hoveredArcId ? 0.9 : 0.4
+      })
+      .attr('stroke-width', function () {
+        return this.getAttribute('data-arc-id') === hoveredArcId ? 2.5 : 1
+      })
+    g.selectAll<SVGCircleElement, unknown>('circle[data-arc-id]')
+      .attr('r', function () {
+        return this.getAttribute('data-arc-id') === hoveredArcId ? 3 : 2
+      })
+      .attr('fill-opacity', function () {
+        return this.getAttribute('data-arc-id') === hoveredArcId ? 0.9 : 0.8
+      })
+  }, [hoveredArcId])
 
   // Draw Minimap Lens (Scroll Indicator)
   useEffect(() => {
     if (!ref.current || !scrollState.scrollHeight || !hasUserScrolled) return
 
-    const svg = d3.select(ref.current)
+    const svg = select(ref.current)
     const layer = svg.select('g.overlay-layer')
     const height = window.innerHeight - 80
-
-    // Clear previous lens
-    layer.selectAll('*').remove()
 
     const { scrollTop, viewportHeight, scrollHeight } = scrollState
 
@@ -244,26 +282,35 @@ export function ArcDiagram() {
     const lensWidth = 50
     const calculatedLensX = spineX - lensWidth + 4
 
-    // Draw the lens - Subtler version, hugging the diagram instead of full width
-    layer.append('rect')
+    // Create the lens once, then only update position per scroll frame
+    let rect = layer.select<SVGRectElement>('rect.lens-rect')
+    if (rect.empty()) {
+      rect = layer.append('rect')
+        .attr('class', 'lens-rect')
+        .attr('fill', 'white')
+        .attr('fill-opacity', 0.03)
+        .attr('stroke', 'none')
+        .style('pointer-events', 'none')
+    }
+    rect
       .attr('x', calculatedLensX)
       .attr('y', lensY)
       .attr('width', lensWidth)
       .attr('height', displayHeight)
-      .attr('fill', 'white')
-      .attr('fill-opacity', 0.03) // Reduced opacity
-      .attr('stroke', 'none') // Removed border
-      .style('pointer-events', 'none')
 
-    // Add subtle indicator line aligned with the spine
-    layer.append('line')
+    let indicator = layer.select<SVGLineElement>('line.lens-indicator')
+    if (indicator.empty()) {
+      indicator = layer.append('line')
+        .attr('class', 'lens-indicator')
+        .attr('stroke', '#fbbf24')
+        .attr('stroke-width', 2)
+        .attr('stroke-opacity', 0.5)
+    }
+    indicator
       .attr('x1', spineX)
       .attr('y1', lensY)
       .attr('x2', spineX)
       .attr('y2', lensY + displayHeight)
-      .attr('stroke', '#fbbf24') // Amber accent
-      .attr('stroke-width', 2)
-      .attr('stroke-opacity', 0.5)
 
   }, [scrollState, hasUserScrolled])
 

@@ -254,10 +254,17 @@ export function InlineArcs() {
     // Initial render
     updateArcs()
 
-    // Update on scroll/resize
-    const scrollEl = document.querySelector('main')
-    scrollEl?.addEventListener('scroll', updateArcs)
-    window.addEventListener('resize', updateArcs)
+    // The overlay scrolls with the poem, so scrolling never changes arc
+    // geometry — only resize and DOM mutations (observer below) do.
+    let resizeRaf: number | null = null
+    const handleResize = () => {
+      if (resizeRaf != null) cancelAnimationFrame(resizeRaf)
+      resizeRaf = requestAnimationFrame(() => {
+        updateArcs()
+        resizeRaf = null
+      })
+    }
+    window.addEventListener('resize', handleResize)
 
     // Reset hover/tooltip on leaving SVG region
     const svgEl = svgRef.current
@@ -334,8 +341,8 @@ export function InlineArcs() {
     }
 
     return () => {
-      scrollEl?.removeEventListener('scroll', updateArcs)
-      window.removeEventListener('resize', updateArcs)
+      window.removeEventListener('resize', handleResize)
+      if (resizeRaf != null) cancelAnimationFrame(resizeRaf)
       observer.disconnect()
       if (rafId != null) cancelAnimationFrame(rafId)
       svgEl?.removeEventListener('mouseleave', handleSvgLeave)
