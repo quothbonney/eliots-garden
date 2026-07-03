@@ -3,7 +3,7 @@ import { Word } from './Word'
 import { InlineArcs } from './InlineArcs'
 import { clsx } from 'clsx'
 import wastelandWhiteSvg from '../../assets/wasteland_white.svg'
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 import type { RefObject } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
@@ -32,6 +32,18 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
   const titleOpacity = useTransform(scrollY, [0, 300], [1, 0])
   const titleScale = useTransform(scrollY, [0, 300], [1, 0.95])
   const titleBlur = useTransform(scrollY, [0, 300], ["0px", "10px"])
+  const titleFilter = useTransform(titleBlur, (blur) => `blur(${blur})`)
+
+  // Speaker carried into each line from the previous attributed line, so
+  // labels appear on voice changes rather than after every stanza break
+  const carriedSpeakerIds = useMemo(() => {
+    let last: string | undefined
+    return lines.map((l) => {
+      const carried = last
+      if (l.speakerId) last = l.speakerId
+      return carried
+    })
+  }, [lines])
 
   // Handle scroll effect for minimap only; title animation is handled
   // separately in a lightweight component that reads scroll state.
@@ -56,7 +68,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
     }
 
     // Attach to the main scrollable area
-    const scrollContainer = document.querySelector('main')
+    const scrollContainer: HTMLElement | null = scrollContainerRef?.current ?? document.querySelector('main')
     if (scrollContainer) {
       // Initialize with current state
       setScrollState(scrollContainer.scrollTop, scrollContainer.clientHeight, scrollContainer.scrollHeight)
@@ -67,7 +79,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
         if (rafId !== null) cancelAnimationFrame(rafId)
       }
     }
-  }, [setScrollState])
+  }, [setScrollState, scrollContainerRef])
 
   if (isLoading) {
     return <div className="p-12 text-white/60">Loading poem…</div>
@@ -86,7 +98,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
           height: '200px',
           opacity: titleOpacity,
           scale: titleScale,
-          filter: useTransform(titleBlur, (blur) => `blur(${blur})`),
+          filter: titleFilter,
         }}
       >
         <div className="relative w-full flex justify-center items-center h-full">
@@ -118,9 +130,9 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
         <div className="h-[400px] w-full"></div>
 
         {lines.map((line, lineIndex) => {
-          // Check if this is the first line with a new speaker
-          const prevLine = lineIndex > 0 ? lines[lineIndex - 1] : null
-          const isNewSpeaker = line.speakerId && line.speakerId !== prevLine?.speakerId
+          // Label a line only when the voice actually changes (stanza breaks
+          // and section headers between same-speaker lines don't count)
+          const isNewSpeaker = line.speakerId && line.speakerId !== carriedSpeakerIds[lineIndex]
           const hasSpeakerAnnotation = isNewSpeaker && line.speakerId && speakers[line.speakerId]?.annotation
 
           // Style based on line type
