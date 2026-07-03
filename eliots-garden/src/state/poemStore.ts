@@ -4,7 +4,11 @@ import wastelandComplete from '../data/wasteland-complete.json'
 import wastelandVerses from '../data/wasteland-verses.json'
 import arcConnectionsData from '../data/arcConnections.json'
 import speakerAssignments from '../data/speakerAssignments.json'
-import annotationsData from '../data/annotations.json'
+import annotationsText from '../data/annotations.txt?raw'
+import speakerAnnotationsText from '../data/speaker_annotations.txt?raw'
+import { parseSpeakerAnnotations } from '../utils/annotationParser'
+import { resolveAnnotations } from '../utils/scholarlyAnnotations'
+import type { ScholarlyAnnotation } from '../utils/scholarlyAnnotations'
 
 export type PoemLine = {
   id: string
@@ -26,6 +30,7 @@ export type Speaker = {
   type: string
   color: string
   description: string
+  annotation?: string // New field for speaker-specific annotations
 }
 
 export type ArcConnection = {
@@ -36,13 +41,7 @@ export type ArcConnection = {
   description: string
 }
 
-export type ScholarlyAnnotation = {
-  id: string
-  phrase: string
-  lineNumber: number
-  annotation: string
-  sources: string[]
-}
+export type { ScholarlyAnnotation }
 
 type PoemState = {
   isLoading: boolean
@@ -57,7 +56,17 @@ type PoemState = {
   showAnnotationHighlights: boolean
   scholarlyAnnotations: ScholarlyAnnotation[]
   activeScholarlyAnnotation: ScholarlyAnnotation | null
-  annotationViewMode: 'single' | 'all'
+  annotationViewMode: 'focused' | 'all' | 'speakers'
+  hasUserScrolled: boolean
+  // Scroll tracking for minimap
+  scrollState: {
+    scrollTop: number
+    viewportHeight: number
+    scrollHeight: number
+  }
+  // New state for speaker annotation selection
+  activeSpeakerAnnotationId: string | null
+
   loadPoem: () => void
   toggleWord: (tokenId: string) => void
   setHoveredArc: (arcId: string | null) => void
@@ -65,7 +74,9 @@ type PoemState = {
   toggleInlineArcs: () => void
   toggleAnnotationHighlights: () => void
   setActiveAnnotation: (annotationId: string | null) => void
-  setAnnotationViewMode: (mode: 'single' | 'all') => void
+  setAnnotationViewMode: (mode: 'focused' | 'all' | 'speakers') => void
+  setScrollState: (scrollTop: number, viewportHeight: number, scrollHeight: number) => void
+  setActiveSpeakerAnnotation: (speakerId: string | null) => void
 }
 
 export const usePoemStore = create<PoemState>((set, get) => ({
@@ -74,17 +85,68 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   activeWordIds: new Set(),
   activeAnnotations: [],
   hoveredArcId: null,
-  arcConnections: arcConnectionsData.connections as ArcConnection[],
-  speakers: speakerAssignments.speakers as Record<string, Speaker>,
+  arcConnections: (() => {
+    // Create a map of verse number to global line number
+    const verseToGlobal = new Map<number, number>()
+    wastelandVerses.verses.forEach((v: any) => {
+      verseToGlobal.set(v.verseNumber, v.lineNumber)
+    })
+
+    return (arcConnectionsData.connections as ArcConnection[]).map(conn => ({
+      ...conn,
+      source: verseToGlobal.get(conn.source) || conn.source,
+      target: verseToGlobal.get(conn.target) || conn.target
+    }))
+  })(),
+  // Augment speaker data with annotations
+  speakers: (() => {
+    const annotations = parseSpeakerAnnotations(speakerAnnotationsText)
+    const speakersWithAnnotations = { ...speakerAssignments.speakers } as Record<string, Speaker>
+
+
+    // Helper to find speaker ID by various keys
+    const findSpeakerId = (key: string): string | undefined => {
+      // 1. Try exact ID match
+      if (speakersWithAnnotations[key]) return key
+
+      const lowerKey = key.toLowerCase()
+      const entry = Object.entries(speakersWithAnnotations).find(([_, s]) =>
+        s.name.toLowerCase() === lowerKey || s.casualName.toLowerCase() === lowerKey
+      )
+
+      return entry ? entry[0] : undefined
+    }
+
+    // Merge annotations into speakers
+    Object.entries(annotations).forEach(([key, annotation]) => {
+      const speakerId = findSpeakerId(key)
+      if (speakerId && speakersWithAnnotations[speakerId]) {
+        speakersWithAnnotations[speakerId] = {
+          ...speakersWithAnnotations[speakerId],
+          annotation
+        }
+      }
+    })
+
+    return speakersWithAnnotations
+  })(),
   showSpeakerColors: false,
   showInlineArcs: true,
   showAnnotationHighlights: true,
-  scholarlyAnnotations: annotationsData.annotations as ScholarlyAnnotation[],
+  scholarlyAnnotations: [],
   activeScholarlyAnnotation: null,
-  annotationViewMode: 'single',
+  annotationViewMode: 'focused',
+  hasUserScrolled: false,
+  scrollState: {
+    scrollTop: 0,
+    viewportHeight: 0,
+    scrollHeight: 0
+  },
+  activeSpeakerAnnotationId: null,
+
   loadPoem() {
     set({ isLoading: true })
-    
+
     // Use the structured JSON data
     const lines = wastelandComplete.lines.map((line: any) => {
       const poemLine: PoemLine = {
@@ -95,9 +157,13 @@ export const usePoemStore = create<PoemState>((set, get) => ({
         type: line.type,
         words: [],
         italic: line.italic,
-        language: line.language
+        language: line.language,
+        // Assign speaker based on line type or verse number
+        speakerId: line.type === 'epigraph'
+          ? 'speaker-epigraph'
+          : undefined // Default to undefined, will be set for verses below
       }
-      
+
       // Find corresponding verse number and speaker if it's a verse line
       if (line.type === 'verse') {
         const verseEntry = wastelandVerses.verses.find((v: any) => v.lineNumber === line.number)
@@ -110,7 +176,7 @@ export const usePoemStore = create<PoemState>((set, get) => ({
           }
         }
       }
-      
+
       // Parse the line into tokens
       if (line.text && line.type !== 'blank') {
         let cursor = 0
@@ -128,42 +194,22 @@ export const usePoemStore = create<PoemState>((set, get) => ({
           cursor += piece.length
           return token
         })
-        
-        // Find annotations that match this line and mark the relevant words
-        const lineAnnotations = (annotationsData.annotations as ScholarlyAnnotation[]).filter(
-          (ann) => ann.lineNumber === line.number
-        )
-        
-        for (const ann of lineAnnotations) {
-          // Normalize the phrase and line text for matching
-          const normalizedPhrase = ann.phrase.toLowerCase().replace(/[.,;:!?—\-'"]/g, '').trim()
-          const normalizedLineText = line.text.toLowerCase().replace(/[.,;:!?—\-'"]/g, '')
-          
-          // Find where the phrase appears in the line
-          const phraseIndex = normalizedLineText.indexOf(normalizedPhrase)
-          if (phraseIndex !== -1) {
-            const phraseEnd = phraseIndex + normalizedPhrase.length
-            
-            // Mark words that fall within this phrase range
-            poemLine.words.forEach((word: any) => {
-              if (!word.isWhitespace) {
-                const wordStart = word.charStart
-                const wordEnd = word.charEnd
-                
-                // Check if word overlaps with phrase
-                if (wordStart < phraseEnd && wordEnd > phraseIndex) {
-                  word.annotationId = ann.id
-                }
-              }
-            })
-          }
-        }
+
       }
-      
+
       return poemLine
     })
-    
-    set({ lines, isLoading: false })
+
+    // Anchor scholarly annotations onto the tokenized poem
+    const { annotations, problems } = resolveAnnotations(lines, annotationsText)
+    if (problems.length > 0) {
+      console.warn(
+        `[annotations] ${problems.length} annotation(s) failed to anchor:\n` +
+          problems.map((p) => `  - ${p}`).join('\n')
+      )
+    }
+
+    set({ lines, scholarlyAnnotations: annotations, isLoading: false })
   },
   toggleWord(tokenId) {
     const active = new Set(get().activeWordIds)
@@ -190,14 +236,31 @@ export const usePoemStore = create<PoemState>((set, get) => ({
     set({ showAnnotationHighlights: !get().showAnnotationHighlights })
   },
   setActiveAnnotation(annotationId: string | null) {
+    // Clear speaker annotation if setting a scholarly one
+    if (annotationId) {
+      set({ activeSpeakerAnnotationId: null, annotationViewMode: 'focused' })
+    }
     const annotation = annotationId
       ? get().scholarlyAnnotations.find((a) => a.id === annotationId) || null
       : null
     set({ activeScholarlyAnnotation: annotation })
   },
-  setAnnotationViewMode(mode: 'single' | 'all') {
+  setActiveSpeakerAnnotation(speakerId: string | null) {
+    // Clear scholarly annotation if setting a speaker one
+    if (speakerId) {
+      set({ activeScholarlyAnnotation: null, annotationViewMode: 'focused' })
+    }
+    set({ activeSpeakerAnnotationId: speakerId })
+  },
+  setAnnotationViewMode(mode: 'focused' | 'all' | 'speakers') {
     set({ annotationViewMode: mode })
   },
+  setScrollState(scrollTop: number, viewportHeight: number, scrollHeight: number) {
+    const alreadyScrolled = get().hasUserScrolled
+    const nowScrolled = alreadyScrolled || scrollTop > 0
+    set({
+      scrollState: { scrollTop, viewportHeight, scrollHeight },
+      hasUserScrolled: nowScrolled,
+    })
+  },
 }))
-
-
