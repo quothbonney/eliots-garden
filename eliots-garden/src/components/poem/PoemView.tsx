@@ -141,7 +141,17 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
           // Add line numbers for verse lines
           const showLineNumber = line.type === 'verse' && line.verseNumber && line.verseNumber % 10 === 0
 
-          const isFirstVerseInSection = line.type === 'verse' && line.verseNumber && (line.verseNumber === 1 || (lines.findIndex(l => l.lineNumber === line.lineNumber) > 0 && lines[lines.findIndex(l => l.lineNumber === line.lineNumber) - 1].type === 'section_header'))
+          // First verse of a section: previous non-blank line is its header
+          const prevContent = (() => {
+            for (let k = lineIndex - 1; k >= 0; k--) {
+              if (lines[k].type !== 'blank') return lines[k]
+            }
+            return null
+          })()
+          const isFirstVerseInSection = line.type === 'verse' && prevContent?.type === 'section_header'
+          const dropcapIdx = isFirstVerseInSection
+            ? line.words.findIndex((w) => !w.isWhitespace && w.text.length > 0)
+            : -1
 
           return (
             <div
@@ -193,12 +203,6 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                     for (let i = 0; i < line.words.length; i++) {
                       const w = line.words[i]
                       const speakerColor = line.speakerId ? speakers[line.speakerId]?.color : undefined
-                      if (isFirstVerseInSection && i === 0 && !w.isWhitespace) {
-                        elements.push(
-                          <span key={w.id} className="dropcap-letter">{w.text.charAt(0)}</span>
-                        )
-                        continue
-                      }
 
                       // Group contiguous annotated tokens, bridging whitespace to the next annotated token with same id
                       if (showAnnotationHighlights && w.annotationId) {
@@ -236,13 +240,14 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                         )
                         elements.push(
                           <span key={`${w.id}-grp`} className="relative inline-block group">
-                            {groupWords.map((gw) => (
+                            {groupWords.map((gw, gi) => (
                               <Word
                                 key={gw.id}
                                 word={gw}
                                 lineType={line.type}
                                 speakerColor={speakerColor}
                                 suppressUnderline
+                                dropcap={i + gi === dropcapIdx}
                               />
                             ))}
                             <span
@@ -265,6 +270,7 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                           lineType={line.type}
                           speakerColor={speakerColor}
                           suppressUnderline
+                          dropcap={i === dropcapIdx}
                         />
                       )
                     }

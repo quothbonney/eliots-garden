@@ -167,10 +167,11 @@ export const usePoemStore = create<PoemState>((set, get) => ({
         }
       }
 
-      // Parse the line into tokens
+      // Parse the line into tokens (strip BOM/CR; drop empty edge pieces
+      // that would otherwise render as phantom zero-width tokens)
       if (line.text && line.type !== 'blank') {
         let cursor = 0
-        const pieces = line.text.split(/(\s+)/)
+        const pieces = line.text.replace(/[﻿\r]/g, '').split(/(\s+)/).filter((p: string) => p !== '')
         poemLine.words = pieces.map((piece: string, idx: number) => {
           const token: any = {
             id: `${poemLine.id}-w${idx}`,

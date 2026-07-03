@@ -7,9 +7,10 @@ interface WordProps {
   speakerColor?: string
   hasNextInGroup?: boolean
   suppressUnderline?: boolean
+  dropcap?: boolean
 }
 
-export function Word({ word, lineType, speakerColor, hasNextInGroup, suppressUnderline }: WordProps) {
+export function Word({ word, lineType, speakerColor, hasNextInGroup, suppressUnderline, dropcap }: WordProps) {
   const toggleWord = usePoemStore((s) => s.toggleWord)
   const isActive = usePoemStore((s) => s.activeWordIds.has(word.id))
   const showSpeakerColors = usePoemStore((s) => s.showSpeakerColors)
@@ -47,7 +48,14 @@ export function Word({ word, lineType, speakerColor, hasNextInGroup, suppressUnd
       style={style}
     >
       <span className="relative group/word">
-        {word.text}
+        {dropcap ? (
+          <>
+            <span className="dropcap-letter">{word.text.charAt(0)}</span>
+            {word.text.slice(1)}
+          </>
+        ) : (
+          word.text
+        )}
         {isAnnotated && !suppressUnderline && (
           <span
             className={clsx(
