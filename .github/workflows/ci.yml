@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: eliots-garden
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: eliots-garden/package-lock.json
+      - run: npm ci
+      # Typechecks (tsc -b), bundles, and prerenders the poem into dist/
+      - run: npm run build
+      - name: Sanity-check prerendered output
+        run: |
+          grep -q "April is the cruellest month" dist/index.html
+          grep -q "application/ld+json" dist/index.html
+          ls dist/assets/*.woff2 > /dev/null
