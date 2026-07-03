@@ -85,19 +85,9 @@ export const usePoemStore = create<PoemState>((set, get) => ({
   activeWordIds: new Set(),
   activeAnnotations: [],
   hoveredArcId: null,
-  arcConnections: (() => {
-    // Create a map of verse number to global line number
-    const verseToGlobal = new Map<number, number>()
-    wastelandVerses.verses.forEach((v: any) => {
-      verseToGlobal.set(v.verseNumber, v.lineNumber)
-    })
-
-    return (arcConnectionsData.connections as ArcConnection[]).map(conn => ({
-      ...conn,
-      source: verseToGlobal.get(conn.source) || conn.source,
-      target: verseToGlobal.get(conn.target) || conn.target
-    }))
-  })(),
+  // Arc endpoints are canonical verse numbers (1-434) throughout the app;
+  // ArcDiagram converts to document lines only for its own spine scale.
+  arcConnections: arcConnectionsData.connections as ArcConnection[],
   // Augment speaker data with annotations
   speakers: (() => {
     const annotations = parseSpeakerAnnotations(speakerAnnotationsText)

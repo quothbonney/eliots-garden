@@ -2,6 +2,14 @@ import { useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import { usePoemStore } from '../../state/poemStore'
 import wastelandComplete from '../../data/wasteland-complete.json'
+import wastelandVerses from '../../data/wasteland-verses.json'
+
+// The spine scale runs over document lines (1-502); arc endpoints are verse
+// numbers (1-434), so map them before positioning.
+const verseToLine = new Map<number, number>(
+  wastelandVerses.verses.map((v: any) => [v.verseNumber, v.lineNumber])
+)
+const lineOf = (verse: number) => verseToLine.get(verse) ?? verse
 
 export function ArcDiagram() {
   const ref = useRef<SVGSVGElement | null>(null)
@@ -165,8 +173,8 @@ export function ArcDiagram() {
       .append('path')
       .attr('class', d => `connection connection-${d.type}`)
       .attr('d', d => {
-        const y1 = yScale(d.source)
-        const y2 = yScale(d.target)
+        const y1 = yScale(lineOf(d.source))
+        const y2 = yScale(lineOf(d.target))
         const midY = (y1 + y2) / 2
         const radius = Math.abs(y2 - y1) / 2
 
@@ -185,13 +193,13 @@ export function ArcDiagram() {
       .on('mouseover', function (_, d) { setHoveredArc(d.id) })
       .on('mouseout', function () { setHoveredArc(null) })
       .append('title')
-      .text(d => `Lines ${d.source}-${d.target}: ${d.description}`)
+      .text(d => `Lines ${d.source}–${d.target}: ${d.description}`)
 
     arcConnections.forEach(conn => {
-      [conn.source, conn.target].forEach(line => {
+      [conn.source, conn.target].forEach(verse => {
         g.append('circle')
           .attr('cx', spineX)
-          .attr('cy', yScale(line))
+          .attr('cy', yScale(lineOf(verse)))
           .attr('r', hoveredArcId === conn.id ? 3 : 2)
           .attr('fill', typeColors[conn.type] || 'white')
           .attr('fill-opacity', hoveredArcId === conn.id ? 0.9 : 0.8)

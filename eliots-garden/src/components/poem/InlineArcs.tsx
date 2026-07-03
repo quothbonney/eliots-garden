@@ -1,6 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { usePoemStore } from '../../state/poemStore'
-import wastelandVerses from '../../data/wasteland-verses.json'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const typeColors = {
@@ -30,14 +29,6 @@ export function InlineArcs() {
     x: number
     y: number
   } | null>(null)
-
-  // Build a map from full lineNumber -> verseNumber for fallback mapping
-  const lineToVerse = useMemo(() => {
-    const m = new Map<number, number>()
-    const verses = (wastelandVerses as any).verses as Array<{ lineNumber: number; verseNumber: number }>
-    verses.forEach(v => m.set(v.lineNumber, v.verseNumber))
-    return m
-  }, [])
 
   useEffect(() => {
     if (!svgRef.current || !containerRef.current) return
@@ -88,10 +79,9 @@ export function InlineArcs() {
         const color = (typeColors as any)[type] || '#9ca3af'
         const desc = (conn as any)?.description || ''
 
-        const srcKey = (conn as any).source
-        const tgtKey = (conn as any).target
-        const sourceY = linePositions.get(srcKey) ?? linePositions.get(lineToVerse.get(srcKey) || -1)
-        const targetY = linePositions.get(tgtKey) ?? linePositions.get(lineToVerse.get(tgtKey) || -1)
+        // conn.source/target are canonical verse numbers, matching data-verse-number
+        const sourceY = linePositions.get((conn as any).source)
+        const targetY = linePositions.get((conn as any).target)
         if (sourceY === undefined || targetY === undefined) return
 
         const arcLength = Math.abs(targetY - sourceY)
@@ -352,7 +342,7 @@ export function InlineArcs() {
       svgEl?.removeEventListener('mousemove', handleMouseMove)
       svgEl?.removeEventListener('mouseenter', handleMouseEnter)
     }
-  }, [arcConnections, setHoveredArc, lines, lineToVerse])
+  }, [arcConnections, setHoveredArc, lines])
 
   // Respond to cross-panel hovers without redrawing
   useEffect(() => {
