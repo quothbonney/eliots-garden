@@ -63,13 +63,13 @@ export function AboutPage({ trigger }: { trigger: ReactNode }) {
 
               <div className="space-y-5 text-[15px] leading-[1.85] text-white/75 font-light tracking-wide">
                 <p>
-                  Jack David Carson is an MIT undergraduate studying electrical engineering with
-                  computer science. An avid poet himself, he first opened <Work>The Waste Land</Work>{' '}
-                  at the age of 12. Over more than ten years of close reading, he has obsessed over
+                  I am Jack David Carson, an MIT undergraduate studying electrical engineering with
+                  computer science. An avid poet myself, I first opened <Work>The Waste Land</Work>{' '}
+                  at the age of 12. Over more than ten years of close reading, I have obsessed over
                   the structure and references of this challenging work.
                 </p>
                 <p>
-                  He believes that while the difficulty of <Work>The Waste Land</Work> is fundamental
+                  I believe that while the difficulty of <Work>The Waste Land</Work> is fundamental
                   to its meaning, the modern reader is unlikely to appreciate its beauty and
                   profundity without a guide. The existing online resources are scattered, overly
                   academic, or hidden behind institutional paywalls. Eliot&rsquo;s Garden was built to
@@ -77,8 +77,18 @@ export function AboutPage({ trigger }: { trigger: ReactNode }) {
                   interface familiar to younger readers.
                 </p>
                 <p>
-                  Outside of <Work>The Waste Land</Work>, Jack considers <Work>Little Gidding</Work>{' '}
-                  the finest Eliot poem. Outside of poetry, he loves motorcycle racing, opera, EDM,
+                  The title &ldquo;Eliot&rsquo;s Garden&rdquo; draws from Line 71 of{' '}
+                  <Work>The Waste Land</Work>: &ldquo;That corpse you planted last year in your
+                  garden.&rdquo; It is among the most arresting images in the poem. Many readers
+                  prefer to think of the work as a collage, or a shattered monument, or a heap of
+                  broken ramparts. I prefer to think of it as a garden, and as this garden in
+                  particular, in which Eliot pleads with the reader to help him cultivate the
+                  hibernating roots of a culture he believes to be in decline. This site, in its
+                  way, is my own minor contribution to that vision.
+                </p>
+                <p>
+                  Outside of <Work>The Waste Land</Work>, I consider <Work>Little Gidding</Work>{' '}
+                  the finest Eliot poem. Outside of poetry, I love motorcycle racing, opera, EDM,
                   and computational biology.
                 </p>
               </div>
