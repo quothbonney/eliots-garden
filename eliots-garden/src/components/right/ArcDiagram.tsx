@@ -316,7 +316,7 @@ export function ArcDiagram() {
 
   return (
     <div className="h-full" style={{ marginLeft: '-40px' }}>
-      <svg ref={ref} className="w-full h-full" />
+      <svg ref={ref} aria-hidden="true" className="w-full h-full" />
     </div>
   )
 }

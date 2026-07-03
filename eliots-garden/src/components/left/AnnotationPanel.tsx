@@ -78,10 +78,10 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
             <button
               key={mode}
               onClick={() => handleViewModeChange(mode)}
-              className="px-3 py-1.5 text-[9px] font-light tracking-wider uppercase rounded-sm transition-all duration-200"
+              className="px-3 py-1.5 text-[10px] font-light tracking-wider uppercase rounded-sm transition-all duration-200"
               style={{
                 backgroundColor: viewMode === mode ? 'rgba(255,255,255,0.1)' : 'transparent',
-                color: viewMode === mode ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.4)',
+                color: viewMode === mode ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.6)',
                 boxShadow: viewMode === mode ? '0 1px 2px rgba(0,0,0,0.2)' : 'none'
               }}
             >
@@ -129,7 +129,7 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
                         </div>
                       )}
                     </div>
-                    <div className="text-[9px] text-white/40 font-light truncate">
+                    <div className="text-[10px] text-white/50 font-light truncate">
                       {speaker.type}
                     </div>
                   </div>
@@ -168,7 +168,7 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
                         {annotation.annotation}
                       </ReactMarkdown>
                     </div>
-                    <div className="text-[9px] uppercase tracking-[0.15em] text-white/20 font-light">
+                    <div className="text-[10px] uppercase tracking-[0.15em] text-white/40 font-light">
                       {annotation.displayRef}
                     </div>
                   </div>
@@ -219,7 +219,7 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
 
                   <button
                     onClick={() => setViewMode('speakers')}
-                    className="text-[9px] uppercase tracking-[0.15em] text-white/30 hover:text-white/50 transition-colors font-light mt-6 flex items-center gap-2"
+                    className="text-[10px] uppercase tracking-[0.15em] text-white/50 hover:text-white/75 transition-colors font-light mt-6 flex items-center gap-2"
                   >
                     <span>←</span> Back to Speakers
                   </button>
@@ -254,7 +254,7 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
 
                     <button
                       onClick={() => setViewMode('all')}
-                      className="text-[9px] uppercase tracking-[0.15em] text-white/30 hover:text-white/50 transition-colors font-light mt-6 flex items-center gap-2"
+                      className="text-[10px] uppercase tracking-[0.15em] text-white/50 hover:text-white/75 transition-colors font-light mt-6 flex items-center gap-2"
                     >
                       <span>←</span> Back to All Notes
                     </button>

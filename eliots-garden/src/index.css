@@ -81,6 +81,17 @@ body::before {
   text-shadow: 0 2px 10px rgba(255,255,255,0.1);
 }
 
+/* Respect users who opt out of motion (framer handles its own animations
+   via MotionConfig; this covers CSS animations/transitions and smooth scroll) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Annotation underline animation - more subtle */
 @keyframes pulse-underline {
   0%, 100% {

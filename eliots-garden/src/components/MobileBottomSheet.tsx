@@ -56,26 +56,25 @@ export function MobileBottomSheet() {
         }}
       >
         {/* Handle / Toolbar */}
-        <div
-          className="flex items-center justify-between px-4 h-12 cursor-pointer select-none"
-          onClick={() => setIsOpen((v) => !v)}
-        >
-          {/* Left: label + drag pill */}
-          <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between px-2 h-12 select-none">
+          {/* Left: expand/collapse button (label + drag pill) */}
+          <button
+            className="flex items-center gap-3 h-12 px-2 cursor-pointer"
+            onClick={() => setIsOpen((v) => !v)}
+            aria-expanded={isOpen}
+            aria-label={isOpen ? 'Collapse marginalia panel' : 'Expand marginalia panel'}
+          >
             <div
               className="w-8 h-[3px] rounded-full bg-white/20 transition-transform duration-300"
               style={{ transform: isOpen ? 'scaleX(0.6)' : 'scaleX(1)' }}
             />
-            <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-light">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-white/60 font-light">
               Marginalia
             </span>
-          </div>
+          </button>
 
           {/* Right: control toggles */}
-          <div
-            className="flex items-center gap-1.5"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="flex items-center gap-1.5">
             {[
               { label: 'Speakers', active: showSpeakerColors, toggle: toggleSpeakerColors },
               { label: 'Arcs', active: showInlineArcs, toggle: toggleInlineArcs },
@@ -84,11 +83,12 @@ export function MobileBottomSheet() {
               <button
                 key={label}
                 onClick={toggle}
-                className="px-2.5 py-1.5 text-[10px] font-light tracking-wider rounded-sm border transition-all duration-200"
+                aria-pressed={active}
+                className="px-2.5 min-h-[44px] text-[11px] font-light tracking-wider rounded-sm transition-all duration-200"
                 style={{
                   backgroundColor: active ? 'rgba(255,255,255,0.1)' : 'transparent',
-                  borderColor: active ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)',
-                  color: active ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.4)',
+                  border: `1px solid ${active ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)'}`,
+                  color: active ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.65)',
                 }}
               >
                 {label}

@@ -413,6 +413,7 @@ export function InlineArcs() {
       >
       <svg
         ref={svgRef}
+        aria-hidden="true"
         className="absolute w-full h-full pointer-events-auto"
         style={{ 
           left: '-280px',

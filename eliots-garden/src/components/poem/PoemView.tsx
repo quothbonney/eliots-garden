@@ -185,8 +185,10 @@ export function PoemView({ scrollContainerRef }: PoemViewProps) {
                   {hasSpeakerAnnotation && (
                     <button
                       onClick={() => setActiveSpeakerAnnotation(line.speakerId!)}
+                      aria-label={`About this speaker: ${speakers[line.speakerId]?.casualName}`}
                       className={clsx(
-                        "w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300",
+                        // ::after extends the touch target to ~40px without changing the visual
+                        "relative w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300 after:absolute after:-inset-3 after:content-['']",
                         activeSpeakerAnnotationId === line.speakerId
                           ? "bg-current text-black scale-110 shadow-[0_0_10px_currentColor]"
                           : "border-current hover:bg-current/20 hover:scale-110"

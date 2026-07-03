@@ -1,7 +1,7 @@
 import { InfoDialog } from './InfoDialog'
 
 const navButtonClass =
-  'text-[10px] font-light tracking-[0.25em] text-white/45 uppercase hover:text-white/70 transition-all duration-500 px-2 py-1'
+  'text-[11px] font-light tracking-[0.25em] text-white/60 uppercase hover:text-white/85 transition-all duration-500 px-2 py-1'
 
 export function Header() {
   return (

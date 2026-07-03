@@ -19,11 +19,12 @@ export function Controls() {
           {/* Speaker Voices Toggle */}
           <button
             onClick={toggleSpeakerColors}
-            className="w-full px-3 py-2 text-[10px] font-light tracking-wider rounded-sm border transition-all duration-300 hover:shadow-lg text-left"
+            aria-pressed={showSpeakerColors}
+            className="w-full px-3 py-2 text-[11px] font-light tracking-wider rounded-sm border transition-all duration-300 hover:shadow-lg text-left"
             style={{
               backgroundColor: showSpeakerColors ? 'rgba(255,255,255,0.08)' : 'transparent',
               borderColor: showSpeakerColors ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)',
-              color: showSpeakerColors ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.5)',
+              color: showSpeakerColors ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.65)',
               boxShadow: showSpeakerColors ? '0 0 20px rgba(255,255,255,0.1)' : 'none'
             }}
           >
@@ -39,11 +40,12 @@ export function Controls() {
           {/* Inline Arcs Toggle */}
           <button
             onClick={toggleInlineArcs}
-            className="w-full px-3 py-2 text-[10px] font-light tracking-wider rounded-sm border transition-all duration-300 hover:shadow-lg text-left"
+            aria-pressed={showInlineArcs}
+            className="w-full px-3 py-2 text-[11px] font-light tracking-wider rounded-sm border transition-all duration-300 hover:shadow-lg text-left"
             style={{
               backgroundColor: showInlineArcs ? 'rgba(255,255,255,0.08)' : 'transparent',
               borderColor: showInlineArcs ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)',
-              color: showInlineArcs ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.5)',
+              color: showInlineArcs ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.65)',
               boxShadow: showInlineArcs ? '0 0 20px rgba(255,255,255,0.1)' : 'none'
             }}
           >
@@ -59,11 +61,12 @@ export function Controls() {
           {/* Annotations Toggle */}
           <button
             onClick={toggleAnnotationHighlights}
-            className="w-full px-3 py-2 text-[10px] font-light tracking-wider rounded-sm border transition-all duration-300 hover:shadow-lg text-left"
+            aria-pressed={showAnnotationHighlights}
+            className="w-full px-3 py-2 text-[11px] font-light tracking-wider rounded-sm border transition-all duration-300 hover:shadow-lg text-left"
             style={{
               backgroundColor: showAnnotationHighlights ? 'rgba(255,255,255,0.08)' : 'transparent',
               borderColor: showAnnotationHighlights ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)',
-              color: showAnnotationHighlights ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.5)',
+              color: showAnnotationHighlights ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.65)',
               boxShadow: showAnnotationHighlights ? '0 0 20px rgba(255,255,255,0.1)' : 'none'
             }}
           >

@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { MotionConfig } from 'framer-motion'
 import { usePoemStore } from './state/poemStore'
 import { Layout } from './components/Layout'
 import './index.css'
@@ -9,5 +10,9 @@ export default function App() {
     usePoemStore.getState().loadPoem()
   }, [])
 
-  return <Layout />
+  return (
+    <MotionConfig reducedMotion="user">
+      <Layout />
+    </MotionConfig>
+  )
 }
