@@ -48,32 +48,39 @@ export function MobileBottomSheet() {
 
       {/* Bottom Sheet */}
       <div
-        className="fixed bottom-0 left-0 right-0 z-40 lg:hidden"
+        className="fixed bottom-0 left-0 right-0 z-40 lg:hidden shadow-[0_-12px_40px_rgba(0,0,0,0.55)]"
         style={{
-          background: 'linear-gradient(to bottom, rgb(15,10,30), rgb(10,6,20))',
-          borderTop: '1px solid rgba(255,255,255,0.08)',
+          background: 'rgba(11,11,12,0.92)',
+          backdropFilter: 'blur(14px)',
+          WebkitBackdropFilter: 'blur(14px)',
           paddingBottom: 'env(safe-area-inset-bottom)',
         }}
       >
+        {/* Top hairline, mirroring the header rule */}
+        <div className="relative">
+          <div className="absolute inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/[0.03] to-transparent" />
+          <div className="absolute left-1/4 right-1/4 h-[1px] bg-white/[0.06]" />
+        </div>
+
         {/* Handle / Toolbar */}
         <div className="flex items-center justify-between px-2 h-12 select-none">
           {/* Left: expand/collapse button (label + drag pill) */}
           <button
-            className="flex items-center gap-3 h-12 px-2 cursor-pointer"
+            className="flex items-center gap-2.5 h-12 px-2 cursor-pointer"
             onClick={() => setIsOpen((v) => !v)}
             aria-expanded={isOpen}
             aria-label={isOpen ? 'Collapse marginalia panel' : 'Expand marginalia panel'}
           >
             <div
-              className="w-8 h-[3px] rounded-full bg-white/20 transition-transform duration-300"
+              className="w-6 h-[3px] rounded-full bg-white/20 transition-transform duration-300"
               style={{ transform: isOpen ? 'scaleX(0.6)' : 'scaleX(1)' }}
             />
-            <span className="text-[10px] uppercase tracking-[0.2em] text-white/60 font-light">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-white/50 font-light">
               Marginalia
             </span>
           </button>
 
-          {/* Right: control toggles */}
+          {/* Right: control toggles (styling mirrors the desktop Controls panel) */}
           <div className="flex items-center gap-1.5">
             {[
               { label: 'Speakers', active: showSpeakerColors, toggle: toggleSpeakerColors },
@@ -84,11 +91,11 @@ export function MobileBottomSheet() {
                 key={label}
                 onClick={toggle}
                 aria-pressed={active}
-                className="px-2.5 min-h-[44px] text-[11px] font-light tracking-wider rounded-sm transition-all duration-200"
+                className="px-2.5 min-h-[44px] text-[10px] font-light tracking-wider uppercase border transition-all duration-300"
                 style={{
-                  backgroundColor: active ? 'rgba(255,255,255,0.1)' : 'transparent',
-                  border: `1px solid ${active ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)'}`,
-                  color: active ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.65)',
+                  backgroundColor: active ? 'rgba(255,255,255,0.08)' : 'transparent',
+                  borderColor: active ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)',
+                  color: active ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.65)',
                 }}
               >
                 {label}

@@ -48,12 +48,17 @@ export function SpeakerDisclaimer() {
     >
       <div
         onClick={handleDismiss}
-        className="pointer-events-auto cursor-pointer bg-red-50/95 border border-red-200 text-red-950 p-6 rounded-sm shadow-[0_0_50px_rgba(220,38,38,0.3)] backdrop-blur-md transition-colors group"
+        className="pointer-events-auto cursor-pointer p-6 rounded-sm backdrop-blur-md transition-colors group"
+        style={{
+          background: 'rgba(17,17,19,0.92)',
+          border: '1px solid rgba(251,191,36,0.18)',
+          boxShadow: '0 12px 50px rgba(0,0,0,0.6), 0 0 40px rgba(251,191,36,0.06)',
+        }}
       >
-        <h3 className="text-[11px] uppercase tracking-[0.2em] text-red-900/60 font-bold mb-3 group-hover:text-red-900 transition-colors">
+        <h3 className="text-[11px] uppercase tracking-[0.2em] text-amber-200/60 font-light mb-3 group-hover:text-amber-200/90 transition-colors">
           A Note on Speakers
         </h3>
-        <div className="space-y-3 text-sm font-serif leading-relaxed text-justify tracking-wide font-medium">
+        <div className="space-y-3 text-sm font-serif leading-relaxed tracking-wide font-light text-white/75">
           <p>
             This is one reader's interpretation, designed as a pedagogical tool to make the poem more accessible.
             The actual poem knowingly resists this clarity; that resistance is part of its meaning.

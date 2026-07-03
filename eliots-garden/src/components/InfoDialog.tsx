@@ -18,7 +18,7 @@ export function InfoDialog({
         <Dialog.Content
           className="fixed z-[70] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[92vw] max-w-xl max-h-[80dvh] overflow-y-auto rounded-sm p-8 focus:outline-none"
           style={{
-            background: 'linear-gradient(to bottom, rgb(18,13,32), rgb(10,6,20))',
+            background: 'linear-gradient(to bottom, #111113, #0b0b0c)',
             border: '1px solid rgba(255,255,255,0.1)',
             boxShadow: '0 20px 80px rgba(0,0,0,0.8)',
           }}

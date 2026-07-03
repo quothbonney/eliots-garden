@@ -47,10 +47,13 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
       </a>
     ),
     img: ({ src, alt }: any) => (
+      // Height-capped so portrait images (Pound, Baudelaire) don't fill
+      // several screen-heights inside the mobile sheet; landscape images
+      // still span the column width
       <img
         src={src}
         alt={alt}
-        className="rounded-sm border border-white/10 my-4 w-full object-cover"
+        className="rounded-sm border border-white/10 my-4 mx-auto w-auto max-w-full max-h-[min(40dvh,20rem)] object-contain"
       />
     ),
     blockquote: ({ children }: any) => (
@@ -73,12 +76,12 @@ export function AnnotationPanel({ hideTitle = false }: { hideTitle?: boolean }) 
         )}
 
         {/* View Mode Toggle */}
-        <div className="flex gap-2 p-1 bg-white/5 rounded-sm justify-start">
+        <div className="flex gap-2 p-1 bg-white/5 justify-start">
           {(['focused', 'speakers', 'all'] as const).map((mode) => (
             <button
               key={mode}
               onClick={() => handleViewModeChange(mode)}
-              className="px-3 py-1.5 text-[10px] font-light tracking-wider uppercase rounded-sm transition-all duration-200"
+              className="px-3 py-1.5 text-[10px] font-light tracking-wider uppercase transition-all duration-200"
               style={{
                 backgroundColor: viewMode === mode ? 'rgba(255,255,255,0.1)' : 'transparent',
                 color: viewMode === mode ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.6)',

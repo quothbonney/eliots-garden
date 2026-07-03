@@ -1,4 +1,5 @@
 import { InfoDialog } from './InfoDialog'
+import { AboutPage } from './AboutPage'
 
 const navButtonClass =
   'text-[11px] font-light tracking-[0.25em] text-white/60 uppercase hover:text-white/85 transition-all duration-500 px-2 py-1'
@@ -14,26 +15,7 @@ export function Header() {
 
         {/* Navigation */}
         <nav className="flex gap-6">
-          <InfoDialog title="About" trigger={<button className={navButtonClass}>About</button>}>
-            <p>
-              Eliot's Garden is an interactive edition of T.&thinsp;S.&thinsp;Eliot's{' '}
-              <em className="font-serif italic text-amber-100/80">The Waste Land</em> (1922). The
-              poem is presented whole, with scholarly marginalia, an interpretation of its shifting
-              speakers, and the web of its allusions drawn as arcs across the text.
-            </p>
-            <p>
-              Phrases underlined in amber carry annotations — select one to read it. The toggles
-              control three layers: <span className="text-white/90">Speakers</span> colors each
-              voice, <span className="text-white/90">Arcs</span> draws connections between distant
-              lines, and <span className="text-white/90">Notes</span> shows the annotation
-              underlines.
-            </p>
-            <p>
-              The speaker attributions are one reader's interpretation, offered as a way in. The
-              poem knowingly resists this clarity; that resistance is part of its meaning. When
-              ready, turn the speakers off and read it plain.
-            </p>
-          </InfoDialog>
+          <AboutPage trigger={<button className={navButtonClass}>About</button>} />
           <InfoDialog
             title="References"
             trigger={<button className={navButtonClass}>References</button>}
