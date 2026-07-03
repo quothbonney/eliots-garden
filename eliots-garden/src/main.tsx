@@ -1,5 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import '@fontsource/literata/300.css'
+import '@fontsource/literata/400.css'
+import '@fontsource/literata/400-italic.css'
+import '@fontsource/literata/500.css'
 import './index.css'
 import App from './App.tsx'
 
