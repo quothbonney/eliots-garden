@@ -209,8 +209,8 @@
     },
     {
       "id": "speaker-22",
-      "name": "Tiresias-narrated Typist & Clerk",
-      "casualName": "Typist & Clerk",
+      "name": "Tiresias Inhabiting the Bodies of the Typist & Clerk",
+      "casualName": "Tiresias Inhabiting the Bodies of the Typist & Clerk",
       "type": "witnessed scene",
       "color": "#7986cb",
       "cue": "At the violet hour",
@@ -218,8 +218,8 @@
     },
     {
       "id": "speaker-23",
-      "name": "Typist Interior",
-      "casualName": "The Typist",
+      "name": "Tiresias Inhabiting the Body of the Typist",
+      "casualName": "Tiresias Inhabiting the Body of the Typist",
       "type": "post-act micro-voice",
       "color": "#64b5f6",
       "cue": "her brain allows one half-formed thought",

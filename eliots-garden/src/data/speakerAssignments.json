@@ -1,5 +1,12 @@
 {
   "speakers": {
+    "speaker-epigraph": {
+      "name": "Epigraph",
+      "casualName": "Epigraph",
+      "type": "epigraph",
+      "color": "#607d8b",
+      "description": "Petronius Satyricon"
+    },
     "speaker-1": {
       "name": "Calendar-Documentarian",
       "casualName": "Narrator",
@@ -162,15 +169,15 @@
       "description": "Seer and synthesizer"
     },
     "speaker-22": {
-      "name": "Tiresias-narrated Typist & Clerk",
-      "casualName": "Typist & Clerk",
+      "name": "Tiresias Inhabiting the Bodies of the Typist & Clerk",
+      "casualName": "Tiresias Inhabiting the Bodies of the Typist & Clerk",
       "type": "witnessed scene",
       "color": "#7986cb",
       "description": "Mechanical coupling witnessed"
     },
     "speaker-23": {
-      "name": "Typist Interior",
-      "casualName": "The Typist",
+      "name": "Tiresias Inhabiting the Body of the Typist",
+      "casualName": "Tiresias Inhabiting the Body of the Typist",
       "type": "post-act micro-voice",
       "color": "#64b5f6",
       "description": "Impersonalized interiority"

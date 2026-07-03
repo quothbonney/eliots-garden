@@ -21,8 +21,8 @@ export function Word({ word, lineType, speakerColor, hasNextInGroup, suppressUnd
     return <span>{word.text}</span>
   }
 
-  // Don't make epigraph, dedication, or headers interactive
-  if (lineType && ['epigraph', 'dedication', 'section_header'].includes(lineType)) {
+  // Don't make headers interactive
+  if (lineType && ['section_header'].includes(lineType)) {
     return <span style={showSpeakerColors && speakerColor ? { color: speakerColor } : undefined}>{word.text}</span>
   }
 
@@ -51,11 +51,11 @@ export function Word({ word, lineType, speakerColor, hasNextInGroup, suppressUnd
         {isAnnotated && !suppressUnderline && (
           <span
             className={clsx(
-              'absolute bottom-0 h-[1px] transition-all duration-300',
+              'absolute bottom-0 h-[1.5px] transition-all duration-300',
               hasNextInGroup ? 'left-0 right-[-2px]' : 'left-0 right-0',
               isAnnotationActive
                 ? 'bg-amber-400/90 shadow-[0_0_8px_rgba(251,191,36,0.6)]'
-                : 'bg-amber-400/60 group-hover/word:bg-amber-400/85 group-hover/word:shadow-[0_0_6px_rgba(251,191,36,0.4)]'
+                : 'bg-amber-400/75 group-hover/word:bg-amber-400/90 group-hover/word:shadow-[0_0_6px_rgba(251,191,36,0.4)]'
             )}
             style={{
               animation: isAnnotationActive ? 'none' : 'pulse-underline 3s ease-in-out infinite',

@@ -3,19 +3,31 @@ import { PoemView } from './poem/PoemView'
 import { Explorer } from './right/Explorer'
 import { Controls } from './right/Controls'
 import { Header } from './Header'
+import { SpeakerDisclaimer } from './SpeakerDisclaimer'
+import { MobileBottomSheet } from './MobileBottomSheet'
+import { useRef } from 'react'
 
 export function Layout() {
+  const mainRef = useRef<HTMLDivElement>(null)
+
   return (
     <>
       <Header />
-      <div className="min-h-screen grid grid-cols-[360px_1fr_560px] gap-0 pt-[45px]">
-        <aside className="border-r border-white/5 sticky top-[45px] h-[calc(100vh-45px)] overflow-hidden shadow-[1px_0_0_rgba(255,255,255,0.02)]">
+      <SpeakerDisclaimer />
+
+      <div className="min-h-screen grid grid-cols-1 lg:grid-cols-[360px_1fr_360px] gap-0 pt-[45px]">
+        {/* Left Panel - Annotations (hidden on mobile for now unless we want it stacked) */}
+        <aside className="hidden lg:block border-r border-white/5 sticky top-[45px] h-[calc(100vh-45px)] overflow-hidden shadow-[1px_0_0_rgba(255,255,255,0.02)]">
           <AnnotationPanel />
         </aside>
-        <main className="overflow-y-auto h-[calc(100vh-45px)] relative bg-black/20">
-          <PoemView />
+
+        {/* Main Poem View */}
+        <main ref={mainRef} className="overflow-y-auto h-[calc(100dvh-45px)] relative bg-black/20 pb-[calc(56px+env(safe-area-inset-bottom))] lg:pb-0">
+          <PoemView scrollContainerRef={mainRef} />
         </main>
-        <aside className="border-l border-white/5 sticky top-[45px] h-[calc(100vh-45px)] overflow-hidden shadow-[-1px_0_0_rgba(255,255,255,0.02)] flex">
+
+        {/* Right Panel - Vertical Explorer (Desktop) */}
+        <aside className="hidden lg:flex border-l border-white/5 sticky top-[45px] h-[calc(100vh-45px)] overflow-hidden shadow-[-1px_0_0_rgba(255,255,255,0.02)]">
           <div className="w-[140px] flex-shrink-0 border-r border-white/5">
             <Controls />
           </div>
@@ -24,8 +36,9 @@ export function Layout() {
           </div>
         </aside>
       </div>
+
+      {/* Mobile Bottom Sheet - annotations + controls */}
+      <MobileBottomSheet />
     </>
   )
 }
-
-

@@ -83,11 +83,11 @@ body::before {
 /* Annotation underline animation - more subtle */
 @keyframes pulse-underline {
   0%, 100% {
-    opacity: 0.5;
+    opacity: 0.65;
     transform: scaleX(0.98);
   }
   50% {
-    opacity: 0.65;
+    opacity: 0.8;
     transform: scaleX(1);
   }
 }

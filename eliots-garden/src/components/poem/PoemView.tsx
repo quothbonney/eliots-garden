@@ -2,8 +2,16 @@ import { usePoemStore } from '../../state/poemStore'
 import { Word } from './Word'
 import { InlineArcs } from './InlineArcs'
 import { clsx } from 'clsx'
+import wastelandWhiteSvg from '../../assets/wasteland_white.svg'
+import { useEffect } from 'react'
+import type { RefObject } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
-export function PoemView() {
+interface PoemViewProps {
+  scrollContainerRef?: RefObject<any>
+}
+
+export function PoemView({ scrollContainerRef }: PoemViewProps) {
   const lines = usePoemStore((s) => s.lines)
   const isLoading = usePoemStore((s) => s.isLoading)
   const speakers = usePoemStore((s) => s.speakers)
@@ -11,22 +19,109 @@ export function PoemView() {
   const showInlineArcs = usePoemStore((s) => s.showInlineArcs)
   const showAnnotationHighlights = usePoemStore((s) => s.showAnnotationHighlights)
   const activeScholarlyAnnotation = usePoemStore((s) => s.activeScholarlyAnnotation)
+  const setScrollState = usePoemStore((s) => s.setScrollState)
+  const setActiveSpeakerAnnotation = usePoemStore((s) => s.setActiveSpeakerAnnotation)
+  const activeSpeakerAnnotationId = usePoemStore((s) => s.activeSpeakerAnnotationId)
+
+  // Scroll-based fade out for title
+  const { scrollY } = useScroll({
+    container: scrollContainerRef
+  })
+
+  const titleOpacity = useTransform(scrollY, [0, 300], [1, 0])
+  const titleScale = useTransform(scrollY, [0, 300], [1, 0.95])
+  const titleBlur = useTransform(scrollY, [0, 300], ["0px", "10px"])
+
+  // Handle scroll effect for minimap only; title animation is handled
+  // separately in a lightweight component that reads scroll state.
+  useEffect(() => {
+    let rafId: number | null = null
+
+    const handleScroll = (e: Event) => {
+      const container = e.target as HTMLElement
+      if (!container) return
+
+      const scrollTop = container.scrollTop
+      const clientHeight = container.clientHeight
+      const scrollHeight = container.scrollHeight
+
+      // Throttle visual updates
+      if (rafId === null) {
+        rafId = requestAnimationFrame(() => {
+          setScrollState(scrollTop, clientHeight, scrollHeight)
+          rafId = null
+        })
+      }
+    }
+
+    // Attach to the main scrollable area
+    const scrollContainer = document.querySelector('main')
+    if (scrollContainer) {
+      // Initialize with current state
+      setScrollState(scrollContainer.scrollTop, scrollContainer.clientHeight, scrollContainer.scrollHeight)
+
+      scrollContainer.addEventListener('scroll', handleScroll, { passive: true })
+      return () => {
+        scrollContainer.removeEventListener('scroll', handleScroll)
+        if (rafId !== null) cancelAnimationFrame(rafId)
+      }
+    }
+  }, [setScrollState])
 
   if (isLoading) {
     return <div className="p-12 text-white/60">Loading poem…</div>
   }
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       {/* Inline arcs SVG overlay */}
       {showInlineArcs && <InlineArcs />}
-      
+
+      {/* Static SVG Title - with scroll-based animation */}
+      <motion.div
+        className="absolute left-0 right-0 z-20 flex justify-center items-center pointer-events-none"
+        style={{
+          top: '100px',
+          height: '200px',
+          opacity: titleOpacity,
+          scale: titleScale,
+          filter: useTransform(titleBlur, (blur) => `blur(${blur})`),
+        }}
+      >
+        <div className="relative w-full flex justify-center items-center h-full">
+          <img
+            src={wastelandWhiteSvg}
+            alt="The Waste Land"
+            className="w-[90vw] max-w-[675px] object-contain"
+            style={{
+              filter: 'drop-shadow(0 0 40px rgba(255,255,255,0.4))',
+              opacity: 0.95,
+            }}
+          />
+          {/* Subtle glow reflection underneath */}
+          <div
+            className="absolute -bottom-4 left-1/2 -translate-x-1/2 h-32 blur-3xl pointer-events-none"
+            style={{
+              background:
+                'radial-gradient(ellipse at center, rgba(255,255,255,0.25) 0%, transparent 70%)',
+              width: '70vw',
+              maxWidth: '450px',
+            }}
+          />
+        </div>
+      </motion.div>
+
       {/* Poem text */}
-      <div id="poem-content" className="p-12 poem-container mx-auto relative z-10">
+      <div id="poem-content" className="px-6 py-12 sm:p-12 poem-container mx-auto relative z-10">
+        {/* Spacer for absolute positioned title - Increased spacing */}
+        <div className="h-[400px] w-full"></div>
+
         {lines.map((line, lineIndex) => {
           // Check if this is the first line with a new speaker
           const prevLine = lineIndex > 0 ? lines[lineIndex - 1] : null
           const isNewSpeaker = line.speakerId && line.speakerId !== prevLine?.speakerId
+          const hasSpeakerAnnotation = isNewSpeaker && line.speakerId && speakers[line.speakerId]?.annotation
+
           // Style based on line type
           const lineClasses = clsx({
             // Epigraph - centered, smaller, italic
@@ -34,7 +129,7 @@ export function PoemView() {
             // Dedication - centered, italic, indented
             'text-center italic text-white/90 mb-1': line.type === 'dedication',
             // Section headers - centered, uppercase, spaced
-            'text-center uppercase tracking-wider text-lg font-light my-8': line.type === 'section_header',
+            'text-center uppercase tracking-wider text-lg font-light my-8 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)] text-shadow-sm': line.type === 'section_header',
             // Regular verse
             'leading-relaxed': line.type === 'verse',
             // Blank lines
@@ -42,28 +137,47 @@ export function PoemView() {
             // Foreign language passages
             'italic': line.italic,
           })
-          
+
           // Add line numbers for verse lines
           const showLineNumber = line.type === 'verse' && line.verseNumber && line.verseNumber % 10 === 0
-          
+
           const isFirstVerseInSection = line.type === 'verse' && line.verseNumber && (line.verseNumber === 1 || (lines.findIndex(l => l.lineNumber === line.lineNumber) > 0 && lines[lines.findIndex(l => l.lineNumber === line.lineNumber) - 1].type === 'section_header'))
 
           return (
-            <div 
-              key={line.id} 
+            <div
+              key={line.id}
               className={clsx('group relative', line.type === 'section_header' && 'poem-section', isFirstVerseInSection && 'first-verse')}
               data-line-number={line.lineNumber}
               {...(line.verseNumber ? { 'data-verse-number': line.verseNumber } : {})}
             >
               {/* Speaker label for new speaker */}
               {showSpeakerColors && isNewSpeaker && line.speakerId && (
-                <div className="text-xs mb-1 mt-3" style={{ color: speakers[line.speakerId]?.color, opacity: 0.7 }}>
+                <div
+                  className="text-xs mb-1 mt-3 flex items-center gap-2 group/speaker"
+                  style={{ color: speakers[line.speakerId]?.color, opacity: 0.9 }}
+                >
                   <span className="font-light tracking-wide">[ {speakers[line.speakerId]?.casualName} ]</span>
+
+                  {/* Speaker annotation indicator */}
+                  {hasSpeakerAnnotation && (
+                    <button
+                      onClick={() => setActiveSpeakerAnnotation(line.speakerId!)}
+                      className={clsx(
+                        "w-4 h-4 flex items-center justify-center rounded-full border transition-all duration-300",
+                        activeSpeakerAnnotationId === line.speakerId
+                          ? "bg-current text-black scale-110 shadow-[0_0_10px_currentColor]"
+                          : "border-current hover:bg-current/20 hover:scale-110"
+                      )}
+                      title="View speaker note"
+                    >
+                      <span className="text-[10px] font-bold">i</span>
+                    </button>
+                  )}
                 </div>
               )}
-              
+
               {showLineNumber && (
-                <span className="absolute -left-12 text-xs text-white/30 select-none">
+                <span className="hidden sm:block absolute -left-12 text-xs text-white/30 select-none">
                   {line.verseNumber}
                 </span>
               )}
@@ -74,7 +188,7 @@ export function PoemView() {
                   <span>{line.text}</span>
                 ) : (
                   (() => {
-                    const elements: JSX.Element[] = []
+                    const elements: React.ReactElement[] = []
 
                     for (let i = 0; i < line.words.length; i++) {
                       const w = line.words[i]
@@ -115,14 +229,14 @@ export function PoemView() {
                         const groupWords = line.words.slice(i, j + 1)
                         const isActive = activeScholarlyAnnotation?.id === annId
                         const underlineClass = clsx(
-                          'absolute bottom-0 left-0 right-0 h-[1px] transition-all duration-300',
+                          'absolute bottom-0 left-0 right-0 h-[1.5px] transition-all duration-300',
                           isActive
                             ? 'bg-amber-400/90 shadow-[0_0_8px_rgba(251,191,36,0.6)]'
-                            : 'bg-amber-400/60 group-hover:bg-amber-400/80 group-hover:shadow-[0_0_6px_rgba(251,191,36,0.4)]'
+                            : 'bg-amber-400/75 group-hover:bg-amber-400/90 group-hover:shadow-[0_0_6px_rgba(251,191,36,0.4)]'
                         )
                         elements.push(
                           <span key={`${w.id}-grp`} className="relative inline-block group">
-                            {groupWords.map((gw, idx) => (
+                            {groupWords.map((gw) => (
                               <Word
                                 key={gw.id}
                                 word={gw}
@@ -131,7 +245,7 @@ export function PoemView() {
                                 suppressUnderline
                               />
                             ))}
-                            <span 
+                            <span
                               className={underlineClass}
                               style={{
                                 animation: isActive ? 'none' : 'pulse-underline 3s ease-in-out infinite',
@@ -166,5 +280,3 @@ export function PoemView() {
     </div>
   )
 }
-
-

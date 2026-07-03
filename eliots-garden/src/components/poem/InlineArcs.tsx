@@ -72,8 +72,15 @@ export function InlineArcs() {
       // Determine arc X anchor relative to SVG's computed left offset
       const poemRect = poemContainer.getBoundingClientRect()
       const svgComputedLeft = parseFloat(getComputedStyle(svgEl).left || '0') || 0 // e.g., -280
-      const arcMargin = 32 // gap from poem text to arc spine
-      const xAnchor = poemRect.left - overlayRect.left - svgComputedLeft - arcMargin
+      const isNarrow = window.innerWidth < 1024
+      const arcMargin = isNarrow ? 8 : 32 // gap from poem text to arc spine
+      // On narrow screens the poem sits at the viewport edge, so clamp the
+      // spine to stay a few px on-screen instead of landing off-canvas.
+      const anchorInOverlay = Math.max(
+        isNarrow ? 10 : -Infinity,
+        poemRect.left - overlayRect.left - arcMargin
+      )
+      const xAnchor = anchorInOverlay - svgComputedLeft
 
       // Draw arcs
       arcConnections.forEach((conn, idx) => {
@@ -90,7 +97,11 @@ export function InlineArcs() {
         const arcLength = Math.abs(targetY - sourceY)
         const baseControlOffset = Math.min(arcLength * 0.35, 220)
         const heightFactor = Math.max(1, arcLength / 3000)
-        const controlOffset = baseControlOffset * heightFactor
+        // Cap the bulge on narrow screens so arcs stay visible at the edge
+        // (bezier midpoint deviates by half the control offset)
+        const controlOffset = isNarrow
+          ? Math.min(baseControlOffset * heightFactor, (anchorInOverlay + 16) * 2)
+          : baseControlOffset * heightFactor
         const controlX = xAnchor - controlOffset
         const controlY = (sourceY + targetY) / 2
 
@@ -423,9 +434,10 @@ export function InlineArcs() {
             exit={{ opacity: 0, x: 20 }}
             className="fixed z-50 pointer-events-auto"
             style={{
-              left: `${previewData.x - 350}px`,
+              left: `${Math.max(8, previewData.x - 350)}px`,
               top: `${previewData.y}px`,
-              transform: 'translateY(-50%)'
+              transform: 'translateY(-50%)',
+              maxWidth: 'calc(100vw - 16px)'
             }}
           >
             <button
